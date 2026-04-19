@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaranteed Material UK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#214339',
+                        'text-dark': '#1a1a1a',
+                        'text-gray': '#555555',
+                        'border-light': '#e0e0e0',
+                        'bg-light': '#fdfdfd',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1, h2, h3, h4, h5, h6 {
+                @apply font-heading text-text-dark leading-[1.2];
+            }
+        }
+        @layer components {
+            .btn {
+                @apply inline-block px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer;
+            }
+            .btn-primary {
+                @apply bg-primary text-white border-2 border-primary hover:bg-[#17322a];
+            }
+            .btn-outline-white {
+                @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-text-dark;
+            }
+            .btn-white {
+                @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0];
+            }
+        }
+        @layer utilities {
+            .section-padding {
+                @apply py-[100px];
+            }
+        }
+    </style>
+</head>
+<body class="font-body text-text-dark bg-bg-light leading-[1.6] antialiased">
+    <header class="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <div class="max-w-[1600px] mx-auto w-full h-[70px] px-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo" class="h-8 w-auto">
+            </div>
+            <nav class="hidden lg:flex h-full gap-8 xl:gap-10">
+                <!-- Dropdown 1 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Roofing Systems <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                RBM Systems
+                            </a>
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Guarantees
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Services <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Installation
+                            </a>
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Maintenance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 3 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Download <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Technical Specs
+                            </a>
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Brochures
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 4 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        References <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Case Studies
+                            </a>
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Testimonials
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 5 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        About Us <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Our Story
+                            </a>
+                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Our Team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#" class="btn btn-primary hidden lg:inline-block">Contact Us</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-[5px] p-2 z-50 focus:outline-none" aria-label="Open Menu">
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-[90vh] min-h-[700px] w-full bg-cover bg-center bg-no-repeat" style="background-image: url('assets/hero_background.png');">
+        <!-- Overlay rimosso per essere fedele alla foto -->
+        <div class="max-w-[1200px] mx-auto w-full px-10 h-full flex flex-col justify-center relative z-10 pt-[70px]">
+            <h1 class="text-white text-[3rem] md:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">Build to Last.<br>Designed for Tomorrow.</h1>
+            <p class="text-[#fdfdfd] text-[1.125rem] max-w-[600px] mb-8 font-normal leading-[1.6]">We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed and durable flat roof solutions, all backed by a strong, collaborative partnership approach.</p>
+            <div class="flex gap-4">
+                <a href="#" class="btn bg-black/40 backdrop-blur-md text-white hover:bg-black/60">Roofing Systems</a>
+                <a href="#" class="btn btn-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding max-w-[1200px] mx-auto px-10">
+        <div class="flex items-center mb-[50px]">
+            <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ABOUT US</h6>
+            <div class="flex-1 h-px bg-border-light"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
+            <div class="flex-1">
+                <h2 class="text-[2.5rem] font-bold mb-4">Discover Our Journey to Excellence</h2>
+                <p class="text-text-gray mb-5 text-[1.05rem]">Arches has evolved from a small local studio into a leading architecture firm known for its innovative and sustainable design solutions.</p>
+                <p class="text-text-gray mb-5 text-[1.05rem]">Our team combines extensive experience with a passion for creativity, aiming to push the boundaries of architecture while maintaining a strong commitment to our clients' needs.</p>
+                <a href="#" class="btn btn-primary mt-2">About Us</a>
+            </div>
+            
+            <div class="flex-1 flex flex-col md:flex-row gap-[30px] w-full">
+                <div class="flex-1 flex flex-col">
+                    <img src="assets/team_working.png" alt="Team working" class="w-full h-[320px] object-cover mb-5">
+                    <div class="flex flex-col">
+                        <span class="font-heading text-[2.5rem] font-bold leading-[1.1] mb-1">20+</span>
+                        <span class="text-sm text-text-gray">Years of experience</span>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col md:mt-[60px]">
+                    <img src="assets/flat_roof_worker.png" alt="Worker on roof" class="w-full h-[320px] object-cover mb-5">
+                    <div class="flex flex-col">
+                        <span class="font-heading text-[2.5rem] font-bold leading-[1.1] mb-1">100%</span>
+                        <span class="text-sm text-text-gray">Projects successfully done</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding max-w-[1200px] mx-auto px-10">
+        <div class="flex items-center mb-[50px]">
+            <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">2</span>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+            <div class="flex-1 h-px bg-border-light"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
+            <div class="max-w-[600px]">
+                <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
+                <p class="text-text-gray text-[1.05rem]">Discover our portfolio of completed projects, showcasing a variety of styles and functionalities.</p>
+            </div>
+            <a href="#" class="btn btn-primary">Roofing Systems</a>
+        </div>
+
+        <div class="bg-primary p-[30px] md:p-[60px] flex flex-col lg:flex-row gap-8 lg:gap-[60px] text-white">
+            <div class="flex-[1.5] flex flex-col justify-center">
+                <h3 class="text-white text-[2rem] font-bold mb-5 tracking-[0.5px]">PHOENIX SUPER</h3>
+                <p class="text-white/90 mb-5 text-base leading-[1.8]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p class="text-white/90 text-base leading-[1.8] mb-0">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+            </div>
+            <div class="flex-1">
+                <img src="assets/green_tiled_roof.png" alt="Phoenix Super Roof" class="w-full h-full min-h-[350px] object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Side Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
+
+    <!-- Mobile Side Menu -->
+    <div id="mobile-side-menu" class="fixed inset-y-0 right-0 w-[280px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[60] flex flex-col pt-20 px-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-text-dark p-2 focus:outline-none" aria-label="Close Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <a href="#" class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">Roofing Systems</a>
+        <a href="#" class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">Services</a>
+        <a href="#" class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">Download</a>
+        <a href="#" class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">References</a>
+        <a href="#" class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">About Us</a>
+        <a href="#" class="btn btn-primary mt-8 text-center w-full">Contact Us</a>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileSideMenu = document.getElementById('mobile-side-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        function toggleMobileMenu() {
+            mobileSideMenu.classList.toggle('translate-x-full');
+            mobileMenuOverlay.classList.toggle('opacity-0');
+            mobileMenuOverlay.classList.toggle('pointer-events-none');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        closeMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+</html>
