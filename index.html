@@ -35,7 +35,7 @@
         }
         @layer components {
             .btn {
-                @apply inline-block px-8 py-3 rounded-full text-sm font-semibold transition-all duration-300 cursor-pointer;
+                @apply inline-block px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 cursor-pointer;
             }
             .btn-primary {
                 @apply bg-primary text-white border-2 border-primary hover:bg-[#17322a];
@@ -55,24 +55,24 @@
     </style>
 </head>
 <body class="font-body text-text-dark bg-bg-light leading-[1.6] antialiased">
-    <header class="absolute top-0 left-0 w-full z-50 bg-transparent">
-        <div class="max-w-[1600px] mx-auto w-full h-[70px] px-5 flex justify-between items-center">
-            <div class="flex items-center gap-3">
+    <header id="main-header" class="fixed top-4 md:top-6 left-0 w-full z-50 px-4 transition-transform duration-300">
+        <div class="max-w-[1200px] mx-auto w-full h-[70px] px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
+            <div class="flex items-center gap-3 shrink-0">
                 <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo" class="h-8 w-auto">
             </div>
-            <nav class="hidden lg:flex h-full gap-8 xl:gap-10">
+            <nav class="hidden lg:flex flex-1 justify-center h-full px-10 gap-5 justify-evenly">
                 <!-- Dropdown 1 -->
                 <div class="relative group h-full flex items-center">
-                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                    <a href="#" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         Roofing Systems <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
                     </a>
                     <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
                         <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
                                 RBM Systems
                             </a>
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
                                 Guarantees
                             </a>
@@ -82,17 +82,33 @@
 
                 <!-- Dropdown 2 -->
                 <div class="relative group h-full flex items-center">
-                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                    <a href="#" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         Services <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
                     </a>
                     <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
                         <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Installation
+                                Roofing Surveys
                             </a>
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                                Supply
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Technical Assistance
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
                                 Maintenance
                             </a>
                         </div>
@@ -101,18 +117,42 @@
 
                 <!-- Dropdown 3 -->
                 <div class="relative group h-full flex items-center">
-                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                    <a href="#" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         Download <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
                     </a>
                     <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
                         <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Technical Specs
+                                TDS
                             </a>
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Brochures
+                                MSDS
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Drawings
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Guarantees
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                More Information
                             </a>
                         </div>
                     </div>
@@ -120,43 +160,63 @@
 
                 <!-- Dropdown 4 -->
                 <div class="relative group h-full flex items-center">
-                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
-                        References <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    <a href="#" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        References
                     </a>
-                    <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
-                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Case Studies
-                            </a>
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
-                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Testimonials
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Dropdown 5 -->
                 <div class="relative group h-full flex items-center">
-                    <a href="#" class="text-sm font-medium flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                    <a href="#" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         About Us <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
                     </a>
                     <div class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
                         <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Our Story
+                                Who We Are
                             </a>
-                            <a href="#" class="px-5 py-2 text-[14px] text-text-dark hover:text-primary flex items-center gap-3 transition-colors">
+                            <a href="#" class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
-                                Our Team
+                                Mission
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Vision
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Values
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                What Our Clients Say
+                            </a>
+                            <a href="#"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                More Information
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 shrink-0">
                 <a href="#" class="btn btn-primary hidden lg:inline-block">Contact Us</a>
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-[5px] p-2 z-50 focus:outline-none" aria-label="Open Menu">
@@ -274,6 +334,21 @@
         mobileMenuBtn.addEventListener('click', toggleMobileMenu);
         closeMenuBtn.addEventListener('click', toggleMobileMenu);
         mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Header scroll behavior
+        const header = document.getElementById('main-header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scroll down: hide header
+                header.classList.add('-translate-y-[150%]');
+            } else {
+                // Scroll up: show header
+                header.classList.remove('-translate-y-[150%]');
+            }
+            lastScrollY = window.scrollY;
+        });
     </script>
 </body>
 </html>
