@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaranteed Material UK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#214339',
+                        'text-dark': '#1a1a1a',
+                        'text-gray': '#555555',
+                        'border-light': '#e0e0e0',
+                        'bg-light': '#fdfdfd',
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            h1, h2, h3, h4, h5, h6 {
+                @apply font-heading text-text-dark leading-[1.2];
+            }
+        }
+        @layer components {
+            .btn {
+                @apply inline-block px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 cursor-pointer;
+            }
+            .btn-primary {
+                @apply bg-primary text-white border-2 border-primary hover:bg-[#17322a] hover:border-[#17322a];
+            }
+            .btn-outline-white {
+                @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-text-dark;
+            }
+            .btn-white {
+                @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
+            }
+        }
+        @layer utilities {
+            .section-padding {
+                @apply py-[100px];
+            }
+        }
+    </style>
+</head>
+
+<body class="font-body text-text-dark bg-bg-light leading-[1.6] antialiased">
+    <header id="main-header" class="fixed top-4 md:top-6 left-0 w-full z-50 px-4 transition-transform duration-300">
+        <div
+            class="max-w-[1200px] mx-auto w-full h-[70px] px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
+            <a href="index.html">
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo"
+                        class="h-8 w-auto">
+                </div>
+            </a>
+            <nav class="hidden lg:flex flex-1 justify-center h-full px-10 gap-5 justify-evenly">
+                <!-- Dropdown 1 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="roofing_systems.html"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Roofing Systems <img src="assets/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="roofing_systems.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                RBM Systems
+                            </a>
+                            <a href="roofing_systems.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Guarantees
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="services.html"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Services <img src="assets/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="services.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Roofing Surveys
+                            </a>
+                            <a href="services.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Supply
+                            </a>
+                            <a href="services.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Technical Assistance
+                            </a>
+                            <a href="services.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Maintenance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 3 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="download.html"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        Download <img src="assets/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="download.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                TDS
+                            </a>
+                            <a href="download.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                MSDS
+                            </a>
+                            <a href="download.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Drawings
+                            </a>
+                            <a href="download.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Guarantees
+                            </a>
+                            <a href="download.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                More Information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 4 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="references.html"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        References
+                    </a>
+                </div>
+
+                <!-- Dropdown 5 -->
+                <div class="relative group h-full flex items-center">
+                    <a href="about.html"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
+                        About Us <img src="assets/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Who We Are
+                            </a>
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Mission
+                            </a>
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Vision
+                            </a>
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Values
+                            </a>
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                What Our Clients Say
+                            </a>
+                            <a href="about.html"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                More Information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex items-center gap-4 shrink-0">
+                <a href="about.html" class="btn btn-primary hidden lg:inline-block">Contact Us</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-[5px] p-2 z-50 focus:outline-none"
+                    aria-label="Open Menu">
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat"
+        style="background-image: url('assets/hero_background.png');">
+        <div
+            class="max-w-[1200px] mx-auto w-full px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
+            <h1 class="text-white text-[3rem] md:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">Build to
+                Last.<br>Designed for Tomorrow.</h1>
+            <p class="text-[#fdfdfd] text-[1.125rem] max-w-[600px] mb-8 font-normal leading-[1.6]">We provide
+                industry-leading waterproofing materials, leveraging our expertise to create guaranteed and durable flat
+                roof solutions, all backed by a strong, collaborative partnership approach.</p>
+            <div class="flex gap-4">
+                <a href="#" class="btn bg-black/40 backdrop-blur-md text-white hover:bg-black/60">Roofing Systems</a>
+                <a href="#" class="btn btn-white">Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOFING SYSTEMS SECTION -->
+    <section class="section-padding max-w-[1200px] mx-auto px-10">
+        <div class="flex items-center mb-[50px]">
+            <span
+                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+            <div class="flex-1 h-px bg-border-light relative flex items-center">
+                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
+            <div class="w-full">
+                <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
+                <p class="text-text-gray text-[1.05rem]">Discover our portfolio of completed projects, showcasing a
+                    variety of styles and functionalities.</p>
+            </div>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-5 md:auto-rows-[220px] lg:grid-rows-3 lg:h-[calc(100vh-350px)] lg:min-h-[600px] lg:max-h-[800px] gap-4 lg:gap-5">
+            <!-- Card 1: Flagship -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-3 md:row-span-2 h-[450px] md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-transparent to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-8 flex flex-col justify-end z-10">
+                    <div class="flex md:flex-row md:items-end justify-between gap-6">
+                        <div class="w-full">
+                            <h3 class="text-4xl md:text-5xl font-bold mb-2 font-heading tracking-tight text-white">
+                                PHOENIX SUPER 40</h3>
+                            <p class="text-sm text-white/80 mb-6">APAO compound • No ageing</p>
+                            <div class="flex justify-between">
+                                <div
+                                    class="inline-flex items-center justify-center px-6 py-2 border border-white/50 rounded-full text-sm font-semibold transition-colors duration-300 group-hover:bg-white group-hover:text-[#214339]">
+                                    40 years Warranty
+                                </div>
+                                <div
+                                    class="flex items-center gap-2 text-sm text-white/80 group-hover:text-white transition-colors duration-300">
+                                    Discover this system
+                                    <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2: Saturn -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <h3 class="text-2xl font-bold mb-1 font-heading tracking-tight text-white">SATURN 30</h3>
+                    <p class="text-xs text-white/70 mb-2">Something About</p>
+                    <p class="text-sm font-bold">30 years Warranty</p>
+                </div>
+            </a>
+
+            <!-- Card 3: Phoenix Super -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <h3 class="text-2xl font-bold mb-1 font-heading tracking-tight text-white">PHOENIX SUPER 25</h3>
+                    <p class="text-xs text-white/70 mb-2">Something About</p>
+                    <p class="text-sm font-bold">25 years Warranty</p>
+                </div>
+            </a>
+
+            <!-- Card 4: Mercury 20 -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">MERCURY 20</h3>
+                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
+                    <p class="text-xs font-bold">20 years Warranty</p>
+                </div>
+            </a>
+
+            <!-- Card 5: Halley 20 -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">HALLEY 20</h3>
+                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
+                    <p class="text-xs font-bold">20 years Warranty</p>
+                </div>
+            </a>
+
+            <!-- Card 6: Mercury 10 -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
+                <div class="absolute inset-0 bg-primary z-0"></div>
+                <img src="assets/hero_background.png" alt=""
+                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">MERCURY 10</h3>
+                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
+                    <p class="text-xs font-bold">10 years Warranty</p>
+                </div>
+            </a>
+
+            <!-- Card 7: Explore -->
+            <a href="#"
+                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 h-[250px] md:h-auto bg-[#2b4236]">
+                <div class="absolute inset-0 bg-primary z-0 transition-colors duration-500 group-hover:bg-[#1f2f26]">
+                </div>
+                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+
+                <div class="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10">
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-white/70">EXPLORE THE FULL
+                        RANGE</span>
+                    <div class="flex items-end justify-between gap-4">
+                        <div>
+                            <h3
+                                class="text-2xl md:text-3xl font-bold mb-1 font-heading tracking-tight leading-tight text-white">
+                                6 Roofing<br>Systems</h3>
+                            <p class="text-[12px] text-white/80">Compare warranty, materials & specs</p>
+                        </div>
+                        <div
+                            class="w-12 h-12 shrink-0 rounded-full border border-white/50 flex items-center justify-center transition-all duration-500 group-hover:bg-white group-hover:border-white group-hover:text-[#214339]">
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Mobile Side Menu Overlay -->
+    <div id="mobile-menu-overlay"
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
+
+    <!-- Mobile Side Menu -->
+    <div id="mobile-side-menu"
+        class="fixed inset-y-0 right-0 w-[280px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[60] flex flex-col pt-20 px-8 overflow-y-auto pb-10">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-text-dark p-2 focus:outline-none"
+            aria-label="Close Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <div class="mobile-menu-item border-b border-border-light">
+            <button
+                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
+                Roofing Systems
+                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
+            </button>
+            <div class="hidden flex-col pb-4 pl-4 gap-3">
+                <a href="roofing_systems.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    RBM Systems
+                </a>
+                <a href="roofing_systems.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Guarantees
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-menu-item border-b border-border-light">
+            <button
+                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
+                Services
+                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
+            </button>
+            <div class="hidden flex-col pb-4 pl-4 gap-3">
+                <a href="services.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Roofing Surveys
+                </a>
+                <a href="services.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Supply
+                </a>
+                <a href="services.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Technical Assistance
+                </a>
+                <a href="services.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Maintenance
+                </a>
+            </div>
+        </div>
+
+        <div class="mobile-menu-item border-b border-border-light">
+            <button
+                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
+                Download
+                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
+            </button>
+            <div class="hidden flex-col pb-4 pl-4 gap-3">
+                <a href="download.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    TDS
+                </a>
+                <a href="download.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    MSDS
+                </a>
+                <a href="download.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Drawings
+                </a>
+                <a href="download.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Guarantees
+                </a>
+                <a href="download.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    More Information
+                </a>
+            </div>
+        </div>
+
+        <a href="#"
+            class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">References</a>
+
+        <div class="mobile-menu-item border-b border-border-light">
+            <button
+                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
+                About Us
+                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
+            </button>
+            <div class="hidden flex-col pb-4 pl-4 gap-3">
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Who We Are
+                </a>
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Mission
+                </a>
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Vision
+                </a>
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Values
+                </a>
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    What Our Clients Say
+                </a>
+                <a href="about.html"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    More Information
+                </a>
+            </div>
+        </div>
+
+        <a href="about.html" class="btn btn-primary mt-8 text-center w-full">Contact Us</a>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileSideMenu = document.getElementById('mobile-side-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+        function toggleMobileMenu() {
+            mobileSideMenu.classList.toggle('translate-x-full');
+            mobileMenuOverlay.classList.toggle('opacity-0');
+            mobileMenuOverlay.classList.toggle('pointer-events-none');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        closeMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Mobile submenu toggle
+        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+        mobileMenuItems.forEach(item => {
+            const btn = item.querySelector('button');
+            const submenu = item.querySelector('div');
+            const arrow = item.querySelector('img');
+
+            if (btn && submenu && arrow) {
+                btn.addEventListener('click', () => {
+                    const isHidden = submenu.classList.contains('hidden');
+                    if (isHidden) {
+                        submenu.classList.remove('hidden');
+                        submenu.classList.add('flex');
+                        arrow.classList.add('rotate-180');
+                    } else {
+                        submenu.classList.add('hidden');
+                        submenu.classList.remove('flex');
+                        arrow.classList.remove('rotate-180');
+                    }
+                });
+            }
+        });
+
+        // Header scroll behavior
+        const header = document.getElementById('main-header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scroll down: hide header
+                header.classList.add('-translate-y-[150%]');
+            } else {
+                // Scroll up: show header
+                header.classList.remove('-translate-y-[150%]');
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Chapter Progress Bar Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.bg-border-light > div.bg-text-dark');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const bar = entry.target;
+                    const targetWidth = bar.getAttribute('data-width');
+
+                    if (entry.isIntersecting) {
+                        if (targetWidth) {
+                            // Small delay makes it feel more natural when scrolling
+                            setTimeout(() => {
+                                bar.classList.remove('w-0');
+                                bar.classList.add(targetWidth);
+                            }, 150);
+                        }
+                    } else {
+                        // Reset when it goes out of view so it can animate again
+                        if (targetWidth) {
+                            bar.classList.remove(targetWidth);
+                            bar.classList.add('w-0');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            progressBars.forEach(bar => {
+                const classes = Array.from(bar.classList);
+                const widthClass = classes.find(c => c.startsWith('w-'));
+
+                if (widthClass && widthClass !== 'w-0') {
+                    bar.setAttribute('data-width', widthClass);
+                    bar.classList.remove(widthClass);
+                    bar.classList.add('w-0');
+
+                    bar.classList.remove('duration-500');
+                    bar.classList.add('duration-[1500ms]', 'ease-in-out');
+
+                    observer.observe(bar);
+                }
+            });
+            // Scroll Reveal Animation for Vertical Cards
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Slide up and fade in (once only)
+                        entry.target.classList.remove('opacity-0', 'translate-y-16');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 }); // Triggers when 15% of the card is visible
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        });
+    </script>
+</body>
+
+</html>
