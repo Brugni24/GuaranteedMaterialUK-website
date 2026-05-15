@@ -118,7 +118,7 @@
                 </div>
 
                 <!-- Dropdown 3 -->
-                <div class="relative group h-full flex items-center">
+                <div class="hidden group h-full flex items-center">
                     <a href="download.html" class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         Download <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform group-hover:rotate-180 duration-500">
                     </a>
@@ -443,7 +443,7 @@
         </div>
     </section>
 
-    <!-- DOWNLOADS SECTION -->
+    <!-- REFERENCES SECTION -->
     <section class="section-padding max-w-[1200px] mx-auto px-10">
         <div class="flex items-center mb-[50px]">
             <span
@@ -640,7 +640,7 @@
         </div>
     </section>
 
-    <!-- REFERENCES SECTION -->
+    <!-- ABOUT US SECTION -->
     <section class="section-padding max-w-[1200px] mx-auto px-10">
         <div class="flex items-center mb-[50px]">
             <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
@@ -751,45 +751,57 @@
         </div>
     </section>
 
-    <!-- ABOUT US SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-10">
-        <div class="flex items-center mb-[50px]">
-            <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">5</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ABOUT US</h6>
-            <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white pt-24 pb-12 w-full mt-20">
+        <div class="max-w-[1200px] mx-auto px-10 flex flex-col md:flex-row justify-between gap-16 md:gap-10">
+            <!-- Logo -->
+            <div class="flex flex-col justify-between md:w-1/4 min-h-[250px]">
+                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-48 h-auto">
+                <span class="text-[13px] text-gray-400 leading-relaxed">Made by <a href="https://www.linkedin.com/in/andrea-brugnera-65a78a291/" class="text-gray-300">Andrea Brugnera</a> and <a href="https://www.linkedin.com/in/francesca-maggi-191013301/" class="text-gray-300">Francesca Maggi</a>.</span>
+            </div>
+
+            <!-- Links Columns -->
+            <div class="flex flex-col sm:flex-row flex-wrap md:flex-nowrap justify-between flex-1 gap-10 md:gap-6">
+                <!-- ADDRESS -->
+                <div class="flex flex-col md:w-1/4">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">ADDRESS</h4>
+                    <p class="text-[13px] text-white leading-relaxed mb-6">1-2 Howley Park Business Village, Pullan Way, Morley, Leeds, LS27, 0BZ<br>United Kingdom</p>
+                </div>
+
+                <!-- MENU -->
+                <div class="flex flex-col md:w-1/4">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">EMAIL</h4>
+                    <a href="mailto:[EMAIL_ADDRESS]"
+                        class="text-[13px] text-white hover:text-[#cccccc] transition-colors mb-6">[EMAIL_ADDRESS]</a>
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">CONTACT US</h4>
+                    <p class="text-[13px] text-white">+1 234 567 8900</p>
+                </div>
+
+                <!-- SUPPORT -->
+                <div class="flex flex-col md:w-1/4">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">LEGAL</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="flex flex-col md:w-1/4">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">SOCIAL</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Facebook</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    
-        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-start">
-            <div class="flex-1">
-                <h2 class="text-[2.5rem] font-bold mb-4">Discover Our Journey to Excellence</h2>
-                <p class="text-text-gray mb-5 text-[1.05rem]">Arches has evolved from a small local studio into a leading
-                    architecture firm known for its innovative and sustainable design solutions.</p>
-                <p class="text-text-gray mb-5 text-[1.05rem]">Our team combines extensive experience with a passion for
-                    creativity, aiming to push the boundaries of architecture while maintaining a strong commitment to our
-                    clients' needs.</p>
-                <a href="#" class="btn btn-primary mt-2">About Us</a>
-            </div>
-    
-            <div class="flex-1 flex flex-col md:flex-row gap-[30px] w-full">
-                <div class="flex-1 flex flex-col">
-                    <img src="assets/team_working.png" alt="Team working" class="w-full h-[320px] object-cover mb-5">
-                    <div class="flex flex-col">
-                        <span class="font-heading text-[2.5rem] font-bold leading-[1.1] mb-1">20+</span>
-                        <span class="text-sm text-text-gray">Years of experience</span>
-                    </div>
-                </div>
-                <div class="flex-1 flex flex-col md:mt-[60px]">
-                    <img src="assets/flat_roof_worker.png" alt="Worker on roof" class="w-full h-[320px] object-cover mb-5">
-                    <div class="flex flex-col">
-                        <span class="font-heading text-[2.5rem] font-bold leading-[1.1] mb-1">100%</span>
-                        <span class="text-sm text-text-gray">Projects successfully done</span>
-                    </div>
-                </div>
-            </div>
+
+        <div class="max-w-[1200px] mx-auto px-10 flex flex-col justify-center md:gap-10 mt-20">
+            <div class="h-[1px] bg-gray-400 w-full"></div>
+            <p class="text-[13px] text-gray-400 leading-relaxed text-center">© 2026 Guaranteed Material UK. All rights reserved. - Company registered in England & Wales No. 16588788 - VAT Reg No. 431815093</p>
         </div>
-    </section>
+    </footer>
 
     <!-- Mobile Side Menu Overlay -->
     <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
@@ -842,7 +854,7 @@
             </div>
         </div>
 
-        <div class="mobile-menu-item border-b border-border-light">
+        <div class="hidden mobile-menu-item border-b border-border-light">
             <button class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
                 Download
                 <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
