@@ -35,7 +35,7 @@
         }
         @layer components {
             .btn {
-                @apply inline-block px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 cursor-pointer;
+                @apply inline-block px-6 py-3 rounded-full text-sm font-bold  transition-all duration-300 cursor-pointer;
             }
             .btn-primary {
                 @apply bg-primary text-white border-2 border-primary hover:bg-[#17322a] hover:border-[#17322a];
@@ -385,9 +385,9 @@
         <div class="grid grid-cols-1 relative">
             <!-- Header Layer -->
             <div class="col-start-1 row-start-1 pointer-events-none z-0">
-                <div class="sticky top-[60px] md:top-[70px] pt-6 pb-[50vh] md:pb-[55vh] w-full">
+                <div class="sticky top-[40px] md:top-[50px] pt-6 pb-[30vh] md:pb-[35vh] w-full">
                     <div class="pointer-events-auto">
-                        <div class="flex items-center mb-[20px]">
+                        <div class="flex items-center mb-[50px]">
                             <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading bg-white">2</span>
                             <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">SERVICES</h6>
                             <div class="flex-1 h-px bg-border-light relative flex items-center">
@@ -405,10 +405,10 @@
             </div>
 
             <!-- Cards Layer -->
-            <div class="col-start-1 row-start-1 pt-[450px] md:pt-[380px] z-10 pointer-events-none">
-                <div class="flex flex-col gap-[15vh] md:gap-[20vh] w-full pb-[10vh] pointer-events-auto">
+            <div class="col-start-1 row-start-1 pt-[550px] md:pt-[480px] z-10 pointer-events-none">
+                <div class="flex flex-col gap-[15vh] md:gap-[20vh] w-full pb-[5vh] pointer-events-auto">
                     <!-- Service 1 -->
-                    <div class="sticky top-[420px] md:top-[340px] z-10 flex flex-col md:flex-row bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
+                    <div class="sticky top-[480px] md:top-[380px] z-10 flex flex-col md:flex-row bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
                         <div class="h-[300px] md:h-auto md:w-5/12 overflow-hidden relative">
                             <img src="assets/service1.png" alt="Consulting & Planning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -424,7 +424,7 @@
                     </div>
 
                     <!-- Service 2 -->
-                    <div class="sticky top-[420px] md:top-[340px] z-20 flex flex-col md:flex-row-reverse bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
+                    <div class="sticky top-[480px] md:top-[380px] z-20 flex flex-col md:flex-row-reverse bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
                         <div class="h-[300px] md:h-auto md:w-5/12 overflow-hidden relative">
                             <img src="assets/service2.png" alt="Custom Manufacturing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -446,197 +446,118 @@
     <!-- REFERENCES SECTION -->
     <section class="section-padding max-w-[1200px] mx-auto px-10">
         <div class="flex items-center mb-[50px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-6 bg-white">
+                <span class="text-lg font-bold font-heading">3</span>
+            </div>
+            <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">REFERENCES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-3/5 transition-all duration-500"></div>
             </div>
         </div>
-    
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
-            <div class="max-w-[600px]">
-                <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
-                <p class="text-text-gray text-[1.05rem]">Discover our portfolio of completed projects, showcasing a variety
-                    of styles and functionalities.</p>
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[20px] gap-5 lg:gap-0">
+            <div class="w-full">
+                <h2 class="text-[2.5rem] font-bold mb-4">Our Projects</h2>
+                <p class="text-text-gray text-[1.05rem]">From planning to execution, every project is a testament to our
+                    commitment to quality and excellence. Here are some highlights from our recent work.</p>
             </div>
-            <a href="roofing_systems.html" class="btn btn-primary">Roofing Systems</a>
         </div>
-    
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <!-- Card 1 -->
-            <a href=""
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Phoenix Super 40" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        PHOENIX SUPER 40</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        APAO compound no ageing</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">40
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
+        
+        <div class="flex flex-col">
+            <!-- Project 1 -->
+            <div class="py-10 border-gray-200 group">
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-16">
+                    <!-- Left: Details -->
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between pt-2">
+                        <div>
+                            <p class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4">MIAMI, FL - 2024</p>
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0">
+                                Custom Retail Display<br>Units
+                            </h3>
+                        </div>
+                        <a href="references.html" class="btn btn-outline border-border-light text-text-dark hover:bg-black hover:text-white hover:border-black inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            Discover
+                            <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+        
+                    <!-- Middle: Image -->
+                    <div class="w-full lg:w-1/2 flex items-center justify-center overflow-hidden">
+                        <a href="references.html" class="block w-full">
+                            <img src="assets/retail_display.png" alt="Custom Retail Display Units"
+                                class="w-full h-[300px] lg:h-auto object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105">
+                        </a>
+                    </div>
+        
+                    <!-- Right: Specs -->
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto pt-2">
+                        <p class="text-[#555] text-[15px] leading-relaxed mb-10">A luxurious residential project featuring
+                            contemporary design elements, sustainable materials, and state-of-the-art amenities.</p>
+        
+                        <div class="flex flex-col w-full mt-auto">
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">SYSTEM</span>
+                                <span class="text-text-dark font-bold text-[14px]">Phoenix Super 40</span>
+                            </div>
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">SIZE</span>
+                                <span class="text-text-dark font-bold text-[14px]">4,200 Sq. ft.</span>
+                            </div>
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">WARRANTY</span>
+                                <span class="text-text-dark font-bold text-[14px]">40 years</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </a>
-    
-            <!-- Card 2 -->
-            <a href="#"
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Saturn" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        SATURN 30</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        Something About</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">30
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
+            </div>
+        
+            <!-- Project 2 -->
+            <div class="py-16 border-t border-b border-gray-200 group">
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-16">
+                    <!-- Left: Details -->
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between pt-2">
+                        <div>
+                            <p class="text-[#777] text-[11px] font-bold tracking-widest uppercase mb-4">SAN FRANCISCO, CA - 2024</p>
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0">
+                                Urban Loft<br>Transformation
+                            </h3>
+                        </div>
+                        <a href="references.html" class="btn btn-outline border-border-light text-text-dark hover:bg-black hover:text-white hover:border-black inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            Discover
+                            <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+        
+                    <!-- Middle: Image -->
+                    <div class="w-full lg:w-1/2 flex items-center justify-center overflow-hidden">
+                        <a href="references.html" class="block w-full">
+                            <img src="assets/retail_display.png" alt="Urban Loft Transformation"
+                                class="w-full h-[300px] lg:h-auto object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105">
+                        </a>
+                    </div>
+        
+                    <!-- Right: Specs -->
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto pt-2">
+                        <p class="text-[#555] text-[15px] leading-relaxed mb-10">Incorporates green technologies for a
+                            sustainable workspace.</p>
+        
+                        <div class="flex flex-col w-full mt-auto">
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">SYSTEM</span>
+                                <span class="text-text-dark font-bold text-[14px]">Eco Roof System</span>
+                            </div>
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">SIZE</span>
+                                <span class="text-text-dark font-bold text-[14px]">12,000 Sq. ft.</span>
+                            </div>
+                            <div class="flex justify-between items-center w-full border-t border-border-light py-3">
+                                <span class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px]">WARRANTY</span>
+                                <span class="text-text-dark font-bold text-[14px]">25 years</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </a>
-    
-            <!-- Card 3 -->
-            <a href="#"
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Phoenix Super 25" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        PHOENIX SUPER 25</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        Something About</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">25
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-    
-            <!-- Card 4 -->
-            <a href="#"
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Mercury 20" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        MERCURY 20</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        Something About</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">20
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-    
-            <!-- Card 5 -->
-            <a href="#"
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Halley 20" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        HALLEY 20</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        Something About</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">20
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </div>
-            </a>
-    
-            <!-- Card 6 -->
-            <a href="#"
-                class="relative group h-[320px] overflow-hidden block transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:z-10">
-                <img src="assets/hero_background.png" alt="Mercury 10" class="w-full h-full object-cover">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#214339] via-[#214339]/50 to-transparent opacity-90 transition-opacity duration-500">
-                </div>
-                <div class="absolute inset-0 bg-[#0a1411] opacity-0 group-hover:opacity-70 transition-opacity duration-500">
-                </div>
-                <div class="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end z-20">
-                    <h3
-                        class="text-white text-[24px] group-hover:text-[15px] font-bold mb-6 group-hover:mb-3 font-heading uppercase tracking-wide transition-all duration-500">
-                        MERCURY 10</h3>
-                    <p
-                        class="text-white text-[14px] group-hover:text-[22px] group-hover:leading-[1.1] font-semibold mb-1 group-hover:mb-2 transition-all duration-500">
-                        Something About</p>
-                    <p class="text-white text-[14px] group-hover:text-[22px] font-semibold transition-all duration-500">10
-                        years Warranty</p>
-                    <div
-                        class="absolute bottom-8 right-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 delay-75">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </div>
-                </div>
-            </a>
+            </div>
         </div>
     </section>
 
@@ -764,7 +685,7 @@
             <div class="flex flex-col sm:flex-row flex-wrap md:flex-nowrap justify-between flex-1 gap-10 md:gap-6">
                 <!-- ADDRESS -->
                 <div class="flex flex-col md:w-1/4">
-                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5">ADDRESS</h4>
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">ADDRESS</h4>
                     <p class="text-[13px] text-white leading-relaxed mb-6">1-2 Howley Park Business Village, Pullan Way, Morley, Leeds, LS27, 0BZ<br>United Kingdom</p>
                 </div>
 
