@@ -64,8 +64,7 @@
             class="max-w-[1200px] mx-auto w-full h-[70px] px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
             <a href="index.html">
                 <div class="flex items-center gap-3 shrink-0">
-                    <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo"
-                        class="h-8 w-auto">
+                    <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo" class="h-8 w-auto">
                 </div>
             </a>
             <nav class="hidden lg:flex flex-1 justify-center h-full px-10 gap-5 justify-evenly">
@@ -98,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Dropdown 2 -->
                 <div class="relative group h-full flex items-center">
                     <a href="services.html"
@@ -144,9 +143,9 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Dropdown 3 -->
-                <div class="relative group h-full flex items-center">
+                <div class="hidden group h-full flex items-center">
                     <a href="download.html"
                         class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer">
                         Download <img src="assets/down_arrow.svg" alt=""
@@ -198,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Dropdown 4 -->
                 <div class="relative group h-full flex items-center">
                     <a href="references.html"
@@ -206,7 +205,7 @@
                         References
                     </a>
                 </div>
-
+    
                 <!-- Dropdown 5 -->
                 <div class="relative group h-full flex items-center">
                     <a href="about.html"
@@ -283,198 +282,162 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat"
-        style="background-image: url('assets/hero_background.png');">
-        <div
-            class="max-w-[1200px] mx-auto w-full px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
-            <h1 class="text-white text-[3rem] md:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">Build to
-                Last.<br>Designed for Tomorrow.</h1>
-            <p class="text-[#fdfdfd] text-[1.125rem] max-w-[600px] mb-8 font-normal leading-[1.6]">We provide
-                industry-leading waterproofing materials, leveraging our expertise to create guaranteed and durable flat
-                roof solutions, all backed by a strong, collaborative partnership approach.</p>
-            <div class="flex gap-4">
-                <a href="#" class="btn bg-black/40 backdrop-blur-md text-white hover:bg-black/60">Roofing Systems</a>
-                <a href="#" class="btn btn-white">Services</a>
+    <section id="about-hero" class="relative h-[500vh] w-full bg-primary">
+        <div class="sticky top-0 h-[100vh] w-full flex items-center max-w-[1200px] mx-auto px-5 lg:px-6 pt-[80px]">
+            <div class="relative w-full h-full">
+                <!-- Title -->
+                <h1 id="about-title" class="text-white text-[3rem] md:text-[4.5rem] font-bold absolute top-[75%] left-0 -translate-y-1/2 w-full will-change-transform tracking-[-1px]">
+                    About Us
+                </h1>
+                
+                <!-- Text -->
+                <div id="about-text" class="text-[#fdfdfd] text-[1.125rem] md:text-[1.5rem] font-normal leading-[1.6] max-w-[800px] absolute top-[45%] left-0">
+                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">Every great name tells a story. Ours starts with <strong class="font-bold">a promise</strong>.</p>
+                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">When we founded <strong class="font-bold">Guaranteed Material UK</strong>, we weren't just choosing a name,</p>
+                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">We were making a commitment to everyone</p>
+                    <p class="opacity-0 translate-y-[20px] will-change-[opacity,transform]">looking for a <strong class="font-bold">professional</strong>, <strong class="font-bold">guaranteed</strong> and <strong class="font-bold">durable solution</strong> for flat roofing.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ROOFING SYSTEMS SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-10">
-        <div class="flex items-center mb-[50px]">
+    <!-- WHO WE ARE SECTION -->
+    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10">
+        <div class="flex items-center mb-[80px]">
             <span
                 class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">WHO WE ARE</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
-            <div class="w-full">
-                <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
-                <p class="text-text-gray text-[1.05rem]">Discover our portfolio of completed projects, showcasing a
-                    variety of styles and functionalities.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+            <div class="pr-0 lg:pr-10">
+                <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-8 text-text-dark leading-[1.1] tracking-[-1px]">Our Team</h2>
+                <p class="text-text-dark text-[1.125rem] leading-[1.6] font-normal">
+                    Guaranteed Material UK combines extensive professional experience from leading organisations across the sector, bringing strategic depth and technical knowledge to every engagement. That background gives us a deep understanding of the industry — and the insight to deliver waterproofing solutions that are both innovative and built to last. Every project is different, and we tailor our approach to match. It's that combination of expertise, dedication and track record that makes Guaranteed Material UK a partner you can genuinely count on.
+                </p>
+            </div>
+            <div class="w-full bg-[#d9d9d9] aspect-[4/3]">
+                <!-- Image Placeholder -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET THE FOUNDERS SECTION -->
+    <section class="w-full bg-black section-padding">
+        <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+            <div class="flex items-center mb-[80px]">
+                <span
+                    class="inline-flex items-center justify-center w-11 h-11 border border-white text-white text-base font-semibold mr-5 font-heading">3</span>
+                <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-white">OUR MISSION</h6>
+                <div class="flex-1 h-px bg-white/20 relative flex items-center">
+                    <div class="h-[2px] bg-white w-1/5 transition-all duration-500"></div>
+                </div>
+            </div>
+
+            <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-white leading-[1.1] tracking-[-1px]">Meet the Founders</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 lg:gap-[100px] w-full max-w-[850px] mx-auto">
+                <!-- Founder 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-[260px] md:w-[280px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
+                        <!-- Placeholder for image -->
+                        <div class="absolute inset-0 bg-[#d9d9d9] transition-transform duration-500 group-hover:scale-110"></div>
+                        
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                        
+                        <!-- Text Content -->
+                        <div class="absolute inset-0 p-6 flex flex-col justify-center items-center text-center opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+                            <p class="text-white text-[0.95rem] leading-[1.6]">
+                                Over 20 years of experience in the UK roofing sector, specialising in advanced RBM systems and technical consultancy for major commercial projects.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Valentino Rossi</h3>
+                    <p class="text-white/80 text-base md:text-lg font-normal">Founder</p>
+                </div>
+                
+                <!-- Founder 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-[260px] md:w-[280px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
+                        <!-- Placeholder for image -->
+                        <div class="absolute inset-0 bg-[#d9d9d9] transition-transform duration-500 group-hover:scale-110"></div>
+                        
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+                        
+                        <!-- Text Content -->
+                        <div class="absolute inset-0 p-6 flex flex-col justify-center items-center text-center opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 z-10">
+                            <p class="text-white text-[0.95rem] leading-[1.6]">
+                                A background in civil engineering and materials science, driving product innovation and quality control across all Guaranteed Material UK solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Valentino Rossi</h3>
+                    <p class="text-white/80 text-base md:text-lg font-normal">Founder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO EVERYDAY SECTION -->
+    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10 relative overflow-hidden">
+        <!-- Chapter Header -->
+        <div class="flex items-center mb-[80px]">
+            <span
+                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">3</span>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR MISSION</h6>
+            <div class="flex-1 h-px bg-border-light relative flex items-center">
+                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div
-            class="grid grid-cols-1 md:grid-cols-5 md:auto-rows-[220px] lg:grid-rows-3 lg:h-[calc(100vh-350px)] lg:min-h-[600px] lg:max-h-[800px] gap-4 lg:gap-5">
-            <!-- Card 1: Flagship -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-3 md:row-span-2 h-[450px] md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-transparent to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+        <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-text-dark leading-[1.1] tracking-[-1px]">What we do everyday</h2>
 
-                <div class="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                    <div class="flex md:flex-row md:items-end justify-between gap-6">
-                        <div class="w-full">
-                            <h3 class="text-4xl md:text-5xl font-bold mb-2 font-heading tracking-tight text-white">
-                                PHOENIX SUPER 40</h3>
-                            <p class="text-sm text-white/80 mb-6">APAO compound • No ageing</p>
-                            <div class="flex justify-between">
-                                <div
-                                    class="inline-flex items-center justify-center px-6 py-2 border border-white/50 rounded-full text-sm font-semibold transition-colors duration-300 group-hover:bg-white group-hover:text-[#214339]">
-                                    40 years Warranty
-                                </div>
-                                <div
-                                    class="flex items-center gap-2 text-sm text-white/80 group-hover:text-white transition-colors duration-300">
-                                    Discover this system
-                                    <svg class="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
+            <!-- Left Image -->
+            <div class="w-full aspect-[16/9] lg:aspect-[4/3] bg-[#d9d9d9]"></div>
+            
+            <!-- Right Text -->
+            <div class="relative pl-0 lg:pl-12 py-4">
+                <!-- Vertical Line -->
+                <div class="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-text-dark"></div>
+                <p class="text-text-dark text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
+                    To deliver professional, reliable and long-lasting flat roofing solutions, combining deep industry expertise with a tailored approach that puts every client's needs first.
+                </p>
+            </div>
+        </div>
+    </section>
 
-            <!-- Card 2: Saturn -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+    <!-- OUR VISION SECTION -->
+    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10">
+        <!-- Chapter Header -->
+        <div class="flex items-center mb-[80px]">
+            <span
+                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">4</span>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR VISION</h6>
+            <div class="flex-1 h-px bg-border-light relative flex items-center">
+                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
+            </div>
+        </div>
 
-                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <h3 class="text-2xl font-bold mb-1 font-heading tracking-tight text-white">SATURN 30</h3>
-                    <p class="text-xs text-white/70 mb-2">Something About</p>
-                    <p class="text-sm font-bold">30 years Warranty</p>
-                </div>
-            </a>
+        <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-text-dark leading-[1.1] tracking-[-1px]">How we see the future</h2>
 
-            <!-- Card 3: Phoenix Super -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
+            <!-- Left Text -->
+            <div class="relative pr-0 lg:pr-12 py-4 order-2 lg:order-1">
+                <p class="text-text-dark text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
+                    To be the most trusted name in flat roof waterproofing in the UK, setting the standard for quality, innovation and lasting partnerships.
+                </p>
+                <!-- Vertical Line -->
+                <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-px bg-text-dark"></div>
+            </div>
 
-                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <h3 class="text-2xl font-bold mb-1 font-heading tracking-tight text-white">PHOENIX SUPER 25</h3>
-                    <p class="text-xs text-white/70 mb-2">Something About</p>
-                    <p class="text-sm font-bold">25 years Warranty</p>
-                </div>
-            </a>
-
-            <!-- Card 4: Mercury 20 -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
-
-                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">MERCURY 20</h3>
-                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
-                    <p class="text-xs font-bold">20 years Warranty</p>
-                </div>
-            </a>
-
-            <!-- Card 5: Halley 20 -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
-
-                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">HALLEY 20</h3>
-                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
-                    <p class="text-xs font-bold">20 years Warranty</p>
-                </div>
-            </a>
-
-            <!-- Card 6: Mercury 10 -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-1 md:row-span-1 aspect-square md:aspect-auto md:h-auto">
-                <div class="absolute inset-0 bg-primary z-0"></div>
-                <img src="assets/hero_background.png" alt=""
-                    class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay z-0 group-hover:scale-110 transition-transform duration-1000">
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-[#151f19] via-[#151f19]/30 to-transparent opacity-90 z-0">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
-
-                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <h3 class="text-xl font-bold mb-1 font-heading tracking-tight text-white">MERCURY 10</h3>
-                    <p class="text-[11px] text-white/70 mb-2">Something About</p>
-                    <p class="text-xs font-bold">10 years Warranty</p>
-                </div>
-            </a>
-
-            <!-- Card 7: Explore -->
-            <a href="#"
-                class="block relative group overflow-hidden text-white transition-all duration-500 hover:z-10 hover:shadow-2xl hover:-translate-y-1 reveal-on-scroll opacity-0 translate-y-16 col-span-1 md:col-span-2 md:row-span-1 h-[250px] md:h-auto bg-[#2b4236]">
-                <div class="absolute inset-0 bg-primary z-0 transition-colors duration-500 group-hover:bg-[#1f2f26]">
-                </div>
-                <div class="absolute inset-0 ring-1 ring-white/10 pointer-events-none z-20"></div>
-
-                <div class="absolute inset-0 p-6 md:p-8 flex flex-col justify-between z-10">
-                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-white/70">EXPLORE THE FULL
-                        RANGE</span>
-                    <div class="flex items-end justify-between gap-4">
-                        <div>
-                            <h3
-                                class="text-2xl md:text-3xl font-bold mb-1 font-heading tracking-tight leading-tight text-white">
-                                6 Roofing<br>Systems</h3>
-                            <p class="text-[12px] text-white/80">Compare warranty, materials & specs</p>
-                        </div>
-                        <div
-                            class="w-12 h-12 shrink-0 rounded-full border border-white/50 flex items-center justify-center transition-all duration-500 group-hover:bg-white group-hover:border-white group-hover:text-[#214339]">
-                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </a>
+            <!-- Right Image -->
+            <div class="w-full aspect-[16/9] lg:aspect-[4/3] bg-[#d9d9d9] order-1 lg:order-2"></div>
         </div>
     </section>
 
@@ -792,6 +755,72 @@
             }, { threshold: 0.15 }); // Triggers when 15% of the card is visible
 
             revealElements.forEach(el => revealObserver.observe(el));
+            // About Us Hero Animation
+            const aboutHero = document.getElementById('about-hero');
+            const aboutTitle = document.getElementById('about-title');
+            const aboutTextLines = document.querySelectorAll('#about-text p');
+
+            if (aboutHero && aboutTitle && aboutTextLines.length > 0) {
+                let targetProgress = 0;
+                let currentProgress = 0;
+
+                window.addEventListener('scroll', () => {
+                    const rect = aboutHero.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+                    
+                    const scrollableDistance = rect.height - windowHeight;
+                    let progress = -rect.top / scrollableDistance;
+                    targetProgress = Math.max(0, Math.min(1, progress));
+                });
+
+                function render() {
+                    // Lerp per rendere l'animazione estremamente fluida
+                    currentProgress += (targetProgress - currentProgress) * 0.08;
+                    
+                    // Fase 1: Il titolo si muove (da 0 a 0.35 del progresso totale)
+                    const titlePhaseEnd = 0.35;
+                    let titleProgress = Math.min(currentProgress / titlePhaseEnd, 1);
+                    
+                    const startTitleTop = 75;
+                    const endTitleTop = 20;
+                    const currentTitleTop = startTitleTop - (titleProgress * (startTitleTop - endTitleTop));
+                    aboutTitle.style.top = `${currentTitleTop}%`;
+                    
+                    // Fase 2: Il testo compare (dopo che il titolo è arrivato, da 0.35 a 1.0)
+                    const textPhaseStart = 0.35;
+                    const textPhaseLength = 1 - textPhaseStart;
+                    
+                    let textPhaseProgress = 0;
+                    if (currentProgress > textPhaseStart) {
+                        textPhaseProgress = (currentProgress - textPhaseStart) / textPhaseLength;
+                    }
+                    
+                    const totalLines = aboutTextLines.length;
+                    const progressPerLine = 1 / totalLines; 
+                    
+                    aboutTextLines.forEach((line, index) => {
+                        const lineStart = index * progressPerLine;
+                        const lineEnd = lineStart + progressPerLine;
+                        
+                        let lineProgress = 0;
+                        // La riga compare velocemente nel primo 30% del suo segmento di scroll
+                        const fadeLength = (lineEnd - lineStart) * 0.3;
+                        if (textPhaseProgress > lineStart) {
+                            lineProgress = (textPhaseProgress - lineStart) / fadeLength;
+                        }
+                        lineProgress = Math.max(0, Math.min(1, lineProgress));
+                        
+                        line.style.opacity = lineProgress;
+                        line.style.transform = `translateY(${20 - (lineProgress * 20)}px)`;
+                    });
+
+                    requestAnimationFrame(render);
+                }
+
+                // Initialize
+                window.dispatchEvent(new Event('scroll'));
+                render();
+            }
         });
     </script>
 </body>
