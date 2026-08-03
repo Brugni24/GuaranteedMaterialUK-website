@@ -481,8 +481,9 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-24 pb-12 w-full mt-20">
-        <div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 items-center">
+    <footer
+        class="bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-24 pb-12 w-full mt-20">
+        <div class="max-w-[1200px] w-full mx-auto px-10 flex flex-col lg:flex-row gap-16 lg:gap-20">
             <!-- Column 1: Logo & Address -->
             <div class="flex flex-col gap-6 lg:col-span-1">
                 <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-40 lg:w-56 h-auto">
@@ -490,63 +491,81 @@
                     1-2 Howley Park, Business<br>Village, Pullan Way, Morley,<br>Leeds, LS27, 0BZ
                 </p>
             </div>
-
-            <!-- Column 2: MENU -->
-            <div class="flex flex-col">
-                <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">MENU</h4>
-                <ul class="flex flex-col gap-4">
-                    <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Roofing Systems</a></li>
-                    <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Services</a></li>
-                    <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">References</a></li>
-                    <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">About us</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3: LEGAL & EMAIL -->
-            <div class="flex flex-col gap-10">
-                <div>
-                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">LEGAL</h4>
+    
+            <div class="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-evenly flex-1 w-full gap-16 lg:gap-0">
+                <!-- Column 2: MENU -->
+                <div class="flex flex-col">
+                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">MENU</h4>
                     <ul class="flex flex-col gap-4">
-                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Privacy policy</a></li>
-                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">EMAIL</h4>
-                    <a href="mailto:office@gmukltd.co.uk" class="text-[13px] text-gray-400 hover:text-white transition-colors">office@gmukltd.co.uk</a>
-                </div>
-            </div>
-
-            <!-- Column 4: CONTACT US & SOCIAL -->
-            <div class="flex flex-col gap-10">
-                <div>
-                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">CONTACT US</h4>
-                    <ul class="flex flex-col gap-5">
-                        <li>
-                            <a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors block mb-1">+ 44 xxxxxxxxxx</a>
-                            <p class="text-[13px] text-gray-400">Richard</p>
+                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Roofing
+                                Systems</a></li>
+                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Services</a>
                         </li>
-                        <li>
-                            <a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors block mb-1">+ 44 xxxxxxxxxx</a>
-                            <p class="text-[13px] text-gray-400">Gilles</p>
+                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">References</a>
+                        </li>
+                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">About us</a>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">SOCIAL</h4>
-                    <ul class="flex flex-col gap-2">
-                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Facebook</a></li>
-                        <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
-                    </ul>
+    
+                <!-- Column 3: LEGAL & EMAIL -->
+                <div class="flex flex-col gap-10">
+                    <div>
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">LEGAL</h4>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Terms &
+                                    Conditions</a>
+                            </li>
+                            <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Privacy
+                                    policy</a></li>
+                            <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">Cookie
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">SOCIAL</h4>
+                        <ul class="flex flex-col gap-2">
+                            <li><a href="#"
+                                    class="text-[13px] text-gray-400 hover:text-white transition-colors">Facebook</a></li>
+                            <li><a href="#"
+                                    class="text-[13px] text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Column 4: CONTACT US & SOCIAL -->
+                <div class="flex flex-col gap-10">
+                    <div>
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">CONTACT US</h4>
+                        <ul class="flex flex-col gap-5">
+                            <li>
+                                <a href="#"
+                                    class="text-[13px] text-gray-400 hover:text-white transition-colors block mb-1">+ 44
+                                    xxxxxxxxxx</a>
+                                <p class="text-[13px] text-gray-400">Richard</p>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[13px] text-gray-400 hover:text-white transition-colors block mb-1">+ 44
+                                    xxxxxxxxxx</a>
+                                <p class="text-[13px] text-gray-400">Gilles</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">EMAIL</h4>
+                        <a href="mailto:office@gmukltd.co.uk"
+                            class="text-[13px] text-gray-400 hover:text-white transition-colors">office@gmukltd.co.uk</a>
+                    </div>
                 </div>
             </div>
         </div>
-
+    
         <div class="max-w-[1200px] mx-auto px-10 flex flex-col justify-center mt-16 lg:mt-20">
-            <div class="h-[1px] bg-white/20 w-full mb-8"></div>
-            <p class="text-[11px] text-gray-400 leading-relaxed text-left">2026 Guaranteed Material UK. All rights reserved. -Company registered in England & Wales No. 16588788 - VAT Reg No. 431615093</p>
+            <div class="h-[1px] bg-white/20 w-full mb-6"></div>
+            <p class="text-[12px] text-gray-400 leading-relaxed text-center">2026 Guaranteed Material UK. All rights
+                reserved. -Company registered in England & Wales No. 16588788 - VAT Reg No. 431615093</p>
         </div>
     </footer>
 
