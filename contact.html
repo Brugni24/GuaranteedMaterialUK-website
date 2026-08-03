@@ -7,6 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon per chi usa il tema chiaro (icona scura) -->
+    <link rel="icon" href="assets/favicon-dark.svg" media="(prefers-color-scheme: light)">
+    
+    <!-- Favicon per chi usa il tema scuro (icona chiara/bianca) -->
+    <link rel="icon" href="assets/favicon-light.svg" media="(prefers-color-scheme: dark)">
+    
+    <!-- Fallback per i browser più vecchi (di default usiamo quella scura) -->
+    <link rel="icon" href="assets/favicon-dark.svg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
