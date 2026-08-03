@@ -231,7 +231,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('assets/gemini2_hero_bg.png');">
+    <section class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('assets/gemini_hero_bg.png');">
         <div class="max-w-[1200px] mx-auto w-full px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
             <h1 class="text-white text-[3rem] md:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">Build to Last.<br>Designed for Tomorrow.</h1>
             <p class="text-[#fdfdfd] text-[1.125rem] max-w-[600px] mb-8 font-normal leading-[1.6]">We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed and durable flat roof solutions, all backed by a strong, collaborative partnership approach.</p>
@@ -255,7 +255,7 @@
         <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
             <div class="w-full">
                 <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
-                <p class="text-text-gray text-[1.05rem]">Discover our portfolio of completed projects, showcasing a variety of styles and functionalities.</p>
+                <p class="text-text-gray text-[1.05rem]">Long lasting and sustainable projects. Choose the perfect system for your roof by: Guarantee, Technology, Performances or Application method.</p>
             </div>
         </div>
 
@@ -395,57 +395,84 @@
         <div class="grid grid-cols-1 relative">
             <!-- Header Layer -->
             <div class="col-start-1 row-start-1 pointer-events-none z-0">
-                <div class="sticky top-[40px] md:top-[50px] pt-6 h-[calc(100vh-40px)] md:h-[calc(100vh-50px)] w-full">
+                <div id="services-header" class="sticky top-[-68px] pt-6 w-full">
                     <div class="pointer-events-auto">
-                        <div class="flex items-center mb-[50px]">
+                        <div class="flex items-center">
                             <span class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading bg-white">2</span>
                             <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">SERVICES</h6>
                             <div class="flex-1 h-px bg-border-light relative flex items-center">
                                 <div class="h-[2px] bg-text-dark w-2/4 transition-all duration-500"></div>
                             </div>
                         </div>
-                        <div class="w-full mb-4">
+                        <div class="w-full mb-4 mt-[50px]">
                             <h2 class="text-[2.2rem] md:text-[3rem] font-bold leading-tight">Our Custom Services</h2>
                         </div>
                         <div class="max-w-[80%]">
-                            <p class="text-text-gray text-[1.05rem] leading-relaxed">Our services are defined by an elite level of craftsmanship and a deeply personalized approach. We focus on delivering unique, high-caliber results that are meticulously engineered to align with your project’s specific requirements and your long-term vision.</p>
+                            <p class="text-text-gray text-[1.05rem] leading-relaxed">
+                                Our services are defined by an elite level of craftsmanship and a deeply personalized approach. We focus on delivering unique, high-caliber results that are meticulously engineered to align with your project’s specific requirements and your long-term vision.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Cards Layer -->
-            <div class="col-start-1 row-start-1 pt-[550px] md:pt-[480px] z-10 pointer-events-none">
-                <div class="flex flex-col gap-[15vh] md:gap-[20vh] w-full pb-[5vh] pointer-events-auto">
+            <div class="col-start-1 row-start-1 pt-[430px] md:pt-[360px] z-10 pointer-events-none">
+                <div class="flex flex-col gap-[15vh] md:gap-[20vh] w-full pb-0 pointer-events-auto">
                     <!-- Service 1 -->
-                    <div class="sticky top-[480px] md:top-[380px] z-10 flex flex-col md:flex-row bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
-                        <div class="h-[300px] md:h-auto md:w-5/12 overflow-hidden relative">
-                            <img src="assets/service1.png" alt="Consulting & Planning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="stacking-card origin-top will-change-transform sticky top-[310px] md:top-[250px] z-10 flex flex-col md:flex-row bg-white border border-border-light rounded-[1.5rem] p-4 md:p-6 gap-8 md:gap-12 shadow-sm">
+                        <div class="flex-1 flex flex-col justify-center py-4 md:py-8 pl-4 md:pl-8">
+                            <div class="inline-flex px-4 py-1.5 rounded-full bg-white border border-gray-400 text-gray-500 text-[13px] font-medium mb-6 self-start">Service 1</div>
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-6 transition-colors duration-500 group-hover:text-white">Consulting & Planning</h3>
+                            <p class="text-text-gray mb-10 leading-relaxed text-[1.1rem]">Expert guidance to map out your project's technical specifications and ensure every detail aligns perfectly with your goals.</p>
+                            
+                            <div class="mt-8 flex items-center gap-4">
+                                <a href="#" class="btn btn-primary inline-flex items-center gap-2 group/btn">
+                                    Discover
+                                    <svg class="transition-transform group-hover/btn:translate-x-1 ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="p-8 md:p-12 flex flex-col justify-center flex-1 bg-white relative overflow-hidden">
-                            <h3 class="text-[1.8rem] md:text-[2.2rem] font-bold mb-4 font-heading uppercase tracking-wide text-text-dark">Consulting & Planning</h3>
-                            <p class="text-text-gray mb-8 leading-relaxed text-[1.1rem]">Expert guidance to map out your project's technical specifications and ensure every detail aligns perfectly with your goals.</p>
-                            <a href="services.html" class="btn btn-outline border-border-light text-text-dark hover:bg-black hover:text-white hover:border-black inline-flex items-center self-start gap-2 group/btn">
-                                Discover
-                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                            </a>
+                        <div class="h-[300px] md:h-auto md:w-[45%] overflow-hidden rounded-xl">
+                            <img src="assets/service1.png" alt="Consulting & Planning" class="w-full h-full object-cover">
                         </div>
                     </div>
 
                     <!-- Service 2 -->
-                    <div class="sticky top-[480px] md:top-[380px] z-20 flex flex-col md:flex-row-reverse bg-white border border-border-light rounded-xl overflow-hidden group shadow-2xl">
-                        <div class="h-[300px] md:h-auto md:w-5/12 overflow-hidden relative">
-                            <img src="assets/service2.png" alt="Custom Manufacturing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="stacking-card origin-top will-change-transform sticky top-[310px] md:top-[250px] z-20 flex flex-col md:flex-row bg-white border border-border-light rounded-[1.5rem] p-4 md:p-6 gap-8 md:gap-12 shadow-sm">
+                        <div class="flex-1 flex flex-col justify-center py-4 md:py-8 pl-4 md:pl-8">
+                            <div class="inline-flex px-4 py-1.5 rounded-full bg-white border border-gray-400 text-gray-500 text-[13px] font-medium mb-6 self-start">Service 2</div>
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-6 transition-colors duration-500 group-hover:text-white">Custom Manufacturing</h3>
+                            <p class="text-text-gray mb-10 leading-relaxed text-[1.1rem]">Bespoke production of premium materials engineered exclusively for your exact structural demands and aesthetics.</p>
+                            
+                            <div class="mt-8 flex items-center gap-4">
+                                <a href="#" class="btn btn-primary inline-flex items-center gap-2 group/btn">
+                                    Discover
+                                    <svg class="transition-transform group-hover/btn:translate-x-1 ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="p-8 md:p-12 flex flex-col justify-center flex-1 bg-[#f9fafb] relative overflow-hidden">
-                            <h3 class="text-[1.8rem] md:text-[2.2rem] font-bold mb-4 font-heading uppercase tracking-wide text-text-dark">Custom Manufacturing</h3>
-                            <p class="text-text-gray mb-8 leading-relaxed text-[1.1rem]">Bespoke production of premium materials engineered exclusively for your exact structural demands and aesthetics.</p>
-                            <a href="services.html" class="btn btn-outline border-border-light text-text-dark hover:bg-black hover:text-white hover:border-black inline-flex items-center self-start gap-2 group/btn">
-                                Discover
-                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                            </a>
+                        <div class="h-[300px] md:h-auto md:w-[45%] overflow-hidden rounded-xl">
+                            <img src="assets/service2.png" alt="Custom Manufacturing" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="stacking-card origin-top will-change-transform sticky top-[310px] md:top-[250px] z-30 flex flex-col md:flex-row bg-white border border-border-light rounded-[1.5rem] p-4 md:p-6 gap-8 md:gap-12 shadow-sm">
+                        <div class="flex-1 flex flex-col justify-center py-4 md:py-8 pl-4 md:pl-8">
+                            <div class="inline-flex px-4 py-1.5 rounded-full bg-white border border-gray-400 text-gray-500 text-[13px] font-medium mb-6 self-start">Service 3</div>
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-6 transition-colors duration-500 group-hover:text-white">Solar Panels Integration</h3>
+                            <p class="text-text-gray mb-10 leading-relaxed text-[1.1rem]">Seamless integration of high-efficiency solar panel systems to maximize sustainable energy generation for your property.</p>
+                            
+                            <div class="mt-8 flex items-center gap-4">
+                                <a href="#" class="btn btn-primary inline-flex items-center gap-2 group/btn">
+                                    Discover
+                                    <svg class="transition-transform group-hover/btn:translate-x-1 ml-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="h-[300px] md:h-auto md:w-[45%] overflow-hidden rounded-xl">
+                            <img src="assets/service_solar_pannels.png" alt="Solar Panels Integration" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
@@ -480,7 +507,7 @@
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">LONDON, UK - 2023</p>
-                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                            <h3 class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-6 transition-colors duration-500 group-hover:text-white">
                                 Commercial Flat Roof<br>Restoration
                             </h3>
                         </div>
@@ -670,7 +697,7 @@
             </div>
             <!-- Image Column -->
             <div class="w-full lg:w-1/2">
-                <div class="w-full h-[450px] lg:h-[550px] bg-primary"></div>
+                <img src="assets/gemini_founders.png" alt="Our Team at Work" class="w-full h-[450px] lg:h-[550px] object-cover">
             </div>
         </div>
     </section>
@@ -688,7 +715,9 @@
                 <!-- ADDRESS -->
                 <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
                     <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">ADDRESS</h4>
-                    <p class="text-[13px] text-white leading-relaxed mb-6 lg:mb-12">1-2 Howley Park Business Village, Pullan Way, Morley, Leeds, LS27, 0BZ<br>United Kingdom</p>
+                    <p class="text-[13px] text-white leading-relaxed mb-6 lg:mb-12">
+                        1-2 Howley Park Business Village, Pullan Way Morley, Leeds LS27 0BZ, UK
+                    </p>
                 </div>
 
                 <!-- MENU -->
@@ -980,6 +1009,62 @@
 
             revealElements.forEach(el => revealObserver.observe(el));
         });
+
+        // Stacking Cards Animation
+        document.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.stacking-card');
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                const stickyTop = parseInt(getComputedStyle(card).top);
+                
+                if (rect.top <= stickyTop + 2) {
+                    if (index < cards.length - 1) {
+                        const nextCard = cards[index + 1];
+                        const nextRect = nextCard.getBoundingClientRect();
+                        const distance = nextRect.top - stickyTop;
+                        const maxDistance = window.innerHeight * 0.5; // Starts animating when next card is halfway up
+                        
+                        if (distance < maxDistance && distance >= 0) {
+                            const progress = 1 - (distance / maxDistance); 
+                            const scale = 1 - (progress * 0.05); 
+                            const brightness = 1 - (progress * 0.25); 
+                            card.style.transform = `scale(${scale})`;
+                            card.style.filter = `brightness(${brightness})`;
+                        } else if (distance < 0) {
+                            card.style.transform = `scale(0.95)`;
+                            card.style.filter = `brightness(0.75)`;
+                        } else {
+                            card.style.transform = `scale(1)`;
+                            card.style.filter = `brightness(1)`;
+                        }
+                    }
+                } else {
+                    card.style.transform = `scale(1)`;
+                    card.style.filter = `brightness(1)`;
+                }
+            });
+        }, { passive: true });
+
+        // Sync header unstick to make text and cards move together immediately
+        const syncHeader = () => {
+            const header = document.getElementById('services-header');
+            const cards = document.querySelectorAll('.stacking-card');
+            if (header && cards.length > 0) {
+                const lastCard = cards[cards.length - 1];
+                const headerTop = parseInt(getComputedStyle(header).top);
+                const cardTop = parseInt(getComputedStyle(lastCard).top);
+                const diff = cardTop - headerTop;
+                header.style.height = (diff + lastCard.offsetHeight) + 'px';
+            }
+        };
+        window.addEventListener('load', syncHeader);
+        window.addEventListener('resize', syncHeader);
+        if (typeof ResizeObserver !== 'undefined') {
+            const observer = new ResizeObserver(syncHeader);
+            document.querySelectorAll('.stacking-card').forEach(c => observer.observe(c));
+        } else {
+            syncHeader();
+        }
     </script>
 </body>
 </html>

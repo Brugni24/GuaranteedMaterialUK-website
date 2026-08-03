@@ -282,7 +282,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="about-hero" class="relative h-[500vh] w-full bg-primary">
+    <section id="about-hero" class="relative h-[500vh] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
         <div class="sticky top-0 h-[100vh] w-full flex items-center max-w-[1200px] mx-auto px-5 lg:px-6 pt-[80px]">
             <div class="relative w-full h-full">
                 <!-- Title -->
@@ -294,8 +294,7 @@
                 <div id="about-text" class="text-[#fdfdfd] text-[1.125rem] md:text-[1.5rem] font-normal leading-[1.6] max-w-[800px] absolute top-[45%] left-0">
                     <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">Every great name tells a story. Ours starts with <strong class="font-bold">a promise</strong>.</p>
                     <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">When we founded <strong class="font-bold">Guaranteed Material UK</strong>, we weren't just choosing a name,</p>
-                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">We were making a commitment to everyone</p>
-                    <p class="opacity-0 translate-y-[20px] will-change-[opacity,transform]">looking for a <strong class="font-bold">professional</strong>, <strong class="font-bold">guaranteed</strong> and <strong class="font-bold">durable solution</strong> for flat roofing.</p>
+                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">We were making a commitment to everyone looking for a <strong class="font-bold">professional</strong>, <strong class="font-bold">guaranteed</strong> and <strong class="font-bold">durable solution</strong> for flat roofing.</p>
                 </div>
             </div>
         </div>
@@ -308,19 +307,25 @@
                 class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
             <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">WHO WE ARE</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-            <div class="pr-0 lg:pr-10">
-                <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-8 text-text-dark leading-[1.1] tracking-[-1px]">Our Team</h2>
-                <p class="text-text-dark text-[1.125rem] leading-[1.6] font-normal">
-                    Guaranteed Material UK combines extensive professional experience from leading organisations across the sector, bringing strategic depth and technical knowledge to every engagement. That background gives us a deep understanding of the industry — and the insight to deliver waterproofing solutions that are both innovative and built to last. Every project is different, and we tailor our approach to match. It's that combination of expertise, dedication and track record that makes Guaranteed Material UK a partner you can genuinely count on.
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-16 items-center">
+            <!-- Text Column -->
+            <div class="w-full lg:w-3/5 flex flex-col items-start">
+                <h2 class="text-[3rem] lg:text-[3.5rem] font-bold leading-[1.1] mb-6">Our Team</h2>
+                <p class="text-text-dark text-[1.1rem] leading-relaxed mb-10">
+                    Guaranteed Material UK combines <strong>extensive professional experience</strong> from leading organisations across the sector, bringing
+                    <strong>strategic depth and technical knowledge</strong> to every engagement. That background gives us a deep understanding of the
+                    industry — and the insight to deliver waterproofing solutions that are both <strong>innovative and built to last</strong>. Every project
+                    is different, and we tailor our approach to match. It's that combination of expertise, dedication and track record that
+                    makes Guaranteed Material UK a <strong>partner you can genuinely count on</strong>.
                 </p>
             </div>
-            <div class="w-full bg-[#d9d9d9] aspect-[4/3]">
-                <!-- Image Placeholder -->
+            <!-- Image Column -->
+            <div class="w-full lg:w-2/5">
+                <img src="assets/gemini_founders.png" alt="Our Team at Work" class="w-full aspect-square object-cover">
             </div>
         </div>
     </section>
@@ -330,21 +335,21 @@
         <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
             <div class="flex items-center mb-[80px]">
                 <span
-                    class="inline-flex items-center justify-center w-11 h-11 border border-white text-white text-base font-semibold mr-5 font-heading">3</span>
-                <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-white">OUR MISSION</h6>
+                    class="inline-flex items-center justify-center w-11 h-11 border border-white text-white text-base font-semibold mr-5 font-heading">2</span>
+                <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-white">OUR TEAM</h6>
                 <div class="flex-1 h-px bg-white/20 relative flex items-center">
-                    <div class="h-[2px] bg-white w-1/5 transition-all duration-500"></div>
+                    <div class="h-[2px] bg-white w-2/3 transition-all duration-500"></div>
                 </div>
             </div>
 
             <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-white leading-[1.1] tracking-[-1px]">Meet the Founders</h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 lg:gap-[100px] w-full max-w-[850px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 lg:gap-[100px] w-full max-w-[950px] mx-auto">
                 <!-- Founder 1 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-[260px] md:w-[280px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
-                        <!-- Placeholder for image -->
-                        <div class="absolute inset-0 bg-[#d9d9d9] transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="w-[300px] md:w-[380px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
+                        <!-- Image -->
+                        <img src="assets/gemini_richard.png" alt="Richard - Founder" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         
                         <!-- Dark Overlay -->
                         <div class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -352,19 +357,19 @@
                         <!-- Text Content -->
                         <div class="absolute inset-0 p-6 flex flex-col justify-center items-center text-center opacity-0 translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 z-10">
                             <p class="text-white text-[0.95rem] leading-[1.6]">
-                                Over 20 years of experience in the UK roofing sector, specialising in advanced RBM systems and technical consultancy for major commercial projects.
+                                With over 35 years of experience, Richard specialises in innovative roofing systems and waterproofing solutions. He provides tailored, sustainable strategies that enhance roof performance and ensure long-term budget predictability for clients.
                             </p>
                         </div>
                     </div>
-                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Valentino Rossi</h3>
+                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Richard Halkier</h3>
                     <p class="text-white/80 text-base md:text-lg font-normal">Founder</p>
                 </div>
                 
                 <!-- Founder 2 -->
                 <div class="flex flex-col items-center">
-                    <div class="w-[260px] md:w-[280px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
-                        <!-- Placeholder for image -->
-                        <div class="absolute inset-0 bg-[#d9d9d9] transition-transform duration-500 group-hover:scale-110"></div>
+                    <div class="w-[300px] md:w-[380px] aspect-square mb-6 relative overflow-hidden group cursor-pointer">
+                        <!-- Image -->
+                        <img src="assets/gemini_gilles.png" alt="Gilles - Founder" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         
                         <!-- Dark Overlay -->
                         <div class="absolute inset-0 bg-black/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -376,7 +381,7 @@
                             </p>
                         </div>
                     </div>
-                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Valentino Rossi</h3>
+                    <h3 class="text-white text-xl md:text-2xl font-bold mb-2">Gilles Drummond</h3>
                     <p class="text-white/80 text-base md:text-lg font-normal">Founder</p>
                 </div>
             </div>
@@ -389,55 +394,89 @@
         <div class="flex items-center mb-[80px]">
             <span
                 class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">3</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR MISSION</h6>
+            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR GOAL</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
         </div>
 
-        <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-text-dark leading-[1.1] tracking-[-1px]">What we do everyday</h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
-            <!-- Left Image -->
-            <div class="w-full aspect-[16/9] lg:aspect-[4/3] bg-[#d9d9d9]"></div>
-            
-            <!-- Right Text -->
-            <div class="relative pl-0 lg:pl-12 py-4">
-                <!-- Vertical Line -->
-                <div class="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-text-dark"></div>
-                <p class="text-text-dark text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
-                    To deliver professional, reliable and long-lasting flat roofing solutions, combining deep industry expertise with a tailored approach that puts every client's needs first.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- OUR VISION SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10">
-        <!-- Chapter Header -->
-        <div class="flex items-center mb-[80px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">4</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR VISION</h6>
-            <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
+        <!-- ========================================== -->
+        <!-- OPTION 1: Clean Side by Side -->
+        <!-- ========================================== -->
+        <div class="mb-32">
+            <div class="inline-flex px-4 py-1.5 rounded-full bg-gray-100 text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-8">Option 1: Side by Side</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+                <!-- Mission -->
+                <div>
+                    <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Mission</h4>
+                    <h2 class="text-[2.5rem] md:text-[3rem] font-bold mb-6 text-text-dark leading-[1.1] tracking-[-1px]">What we do every day</h2>
+                    <p class="text-text-gray text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
+                        We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep industry expertise with a tailored approach, we put every client's unique needs first.
+                    </p>
+                </div>
+                <!-- Vision -->
+                <div>
+                    <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Vision</h4>
+                    <h2 class="text-[2.5rem] md:text-[3rem] font-bold mb-6 text-text-dark leading-[1.1] tracking-[-1px]">How we see the future</h2>
+                    <p class="text-text-gray text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
+                        We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new industry standards for quality, continuous innovation, and lasting partnerships.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <h2 class="text-[3rem] md:text-[3.5rem] font-bold mb-16 text-text-dark leading-[1.1] tracking-[-1px]">How we see the future</h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
-            <!-- Left Text -->
-            <div class="relative pr-0 lg:pr-12 py-4 order-2 lg:order-1">
-                <p class="text-text-dark text-[1.125rem] md:text-[1.25rem] leading-[1.6] font-normal">
-                    To be the most trusted name in flat roof waterproofing in the UK, setting the standard for quality, innovation and lasting partnerships.
-                </p>
-                <!-- Vertical Line -->
-                <div class="hidden lg:block absolute right-0 top-0 bottom-0 w-px bg-text-dark"></div>
+        <!-- ========================================== -->
+        <!-- OPTION 2: Big Bold Typography (Stacked) -->
+        <!-- ========================================== -->
+        <div class="mb-32 pt-20 border-t border-border-light">
+            <div class="inline-flex px-4 py-1.5 rounded-full bg-gray-100 text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-12">Option 2: Big Typography</div>
+            <div class="flex flex-col gap-24">
+                <!-- Mission -->
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-16 items-start">
+                    <div class="lg:w-1/4">
+                        <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-2">Our Mission</h4>
+                        <h2 class="text-[1.5rem] font-bold text-text-dark leading-[1.2] tracking-[-0.5px]">What we do every day</h2>
+                    </div>
+                    <p class="lg:w-3/4 text-text-dark text-[2rem] md:text-[2.5rem] leading-[1.4] font-medium">
+                        We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep industry expertise with a tailored approach, we put every client's unique needs first.
+                    </p>
+                </div>
+                <!-- Vision -->
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-16 items-start">
+                    <div class="lg:w-1/4">
+                        <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-2">Our Vision</h4>
+                        <h2 class="text-[1.5rem] font-bold text-text-dark leading-[1.2] tracking-[-0.5px]">How we see the future</h2>
+                    </div>
+                    <p class="lg:w-3/4 text-text-dark text-[2rem] md:text-[2.5rem] leading-[1.4] font-medium">
+                        We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new industry standards for quality, continuous innovation, and lasting partnerships.
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <!-- Right Image -->
-            <div class="w-full aspect-[16/9] lg:aspect-[4/3] bg-[#d9d9d9] order-1 lg:order-2"></div>
+        <!-- ========================================== -->
+        <!-- OPTION 3: Minimalist Grid with Borders -->
+        <!-- ========================================== -->
+        <div class="mb-20 pt-20 border-t border-border-light">
+            <div class="inline-flex px-4 py-1.5 rounded-full bg-gray-100 text-gray-500 text-[11px] font-bold tracking-widest uppercase mb-12">Option 3: Minimalist Grid</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 border-y border-border-light">
+                <!-- Mission -->
+                <div class="py-16 lg:pr-16 lg:border-r border-border-light">
+                    <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Mission</h4>
+                    <h2 class="text-[2.2rem] font-bold mb-6 text-text-dark leading-[1.1]">What we do every day</h2>
+                    <p class="text-text-gray text-[1.125rem] leading-[1.6] font-normal">
+                        We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep industry expertise with a tailored approach, we put every client's unique needs first.
+                    </p>
+                </div>
+                <!-- Vision -->
+                <div class="py-16 lg:pl-16">
+                    <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Vision</h4>
+                    <h2 class="text-[2.2rem] font-bold mb-6 text-text-dark leading-[1.1]">How we see the future</h2>
+                    <p class="text-text-gray text-[1.125rem] leading-[1.6] font-normal">
+                        We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new industry standards for quality, continuous innovation, and lasting partnerships.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -777,7 +816,7 @@
 
         // Chapter Progress Bar Animation
         document.addEventListener('DOMContentLoaded', () => {
-            const progressBars = document.querySelectorAll('.bg-border-light > div.bg-text-dark');
+            const progressBars = document.querySelectorAll('.flex-1.h-px > div.h-\\[2px\\]');
 
             const observerOptions = {
                 root: null,
@@ -877,23 +916,24 @@
                         textPhaseProgress = (currentProgress - textPhaseStart) / textPhaseLength;
                     }
                     
-                    const totalLines = aboutTextLines.length;
-                    const progressPerLine = 1 / totalLines; 
+                    const fadeLength = 0.4;
+                    const stagger = 0.08;
                     
                     aboutTextLines.forEach((line, index) => {
-                        const lineStart = index * progressPerLine;
-                        const lineEnd = lineStart + progressPerLine;
-                        
+                        const lineStart = index * stagger;
                         let lineProgress = 0;
-                        // La riga compare velocemente nel primo 30% del suo segmento di scroll
-                        const fadeLength = (lineEnd - lineStart) * 0.3;
+                        
                         if (textPhaseProgress > lineStart) {
                             lineProgress = (textPhaseProgress - lineStart) / fadeLength;
                         }
                         lineProgress = Math.max(0, Math.min(1, lineProgress));
                         
+                        // Easing out cubic for smoother motion
+                        const easedProgress = 1 - Math.pow(1 - lineProgress, 3);
+                        
+                        // Smoothly scale opacity linearly, but use easing for the translation (starts from 40px below)
                         line.style.opacity = lineProgress;
-                        line.style.transform = `translateY(${20 - (lineProgress * 20)}px)`;
+                        line.style.transform = `translateY(${40 - (easedProgress * 40)}px)`;
                     });
 
                     requestAnimationFrame(render);

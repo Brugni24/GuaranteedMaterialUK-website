@@ -283,11 +283,8 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-primary">
-        <!-- Light grid overlay -->
-        <div
-            class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none z-0">
-        </div>
+    <section
+        class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
         <div
             class="max-w-[1200px] mx-auto w-full px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
             <h1 class="text-white text-[3rem] md:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">Phoenix Super 40</h1>
@@ -302,7 +299,7 @@
             </div>
             <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">INTRODUCTION</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-2/5 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
         </div>
 
@@ -316,25 +313,15 @@
 
                 <!-- Pills -->
                 <div class="flex flex-wrap gap-3 mb-10">
-                    <span class="inline-flex items-center px-5 py-2 border border-border-light text-sm font-semibold bg-white">40Years Warranty</span>
+                    <span class="inline-flex items-center px-5 py-2 border border-border-light text-sm font-semibold bg-white">40 Years Warranty</span>
                     <span class="inline-flex items-center px-5 py-2 border border-border-light text-sm font-semibold bg-white">BBA Certified</span>
                     <span class="inline-flex items-center px-5 py-2 border border-border-light text-sm font-semibold bg-white">Torch-Applied</span>
                 </div>
-
-                <!-- Buttons -->
-                <div class="flex flex-wrap gap-4">
-                    <a href="#" class="btn btn-primary bg-primary text-white hover:bg-[#17322a]">Download Datasheet</a>
-                    <a href="#" class="btn btn-outline border-border-light text-text-dark hover:bg-white hover:text-black hover:border-white transition-colors duration-500">Contact Us</a>
-                </div>
             </div>
 
-            <!-- Right Image Placeholder -->
-            <div class="flex-1">
-                <div class="w-full aspect-[4/3] bg-[#f0f0f0] border border-dashed border-[#cccccc] flex flex-col items-center justify-center text-text-gray relative group">
-                    <svg class="w-8 h-8 mb-3 text-[#a0a0a0]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    <p class="text-sm font-medium">Drop a photo of Phoenix Super 40</p>
-                    <p class="text-xs mt-1 text-[#888]">or <span class="underline">browse files</span></p>
-                </div>
+            <!-- Right Image -->
+            <div class="flex-1 overflow-hidden">
+                <img src="assets/gemini_reference1.png" alt="Phoenix Super 40" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 hover:scale-105">
             </div>
         </div>
     </section>
@@ -348,67 +335,7 @@
             </div>
             <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">KEY PROPERTIES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-2/5 transition-all duration-500"></div>
-            </div>
-        </div>
-
-        <!-- OPTION 1: Green Background Cards -->
-        <div class="mb-16">
-            <h3 class="text-xl font-bold mb-6 border-b border-border-light pb-2">Option 1: Solid Green Cards</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">40 yrs</h3>
-                    <p class="text-[0.95rem] text-white/80 leading-relaxed">BBA-certified estimated service life</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">-35°C</h3>
-                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Flexibility at low temperature</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">140°C</h3>
-                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Flow resistance at high temperature</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">Torch</h3>
-                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Applied, APAO compound</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- OPTION 3: Minimal Light Green Tint Cards -->
-        <div class="mb-10">
-            <h3 class="text-xl font-bold mb-6 text-text-gray border-b border-border-light pb-2">Option 3: Soft Green Tint Cards</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="flex flex-col justify-center p-8 bg-[#17322a]/5 rounded-2xl border border-transparent hover:border-[#17322a]/20 transition-colors">
-                    <h3 class="text-[2rem] font-bold text-[#17322a] mb-2 font-heading leading-tight">40 yrs</h3>
-                    <p class="text-[0.95rem] text-[#17322a]/80 leading-relaxed">BBA-certified estimated service life</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a]/5 rounded-2xl border border-transparent hover:border-[#17322a]/20 transition-colors">
-                    <h3 class="text-[2rem] font-bold text-[#17322a] mb-2 font-heading leading-tight">-35°C</h3>
-                    <p class="text-[0.95rem] text-[#17322a]/80 leading-relaxed">Flexibility at low temperature</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a]/5 rounded-2xl border border-transparent hover:border-[#17322a]/20 transition-colors">
-                    <h3 class="text-[2rem] font-bold text-[#17322a] mb-2 font-heading leading-tight">140°C</h3>
-                    <p class="text-[0.95rem] text-[#17322a]/80 leading-relaxed">Flow resistance at high temperature</p>
-                </div>
-                <div class="flex flex-col justify-center p-8 bg-[#17322a]/5 rounded-2xl border border-transparent hover:border-[#17322a]/20 transition-colors">
-                    <h3 class="text-[2rem] font-bold text-[#17322a] mb-2 font-heading leading-tight">Torch</h3>
-                    <p class="text-[0.95rem] text-[#17322a]/80 leading-relaxed">Applied, APAO compound</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY APAO SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10">
-        <!-- Header -->
-        <div class="flex items-center mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">3</span>
-            </div>
-            <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">WHY APAO</h6>
-            <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-2/5 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-2/3 transition-all duration-500"></div>
             </div>
         </div>
 
@@ -417,29 +344,68 @@
             <div class="flex-1">
                 <h2 class="text-[2.5rem] font-bold text-text-dark mb-6 leading-tight">Why use APAO membranes</h2>
                 <p class="text-[1.1rem] text-text-gray leading-relaxed">
-                    Climate suitability is a primary driver. The UK's temperature range — cold, damp winters and increasingly warm summers — makes APAO particularly well suited, as it prevents cold-weather cracking and resists thermal cycling stress in the UK's frequent freeze-thaw conditions.
+                    Climate suitability is a primary driver. The UK's temperature range — cold, damp winters and increasingly
+                    warm summers — makes APAO particularly well suited, as it prevents cold-weather cracking and resists thermal
+                    cycling stress in the UK's frequent freeze-thaw conditions.
                 </p>
             </div>
-
+        
             <!-- Right List -->
             <div class="flex-1 flex flex-col gap-6">
                 <div class="flex items-start gap-4">
                     <div class="mt-1 shrink-0 text-text-dark">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                     </div>
-                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Superior durability compared to traditional polymer-modified bitumen membranes, with an estimated service life by BBA in excess of 40 years.</p>
+                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Superior durability compared to traditional
+                        polymer-modified bitumen membranes, with an estimated service life by BBA in excess of 40 years.</p>
                 </div>
                 <div class="flex items-start gap-4">
                     <div class="mt-1 shrink-0 text-text-dark">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                     </div>
-                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Good adhesion to the most common substrates (concrete, wood, metal).</p>
+                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Good adhesion to the most common substrates
+                        (concrete, wood, metal).</p>
                 </div>
                 <div class="flex items-start gap-4">
                     <div class="mt-1 shrink-0 text-text-dark">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                     </div>
-                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Resistance to ageing (UV, oxidation) thanks to the stable polymeric structure.</p>
+                    <p class="text-[1.1rem] text-text-gray leading-relaxed">Resistance to ageing (UV, oxidation) thanks to the
+                        stable polymeric structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">40 yrs</h3>
+                    <p class="text-[0.95rem] text-white/80 leading-relaxed">BBA-certified estimated service life</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">-35°C</h3>
+                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Flexibility at low temperature</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">140°C</h3>
+                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Flow resistance at high temperature</p>
+                </div>
+                <div
+                    class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">Torch</h3>
+                    <p class="text-[0.95rem] text-white/80 leading-relaxed">Applied, APAO compound</p>
                 </div>
             </div>
         </div>
@@ -450,11 +416,11 @@
         <!-- Header -->
         <div class="flex items-center mb-[50px]">
             <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">4</span>
+                <span class="text-lg font-bold font-heading">3</span>
             </div>
             <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">SYSTEM BUILD-UP</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-2/5 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
         </div>
 
@@ -518,26 +484,105 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- BOTTOM BANNER SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-5 lg:px-10 pb-[100px]">
-        <div class="bg-[#17322a] rounded-2xl p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div class="bg-[#17322a] rounded-2xl p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-10 my-[50px]">
             <div class="flex items-center gap-4 text-white shrink-0">
                 <span class="text-[5rem] lg:text-[6rem] font-bold leading-none">40</span>
                 <span class="text-lg font-bold leading-tight">Years<br>Warranty</span>
             </div>
             <div class="flex-1 max-w-[500px]">
                 <p class="text-white/90 text-[1.1rem] leading-relaxed">
-                    Backed by an estimated service life certified by the BBA, Phoenix Super 40 delivers superior durability compared to traditional modified bitumen membranes.
+                    Backed by an estimated service life certified by the BBA, Phoenix Super 40 delivers superior durability
+                    compared to traditional modified bitumen membranes.
                 </p>
             </div>
             <div class="flex flex-col sm:flex-row gap-4 shrink-0">
-                <a href="#" class="btn bg-white text-text-dark hover:bg-[#f0f0f0]">Download Datasheet</a>
+                <a href="#" class="btn bg-white text-text-dark hover:bg-[#f0f0f0] hidden">Download Datasheet</a>
                 <a href="#" class="btn border-2 border-white text-white hover:bg-[#1f4234] hover:text-white">Contact Us</a>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white pt-24 pb-12 w-full mt-20">
+        <div class="max-w-[1200px] mx-auto px-10 flex flex-col lg:flex-row justify-between gap-16 lg:gap-10">
+            <!-- Logo -->
+            <div class="flex flex-col justify-between lg:w-1/4 min-h-[150px]">
+                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-48 h-auto">
+            </div>
+    
+            <!-- Links Columns -->
+            <div class="flex flex-col sm:flex-row flex-wrap justify-between flex-1 gap-10 lg:gap-6">
+                <!-- ADDRESS -->
+                <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">ADDRESS</h4>
+                    <p class="text-[13px] text-white leading-relaxed mb-6 lg:mb-12">1-2 Howley Park Business Village, Pullan
+                        Way, Morley, Leeds, LS27, 0BZ<br>United Kingdom</p>
+                </div>
+    
+                <!-- MENU -->
+                <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">MENU</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Home</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Roofing
+                                Systems</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Services</a>
+                        </li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">References</a>
+                        </li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- CONTACT INFO -->
+                <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">EMAIL</h4>
+                    <a href="mailto:[EMAIL_ADDRESS]"
+                        class="text-[13px] text-white hover:text-[#cccccc] transition-colors mb-6 lg:mb-12">office@gmukltd.co.uk</a>
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">CONTACT US</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">+44 234 567
+                                8900</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">+44 234 567
+                                8900</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">+44 234 567
+                                8900</a></li>
+                    </ul>
+                </div>
+    
+                <!-- SUPPORT -->
+                <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">LEGAL</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Terms &
+                                Conditions</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Privacy
+                                Policy</a></li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Cookie
+                                Policy</a></li>
+                    </ul>
+                </div>
+    
+                <!-- SOCIAL -->
+                <div class="flex flex-col w-full sm:w-[45%] lg:w-auto lg:flex-1">
+                    <h4 class="text-[11px] text-gray-400 tracking-widest uppercase mb-5 font-semibold">SOCIAL</h4>
+                    <ul class="flex flex-col gap-1">
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">Facebook</a>
+                        </li>
+                        <li><a href="#" class="text-[13px] text-white hover:text-[#cccccc] transition-colors">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="max-w-[1200px] mx-auto px-10 flex flex-col justify-center mt-16 lg:mt-20">
+            <div class="h-[1px] bg-gray-400 w-full mb-8"></div>
+            <p class="text-[13px] text-gray-400 leading-relaxed text-center">© 2026 Guaranteed Material UK. All rights
+                reserved. - Company registered in England & Wales No. 16588788 - VAT Reg No. 431815093</p>
+        </div>
+    </footer>
 
     <!-- Mobile Side Menu Overlay -->
     <div id="mobile-menu-overlay"
