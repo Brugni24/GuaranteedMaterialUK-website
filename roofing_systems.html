@@ -1002,389 +1002,94 @@
                 </div>
             </div>
 
-            <!-- Opzioni di layout (Solo per Desktop per scelta) -->
-
-            <!-- OPTION A (Original) -->
-            <div class="mt-16 border-t-2 border-border-light pt-8">
-                <h3 class="text-center font-bold text-xl text-text-dark mb-4 uppercase tracking-widest">Opzione A:
-                    Circolare con icone e traccia</h3>
-                <!-- Desktop View (Circular Layout) -->
+            <!-- OPTION 4 -->
+            <div class="mt-18 pt-8">
                 <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto mt-16 mb-16">
-                    <!-- Circular Track -->
-                    <div class="absolute inset-[30px] rounded-full border-[2px] border-dashed border-border-light z-0">
+                    
+                    <!-- Cerchio grande tratteggiato unito -->
+                    <div class="absolute inset-0 rounded-full border-[2px] border-dashed border-[#457861] z-0 opacity-60"></div>
+                    
+                    <!-- 4 frecce animate che girano in tondo -->
+                    <div class="absolute inset-0 z-0 animate-[spin_15s_linear_infinite]">
+                        <!-- Top -->
+                        <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-6 h-6 text-[#457861] bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" /></svg>
+                        </div>
+                        <!-- Right -->
+                        <div class="absolute top-1/2 right-[-10px] -translate-y-1/2 w-6 h-6 text-[#457861] bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" /></svg>
+                        </div>
+                        <!-- Bottom -->
+                        <div class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-6 h-6 text-[#457861] bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" /></svg>
+                        </div>
+                        <!-- Left -->
+                        <div class="absolute top-1/2 left-[-10px] -translate-y-1/2 w-6 h-6 text-[#457861] bg-white rounded-full flex items-center justify-center">
+                            <svg class="w-5 h-5 -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" /></svg>
+                        </div>
                     </div>
 
-                    <!-- Central Logo -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-0 opacity-10">
-                        <img src="assets/vertical_logo_dark.svg" class="w-20 mx-auto" alt="Guaranteed Material Logo">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 bg-white/50 rounded-full p-4 backdrop-blur-sm shadow-[0_0_20px_rgba(255,255,255,0.8)]">
+                        <img src="assets/Green_Single_Logo.svg" class="w-32 mx-auto" alt="Guaranteed Material Logo">
                     </div>
 
-                    <!-- Step 1 (Top) -->
-                    <div
-                        class="absolute top-[0%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                1</div>
+                    <div class="absolute top-[0%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">1</span>
                         </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">Roof
-                            Survey</h4>
-                    </div>
-
-                    <!-- Step 2 (Top Right - 60deg) -->
-                    <div
-                        class="absolute top-[25%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                2</div>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">Design
-                            Spec</h4>
-                    </div>
-
-                    <!-- Step 3 (Bottom Right - 120deg) -->
-                    <div
-                        class="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                3</div>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Installation</h4>
-                    </div>
-
-                    <!-- Step 4 (Bottom - 180deg) -->
-                    <div
-                        class="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                4</div>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Inspection</h4>
-                    </div>
-
-                    <!-- Step 5 (Bottom Left - 240deg) -->
-                    <div
-                        class="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                5</div>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Guarantee</h4>
-                    </div>
-
-                    <!-- Step 6 (Top Left - 300deg) -->
-                    <div
-                        class="absolute top-[25%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <div
-                                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                                6</div>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Maintenance</h4>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OPTION 1 -->
-            <div class="mt-16 border-t-2 border-border-light pt-8">
-                <h3 class="text-center font-bold text-xl text-text-dark mb-4 uppercase tracking-widest">Opzione 1:
-                    Minimalista (Senza icone)</h3>
-                <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto mt-16 mb-16">
-                    <div class="absolute inset-[30px] rounded-full border border-text-dark/20 z-0"></div>
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-0 opacity-10">
-                        <img src="assets/vertical_logo_dark.svg" class="w-20 mx-auto" alt="Guaranteed Material Logo">
-                    </div>
-                    <div
-                        class="absolute top-[0%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">01</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">Roof
-                            Survey</h4>
-                    </div>
-                    <div
-                        class="absolute top-[25%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">02</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">Design
-                            Spec</h4>
-                    </div>
-                    <div
-                        class="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">03</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Installation</h4>
-                    </div>
-                    <div
-                        class="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">04</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Inspection</h4>
-                    </div>
-                    <div
-                        class="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">05</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Guarantee</h4>
-                    </div>
-                    <div
-                        class="absolute top-[25%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-16 h-16 rounded-full bg-white border border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative hover:scale-110 cursor-default">
-                            <span class="font-heading text-xl font-bold">06</span>
-                        </div>
-                        <h4 class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg">
-                            Maintenance</h4>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OPTION 2 -->
-            <div class="mt-16 border-t-2 border-border-light pt-8">
-                <h3 class="text-center font-bold text-xl text-text-dark mb-4 uppercase tracking-widest">Opzione 2:
-                    Colore pieno verde (Con icone)</h3>
-                <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto mt-16 mb-16">
-                    <div
-                        class="absolute inset-[30px] rounded-full border-[2px] border-dashed border-[#457861]/30 z-0 -translate-y-4">
-                    </div>
-                    <div
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-0 -translate-y-4">
-                        <h3 class="text-xl font-bold font-heading text-[#457861]">GUARANTEE<br>PROCESS</h3>
-                    </div>
-                    <div
-                        class="absolute top-[0%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                1</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Roof Survey</h4>
-                    </div>
-                    <div
-                        class="absolute top-[25%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                2</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Design Spec</h4>
-                    </div>
-                    <div
-                        class="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                3</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Installation</h4>
-                    </div>
-                    <div
-                        class="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                4</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Inspection</h4>
-                    </div>
-                    <div
-                        class="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                                </path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                5</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Guarantee</h4>
-                    </div>
-                    <div
-                        class="absolute top-[25%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-10 group w-32">
-                        <div
-                            class="w-20 h-20 rounded-full bg-[#457861] text-white flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-text-dark shadow-lg relative hover:-translate-y-2 cursor-default">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <div
-                                class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-white text-[#457861] flex items-center justify-center text-[11px] font-bold shadow-md border border-gray-100">
-                                6</div>
-                        </div>
-                        <h4
-                            class="font-bold text-[12px] tracking-widest uppercase bg-white/80 px-2 rounded-lg text-text-dark">
-                            Maintenance</h4>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OPTION 3 -->
-            <div class="mt-16 border-t-2 border-border-light pt-8">
-                <h3 class="text-center font-bold text-xl text-text-dark mb-4 uppercase tracking-widest">Opzione 3: Stile
-                    "Orbita" (Senza icone)</h3>
-                <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto mt-16 mb-16">
-                    <div class="absolute inset-[40px] rounded-full border-[6px] border-gray-100 z-0"></div>
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-0 opacity-10">
-                        <img src="assets/vertical_logo_dark.svg" class="w-20 mx-auto" alt="Guaranteed Material Logo">
-                    </div>
-                    <div class="absolute top-[0%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white mx-auto">
-                        </div>
-                        <div
-                            class="absolute bottom-full mb-4 left-1/2 -translate-x-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-center group-hover:-translate-y-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none mb-1">01</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark">Roof Survey</h4>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Roof Survey</h4>
+                        <div class="absolute bottom-[110%] left-1/2 -translate-x-1/2 w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-center">
+                            Valutazione iniziale delle condizioni del tetto per individuare le necessità specifiche.
                         </div>
                     </div>
-                    <div class="absolute top-[25%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white">
+                    <!-- 2 -->
+                    <div class="absolute top-[25%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">2</span>
                         </div>
-                        <div
-                            class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-left flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none">02</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark leading-tight">
-                                Design Spec</h4>
-                        </div>
-                    </div>
-                    <div class="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white">
-                        </div>
-                        <div
-                            class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-left flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none">03</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark leading-tight">
-                                Installation</h4>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Design Spec</h4>
+                        <div class="absolute top-1/2 -translate-y-1/2 left-[110%] w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-left">
+                            Creazione delle specifiche tecniche e progettuali su misura per la copertura.
                         </div>
                     </div>
-                    <div class="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white mx-auto">
+                    <!-- 3 -->
+                    <div class="absolute top-[75%] left-[93.3%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">3</span>
                         </div>
-                        <div
-                            class="absolute top-full mt-4 left-1/2 -translate-x-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-center group-hover:translate-y-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none mb-1">04</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark">Inspection</h4>
-                        </div>
-                    </div>
-                    <div class="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white">
-                        </div>
-                        <div
-                            class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-right flex flex-row-reverse items-center gap-3 group-hover:-translate-x-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none">05</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark leading-tight">
-                                Guarantee</h4>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Installation</h4>
+                        <div class="absolute top-1/2 -translate-y-1/2 left-[110%] w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-left">
+                            Posa in opera del sistema da parte di installatori professionisti approvati.
                         </div>
                     </div>
-                    <div class="absolute top-[25%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 z-10 group">
-                        <div
-                            class="w-5 h-5 rounded-full bg-text-dark group-hover:bg-[#457861] group-hover:scale-150 transition-all duration-300 shadow-sm border-2 border-white">
+                    <!-- 4 -->
+                    <div class="absolute top-[100%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">4</span>
                         </div>
-                        <div
-                            class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white border border-border-light shadow-lg rounded-xl p-3 w-36 text-right flex flex-row-reverse items-center gap-3 group-hover:-translate-x-1 transition-transform duration-300">
-                            <div class="text-[#457861] font-bold text-lg leading-none">06</div>
-                            <h4 class="font-bold text-[10px] tracking-widest uppercase text-text-dark leading-tight">
-                                Maintenance</h4>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Inspection</h4>
+                        <div class="absolute top-[110%] left-1/2 -translate-x-1/2 w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-center">
+                            Ispezione finale per garantire che tutti gli standard di qualità siano stati rispettati.
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="absolute top-[75%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">5</span>
+                        </div>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Guarantee</h4>
+                        <div class="absolute top-1/2 -translate-y-1/2 right-[110%] w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-right">
+                            Rilascio della garanzia completa per il sistema di copertura installato.
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="absolute top-[25%] left-[6.7%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center z-20 group w-32 cursor-pointer transition-all duration-300 hover:scale-125 active:scale-150">
+                        <div class="w-16 h-16 rounded-full bg-white border-2 border-[#457861] flex flex-col items-center justify-center mb-2 transition-all duration-300 group-hover:bg-[#457861] group-hover:text-white text-[#457861] shadow-md">
+                            <span class="font-heading text-2xl font-bold">6</span>
+                        </div>
+                        <h4 class="font-bold text-[15px] tracking-widest uppercase bg-white/90 px-4 py-2 border border-gray-200 rounded-3xl text-text-dark transition-colors duration-300 group-hover:text-[#457861] shadow-sm">Maintenance</h4>
+                        <div class="absolute top-1/2 -translate-y-1/2 right-[110%] w-64 p-3 text-[11px] leading-snug text-gray-500 bg-transparent border border-gray-300 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none text-right">
+                            Programma di manutenzione periodica per assicurare la massima longevità del tetto.
                         </div>
                     </div>
                 </div>
