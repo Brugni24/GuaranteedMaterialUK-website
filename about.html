@@ -313,11 +313,11 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
             <!-- Text Column -->
-            <div class="w-full lg:w-3/5 flex flex-col items-start">
+            <div class="w-full lg:w-3/5 flex flex-col items-start justify-center">
                 <h2 class="text-[2.25rem] lg:text-[3.5rem] font-bold leading-[1.1] mb-6">Our Team</h2>
-                <p class="text-text-dark text-base lg:text-[1.1rem] leading-relaxed mb-10">
+                <p class="text-text-dark text-base lg:text-[1.1rem] leading-relaxed">
                     With roots in the construction business dating back to the '90s, our team combines extensive
                     professional experience from leading organisations across the sector, bringing strategic depth and
                     technical knowledge to every engagement. That background gives us a deep understanding of the
@@ -328,8 +328,9 @@
                 </p>
             </div>
             <!-- Image Column -->
-            <div class="w-full lg:w-2/5">
-                <img src="assets/team_working.png" alt="Our Team at Work" class="w-full aspect-square object-cover">
+            <div class="lg:w-2/5 relative overflow-hidden rounded-sm min-h-[300px] lg:min-h-0 flex justify-end">
+                <img src="assets/team_working.png" alt="Our Team at Work"
+                    class="h-full w-auto max-w-full object-cover object-right lg:absolute lg:inset-y-0 lg:right-0 rounded-sm">
             </div>
         </div>
     </section>
