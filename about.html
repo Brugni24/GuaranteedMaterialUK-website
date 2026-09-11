@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,6 +57,27 @@
             }
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
+            }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
             }
         }
         @layer utilities {
@@ -303,11 +324,10 @@
     </section>
 
     <!-- WHO WE ARE SECTION -->
-    <section id="who-we-are" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px] lg:mb-[80px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">WHO WE ARE</h6>
+    <section id="who-we-are" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">WHO WE ARE</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
@@ -316,8 +336,8 @@
         <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
             <!-- Text Column -->
             <div class="w-full lg:w-3/5 flex flex-col items-start justify-center">
-                <h2 class="text-[2.25rem] lg:text-[3.5rem] font-bold leading-[1.1] mb-6">Our Team</h2>
-                <p class="text-text-dark text-base lg:text-[1.1rem] leading-relaxed">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-desc text-base lg:text-[1.1rem]">
                     With roots in the construction business dating back to the '90s, our team combines extensive
                     professional experience from leading organisations across the sector, bringing strategic depth and
                     technical knowledge to every engagement. That background gives us a deep understanding of the
@@ -336,19 +356,18 @@
     </section>
 
     <!-- OUR VALUES SECTION -->
-    <section id="our-values" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px] lg:mb-[80px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">2</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">OUR VALUES</h6>
+    <section id="our-values" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">2</span>
+            <h6 class="section-eyebrow">OUR VALUES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/2 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="mb-10 lg:mb-16">
-            <h2 class="text-[2.25rem] lg:text-[3.5rem] font-bold leading-[1.1] mb-6">What Drives Us</h2>
-            <p class="text-text-gray text-base md:text-[1.1rem] max-w-[700px]">The core principles that guide our work
+        <div class="section-header-block">
+            <h2 class="section-title">What Drives Us</h2>
+            <p class="section-desc">The core principles that guide our work
                 and our relationships with clients.</p>
         </div>
 
@@ -399,12 +418,11 @@
     </section>
 
     <!-- WHAT WE DO EVERYDAY SECTION -->
-    <section id="our-goal" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10 relative overflow-hidden">
+    <section id="our-goal" class="section-padding section-container relative overflow-hidden">
         <!-- Chapter Header -->
-        <div class="flex items-center mb-[50px] lg:mb-[80px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">3</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase text-text-dark">OUR GOAL</h6>
+        <div class="section-indicator">
+            <span class="section-badge">3</span>
+            <h6 class="section-eyebrow">OUR GOAL</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
@@ -414,10 +432,8 @@
             <!-- Mission -->
             <div>
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Mission</h4>
-                <h2 class="text-[2rem] md:text-[3rem] font-bold mb-6 text-text-dark leading-[1.1] tracking-[-1px]">What
-                    we do
-                    every day</h2>
-                <p class="text-text-gray text-base md:text-[1.25rem] leading-[1.6] font-normal">
+                <h2 class="section-title">What we do every day</h2>
+                <p class="section-desc text-base md:text-[1.25rem]">
                     We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep
                     industry
                     expertise with a tailored approach, we put every client's unique needs first.
@@ -426,10 +442,8 @@
             <!-- Vision -->
             <div>
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Vision</h4>
-                <h2 class="text-[2rem] md:text-[3rem] font-bold mb-6 text-text-dark leading-[1.1] tracking-[-1px]">How
-                    we see
-                    the future</h2>
-                <p class="text-text-gray text-base md:text-[1.25rem] leading-[1.6] font-normal">
+                <h2 class="section-title">How we see the future</h2>
+                <p class="section-desc text-base md:text-[1.25rem]">
                     We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new
                     industry
                     standards for quality, continuous innovation, and lasting partnerships.

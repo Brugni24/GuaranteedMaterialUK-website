@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,6 +57,27 @@
             }
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
+            }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
             }
         }
         @layer utilities {
@@ -284,20 +305,19 @@
     </section>
 
     <!-- ROOFING SYSTEMS SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+    <section class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">ROOFING SYSTEMS</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/5 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[40px] lg:mb-[60px] gap-5 lg:gap-0">
+        <div class="section-header-block flex flex-col lg:flex-row lg:justify-between lg:items-end gap-5 lg:gap-0">
             <div class="w-full">
-                <h2 class="text-[2.25rem] lg:text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
-                <p class="text-text-gray text-base lg:text-[1.05rem]">Discover our portfolio of completed projects, showcasing a
+                <h2 class="section-title">Our Roofing Systems</h2>
+                <p class="section-desc">Discover our portfolio of completed projects, showcasing a
                     variety of styles and functionalities.</p>
             </div>
         </div>

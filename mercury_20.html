@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,6 +57,27 @@
             }
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
+            }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
             }
         }
         @layer utilities {
@@ -286,12 +307,10 @@
     </section>
 
     <!-- INTRO SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10 pt-[60px] lg:pt-[100px]">
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-4 lg:mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">1</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-6 tracking-[1.5px] uppercase">INTRODUCTION</h6>
+    <section class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">INTRODUCTION</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
@@ -300,9 +319,9 @@
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <!-- Left Content -->
             <div class="flex-1">
-                <h2 class="text-[2.5rem] lg:text-[4rem] font-bold text-text-dark mb-6 leading-[1.1] tracking-tight">
+                <h2 class="section-title">
                     Mercury 20</h2>
-                <p class="text-base lg:text-[1.125rem] text-text-gray mb-8 leading-relaxed max-w-[600px]">
+                <p class="section-desc mb-8 max-w-[600px]">
                     Mercury membranes use an SBS (Styrene-Butadiene-Styrene) modified bitumen compound, the most common waterproofing solution for roofs across the UK.<br><br>
                     Its cold flexibility (-20Â°C), elastic behaviour and robust design make Mercury 20 a strong SBS choice, offering good performance and durability.
                 </p>
@@ -325,13 +344,11 @@
     </section>
 
     <!-- KEY PROPERTIES SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
+    <section class="section-padding section-container">
         <!-- Header -->
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-4 lg:mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">2</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-6 tracking-[1.5px] uppercase">KEY PROPERTIES</h6>
+        <div class="section-indicator">
+            <span class="section-badge">2</span>
+            <h6 class="section-eyebrow">KEY PROPERTIES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-2/3 transition-all duration-500"></div>
             </div>
@@ -340,8 +357,8 @@
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-20">
             <!-- Left Text -->
             <div class="flex-1">
-                <h2 class="text-[2.25rem] lg:text-[2.5rem] font-bold text-text-dark mb-4 lg:mb-6 leading-tight">Why use SBS membranes</h2>
-                <p class="text-base lg:text-[1.1rem] text-text-gray leading-relaxed">
+                <h2 class="section-title">Why use SBS membranes</h2>
+                <p class="section-desc">
                     SBS systems have decades of proven performance data in the UK market because they are particularly well-suited to the local weather, with good elasticity and adhesion â€” especially when compared to APP systems.
                 </p>
             </div>
@@ -403,13 +420,11 @@
     </section>
 
     <!-- SYSTEM BUILD-UP SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
+    <section class="section-padding section-container">
         <!-- Header -->
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-4 lg:mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">3</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-6 tracking-[1.5px] uppercase">SYSTEM BUILD-UP</h6>
+        <div class="section-indicator">
+            <span class="section-badge">3</span>
+            <h6 class="section-eyebrow">SYSTEM BUILD-UP</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>

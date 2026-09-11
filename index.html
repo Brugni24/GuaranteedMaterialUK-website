@@ -58,6 +58,27 @@
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
             }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
+            }
         }
         @layer utilities {
             .section-padding {
@@ -295,20 +316,19 @@
     </section>
 
     <!-- ROOFING SYSTEMS SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ROOFING SYSTEMS</h6>
+    <section class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">ROOFING SYSTEMS</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/4 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[60px] gap-5 lg:gap-0">
+        <div class="section-header-block flex flex-col lg:flex-row lg:justify-between lg:items-end gap-5 lg:gap-0">
             <div class="w-full">
-                <h2 class="text-[2.5rem] font-bold mb-4">Our Roofing Systems</h2>
-                <p class="text-text-gray text-[1.05rem]">Long lasting and sustainable projects. Choose
+                <h2 class="section-title">Our Roofing Systems</h2>
+                <p class="section-desc">Long lasting and sustainable projects. Choose
                     the perfect
                     system for your roof by: Guarantee, Technology, Performances or Application method.</p>
             </div>
@@ -490,25 +510,22 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
+    <section class="section-padding section-container">
         <div class="grid grid-cols-1 relative">
             <!-- Header Layer -->
             <div class="col-start-1 row-start-1 pointer-events-none z-0">
                 <div id="services-header" class="sticky top-[-68px] pt-6 w-full">
                     <div class="pointer-events-auto">
-                        <div class="flex items-center">
-                            <span
-                                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading bg-white">2</span>
-                            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">SERVICES</h6>
+                        <div class="section-indicator">
+                            <span class="section-badge">2</span>
+                            <h6 class="section-eyebrow">SERVICES</h6>
                             <div class="flex-1 h-px bg-border-light relative flex items-center">
                                 <div class="h-[2px] bg-text-dark w-2/4 transition-all duration-500"></div>
                             </div>
                         </div>
-                        <div class="w-full lg:mb-4 mt-8 lg:mt-[50px]">
-                            <h2 class="text-[2rem] lg:text-[3rem] font-bold leading-tight mb-4">Our Custom Services</h2>
-                        </div>
                         <div class="w-full">
-                            <p class="text-text-gray text-base lg:text-[1.05rem] leading-relaxed">
+                            <h2 class="section-title">Our Custom Services</h2>
+                            <p class="section-desc">
                                 Guaranteed Material UK offers more than just waterproofing solutions: Refurbishment roof
                                 evaluation service, Roof Asset Management, Design & Specification, Installation
                                 expertise through approved roofing contractors under constant site inspection, Project
@@ -622,20 +639,18 @@
     </section>
 
     <!-- REFERENCES SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">3</span>
-            </div>
-            <h6 class="text-sm font-bold mr-6 tracking-[1.5px] uppercase">REFERENCES</h6>
+    <section class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">3</span>
+            <h6 class="section-eyebrow">REFERENCES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-3/4 transition-all duration-500"></div>
             </div>
         </div>
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[20px] gap-5 lg:gap-0">
+        <div class="section-header-block flex flex-col lg:flex-row lg:justify-between lg:items-end gap-5 lg:gap-0">
             <div class="w-full">
-                <h2 class="text-[2rem] lg:text-[2.5rem] font-bold mb-4">Our Projects</h2>
-                <p class="text-text-gray text-base lg:text-[1.05rem]">From planning to execution, every
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-desc">From planning to execution, every
                     project is a
                     testament to our
                     commitment to quality and excellence. Here are some highlights from our recent work.</p>
@@ -856,11 +871,10 @@
     </section>
 
     <!-- ABOUT US SECTION -->
-    <section class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[50px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-5 font-heading">4</span>
-            <h6 class="text-sm font-bold mr-5 tracking-[1px] uppercase">ABOUT US</h6>
+    <section class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">4</span>
+            <h6 class="section-eyebrow">ABOUT US</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
@@ -869,9 +883,8 @@
         <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
             <!-- Text Column -->
             <div class="w-full lg:w-1/2 flex flex-col items-start">
-                <h2 class="text-[2.25rem] lg:text-[3.5rem] font-bold leading-[1.1] mb-6">Discover Our Journey to
-                    Excellence</h2>
-                <p class="text-text-dark text-base lg:text-[1.1rem] leading-relaxed mb-10">We provide industry-leading
+                <h2 class="section-title">Discover Our Journey to Excellence</h2>
+                <p class="section-desc mb-8">We provide industry-leading
                     waterproofing materials, leveraging our expertise to create guaranteed and durable flat roof
                     solutions, all backed by a strong, collaborative partnership approach.</p>
                 <a href="about.html" class="btn btn-primary">About Us</a>

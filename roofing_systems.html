@@ -58,6 +58,27 @@
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
             }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
+            }
         }
         @layer utilities {
             .section-padding {
@@ -287,11 +308,10 @@
     </section>
 
     <!-- OUR PROPOSAL SECTION -->
-    <section id="our-proposal" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <span
-                class="inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold mr-4 lg:mr-5 font-heading">1</span>
-            <h6 class="text-sm font-bold mr-4 lg:mr-5 tracking-[1px] uppercase">OUR PROPOSAL</h6>
+    <section id="our-proposal" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">OUR PROPOSAL</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
@@ -299,13 +319,12 @@
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-stretch">
             <!-- Text Column -->
             <div class="w-full flex flex-col items-start justify-center">
-                <div
-                    class="text-[2.25rem] lg:text-[3rem] font-bold text-text-dark leading-[1.1] mb-6 whitespace-nowrap">
+                <div class="section-title whitespace-nowrap mb-6">
                     <h2>Proven Performance.</h2>
                     <h2>Build to Last.</h2>
                     <h2>Designed for Tomorrow.</h2>
                 </div>
-                <p class="text-base lg:text-[1.1rem] text-text-gray leading-[1.6]">
+                <p class="section-desc text-base lg:text-[1.1rem]">
                     We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed
                     and durable flat roof solutions, all backed by a strong, collaborative partnership approach.
                 </p>
@@ -319,20 +338,18 @@
     </section>
 
     <!-- RBM SYSTEMS SECTION -->
-    <section id="rbm-systems" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-12 h-12 border border-text-dark mr-4 lg:mr-6 bg-white">
-                <span class="text-lg font-bold font-heading">2</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-6 tracking-[1.5px] uppercase">RBM SYSTEMS</h6>
+    <section id="rbm-systems" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">2</span>
+            <h6 class="section-eyebrow">RBM SYSTEMS</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
         </div>
-        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end mb-[20px] gap-4 lg:gap-0">
+        <div class="section-header-block flex flex-col lg:flex-row lg:justify-between lg:items-end gap-4 lg:gap-0">
             <div class="w-full">
-                <h2 class="text-[2.25rem] lg:text-[2.5rem] font-bold mb-4">Our Systems</h2>
-                <p class="text-text-gray text-base lg:text-[1.1rem]">
+                <h2 class="section-title">Our Systems</h2>
+                <p class="section-desc text-base lg:text-[1.1rem]">
                     Our Bituminous Membrane Systems provide versatile, high-performance waterproofing
                     solutions for every roofing application.
                     Combining advanced membrane technologies &mdash; including APAO, SBS and Self-Adhesive &mdash;
@@ -758,20 +775,18 @@
     </section>
 
     <!-- COMPARISON SECTION -->
-    <section id="comparison" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-11 h-11 border border-text-dark mr-4 lg:mr-5 bg-white">
-                <span class="text-base font-bold font-heading">3</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-5 tracking-[1px] uppercase">SYSTEM COMPARISON</h6>
+    <section id="comparison" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">3</span>
+            <h6 class="section-eyebrow">SYSTEM COMPARISON</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="mb-[40px]">
-            <h2 class="text-[2.25rem] lg:text-[2.5rem] font-bold mb-4">Compare Our Systems</h2>
-            <p class="text-text-gray text-base lg:text-[1.05rem]">
+        <div class="section-header-block">
+            <h2 class="section-title">Compare Our Systems</h2>
+            <p class="section-desc">
                 Review the technical specifications across our range of waterproofing membranes to find the perfect fit
                 for your project.
             </p>
@@ -868,20 +883,18 @@
     </section>
 
     <!-- GUARANTEES SECTION -->
-    <section id="guarantees" class="section-padding max-w-[1200px] mx-auto px-4 lg:px-10">
-        <div class="flex items-center mb-[40px] lg:mb-[50px]">
-            <div class="flex items-center justify-center w-11 h-11 border border-text-dark mr-4 lg:mr-5 bg-white">
-                <span class="text-base font-bold font-heading">4</span>
-            </div>
-            <h6 class="text-sm font-bold mr-4 lg:mr-5 tracking-[1px] uppercase">GUARANTEES</h6>
+    <section id="guarantees" class="section-padding section-container">
+        <div class="section-indicator">
+            <span class="section-badge">4</span>
+            <h6 class="section-eyebrow">GUARANTEES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="mb-[40px]">
-            <h2 class="text-[2.25rem] lg:text-[2.5rem] font-bold mb-6">Our Guarantee Approach</h2>
-            <div class="text-text-gray text-base lg:text-[1.05rem] leading-relaxed space-y-4">
+        <div class="section-header-block">
+            <h2 class="section-title">Our Guarantee Approach</h2>
+            <div class="section-desc space-y-4">
                 <p>
                     Too often, when it comes to roofing systems and guarantees, the focus falls on product performance
                     alone.

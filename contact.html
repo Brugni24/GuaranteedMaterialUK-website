@@ -55,6 +55,27 @@
             .btn-white {
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
             }
+            .section-container {
+                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+            }
+            .section-indicator {
+                @apply flex items-center mb-10 lg:mb-12;
+            }
+            .section-badge {
+                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+            }
+            .section-eyebrow {
+                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+            }
+            .section-header-block {
+                @apply mb-10 lg:mb-14;
+            }
+            .section-title {
+                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+            }
+            .section-desc {
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
+            }
         }
         @layer utilities {
             .section-padding {
@@ -263,13 +284,13 @@
         <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
-        <div class="max-w-[1200px] mx-auto px-4 lg:px-6 relative z-10">
+        <div class="section-container relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                 
                 <!-- Contact Information -->
                 <div class="reveal-on-scroll opacity-0 translate-y-16 transition-all duration-700 ease-out">
-                    <h2 class="text-3xl md:text-4xl font-bold text-text-dark mb-8">Get in Touch</h2>
-                    <p class="text-text-gray mb-10 text-lg">Whether you need technical assistance, a quote for a roofing project, or just have a general inquiry, our team is ready to assist you.</p>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-desc mb-10">Whether you need technical assistance, a quote for a roofing project, or just have a general inquiry, our team is ready to assist you.</p>
                     
                     <div class="space-y-8">
                         <!-- Phone -->
