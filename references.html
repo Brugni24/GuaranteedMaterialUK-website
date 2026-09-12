@@ -77,7 +77,7 @@
                 @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
             }
             .section-desc {
-                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
             }
         }
         @layer utilities {
@@ -324,6 +324,9 @@
         </div>
     
         <div class="flex flex-col group/list">
+            <!-- Separator -->
+            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+
             <!-- Project 1 -->
             <div
                 class="py-10 px-4 lg:px-8 -mx-4 lg:-mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-500">
@@ -548,6 +551,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Separator -->
+            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
         </div>
     </section>
 

@@ -77,7 +77,7 @@
                 @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
             }
             .section-desc {
-                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed max-w-[800px];
+                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
             }
         }
         @layer utilities {
@@ -313,7 +313,7 @@
             <span class="section-badge">1</span>
             <h6 class="section-eyebrow">OUR PROPOSAL</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-1/4 transition-all duration-500"></div>
             </div>
         </div>
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-stretch">
@@ -343,13 +343,13 @@
             <span class="section-badge">2</span>
             <h6 class="section-eyebrow">RBM SYSTEMS</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-1/2 transition-all duration-500"></div>
             </div>
         </div>
         <div class="section-header-block flex flex-col lg:flex-row lg:justify-between lg:items-end gap-4 lg:gap-0">
             <div class="w-full">
                 <h2 class="section-title">Our Systems</h2>
-                <p class="section-desc text-base lg:text-[1.1rem]">
+                <p class="section-desc">
                     Our Bituminous Membrane Systems provide versatile, high-performance waterproofing
                     solutions for every roofing application.
                     Combining advanced membrane technologies &mdash; including APAO, SBS and Self-Adhesive &mdash;
@@ -358,6 +358,9 @@
                 </p>
             </div>
         </div>
+
+        <!-- Separator -->
+        <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
         <div class="flex flex-col">
             <!-- System 1: Phoenix Super 35 -->
@@ -771,6 +774,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Separator -->
+            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
         </div>
     </section>
 
@@ -780,7 +786,7 @@
             <span class="section-badge">3</span>
             <h6 class="section-eyebrow">SYSTEM COMPARISON</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-3/4 transition-all duration-500"></div>
             </div>
         </div>
 
@@ -792,7 +798,7 @@
             </p>
         </div>
 
-        <div class="mb-20 overflow-x-auto">
+        <div class="overflow-x-auto">
             <table class="w-full text-left border-collapse min-w-[900px]">
                 <thead>
                     <tr class="border-b-2 border-text-dark text-text-gray text-[11px] tracking-widest uppercase">
@@ -888,7 +894,7 @@
             <span class="section-badge">4</span>
             <h6 class="section-eyebrow">GUARANTEES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
             </div>
         </div>
 
@@ -902,18 +908,18 @@
                 <p>
                     We take a different approach &mdash; offering a durable, sustainable, and cost-efficient solution
                     that
-                    starts with a professional, experienced <strong>Roof Survey</strong>. This survey then informs a
-                    precise <strong>Design Specification</strong>, ensuring the most Appropriate Roofing System is
+                    starts with a professional, experienced <strong class="text-text-dark">Roof Survey</strong>. This survey then informs a
+                    precise <strong class="text-text-dark">Design Specification</strong>, ensuring the most Appropriate Roofing System is
                     selected for each project.
                 </p>
                 <p>
-                    A carefully selected network of <strong>Approved Installers</strong> guarantees Correct
-                    Installation, supported by our constant <strong>On-site Inspection</strong> to meet the highest
+                    A carefully selected network of <strong class="text-text-dark">Approved Installers</strong> guarantees Correct
+                    Installation, supported by our constant <strong class="text-text-dark">On-site Inspection</strong> to meet the highest
                     standards.
                 </p>
                 <p>
-                    Through this process, we're able to issue a <strong>Guarantee</strong> based on the system as
-                    installed &mdash; one that stays valid only through ongoing <strong>Roof Maintenance</strong>,
+                    Through this process, we're able to issue a <strong class="text-text-dark">Guarantee</strong> based on the system as
+                    installed &mdash; one that stays valid only through ongoing <strong class="text-text-dark">Roof Maintenance</strong>,
                     carried out by the Approved Installer according to our specifications.
                 </p>
             </div>
@@ -1025,8 +1031,8 @@
             </div>
 
             <!-- OPTION 4 -->
-            <div class="mt-18 pt-8">
-                <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto mt-16 mb-16">
+            <div class="py-6">
+                <div class="hidden lg:block relative w-[450px] h-[450px] mx-auto">
 
                     <!-- Cerchio grande tratteggiato unito -->
                     <div
