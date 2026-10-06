@@ -334,33 +334,38 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-8 lg:gap-20">
-            <!-- Left Content -->
-            <div class="flex-1">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+            <!-- Text Column -->
+            <div class="w-full lg:w-1/2 flex flex-col justify-start">
                 <h2 class="section-title">
-                    Saturn 30</h2>
-                <p class="section-desc mb-8 max-w-[600px]">
+                    Saturn 30
+                </h2>
+                <p class="section-desc mb-8">
                     Saturn membranes use a special SBS (Styrene-Butadiene-Styrene) modified bitumen compound, the
                     leading waterproofing solution for flat and low-slope roofs across the UK.<br><br>
-                    With its cold flexibility (-25Â°C) and rubber-like, elastic behaviour, it represents the high-end SBS
+                    With its cold flexibility (-25°C) and rubber-like, elastic behaviour, it represents the high-end SBS
                     proposal to offer incredible performances and durability.
                 </p>
 
-                <!-- Pills -->
-                <div class="flex flex-wrap gap-3 mb-10">
+                <!-- Modern Rounded Badges -->
+                <div class="flex flex-wrap gap-2.5">
                     <span
-                        class="inline-flex items-center px-4 lg:px-5 py-2 border border-border-light text-[13px] lg:text-sm font-semibold bg-white">30
-                        Years Warranty</span>
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gray-100/80 border border-gray-200/80 text-xs lg:text-[13px] font-medium text-text-dark select-none">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                        30 Years Warranty
+                    </span>
                     <span
-                        class="inline-flex items-center px-4 lg:px-5 py-2 border border-border-light text-[13px] lg:text-sm font-semibold bg-white">Torch
-                        Applied</span>
+                        class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gray-100/80 border border-gray-200/80 text-xs lg:text-[13px] font-medium text-text-dark select-none">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                        Torch Applied
+                    </span>
                 </div>
             </div>
 
-            <!-- Right Image -->
-            <div class="flex-1 overflow-hidden rounded-xl lg:rounded-none">
+            <!-- Image Column -->
+            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl border border-border-light aspect-[4/3] bg-gray-50 shadow-sm">
                 <img src="assets/gemini_reference1.png" alt="Saturn 30"
-                    class="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 hover:scale-105">
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
             </div>
         </div>
     </section>
@@ -383,7 +388,7 @@
                     SBS membranes</h2>
                 <p class="section-desc">
                     SBS systems have decades of proven performance data in the UK market because they are particularly
-                    well-suited to the local weather, with good elasticity and adhesion â€” especially when compared to
+                    well-suited to the local weather, with good elasticity and adhesion &mdash; especially when compared to
                     APP systems.
                 </p>
             </div>
@@ -427,12 +432,12 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div
                     class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">-25Â°C</h3>
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">-25°C</h3>
                     <p class="text-[0.95rem] text-white/80 leading-relaxed">Flexibility at low temperature</p>
                 </div>
                 <div
                     class="flex flex-col justify-center p-8 bg-[#17322a] rounded-2xl shadow-lg transition-transform hover:-translate-y-1">
-                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">100Â°C</h3>
+                    <h3 class="text-[2rem] font-bold mb-2 font-heading leading-tight text-white">100°C</h3>
                     <p class="text-[0.95rem] text-white/80 leading-relaxed">Flow resistance at high temperature</p>
                 </div>
                 <div
@@ -443,9 +448,9 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-8 pt-24 lg:pt-28 lg:gap-20">
+        <div class="flex flex-col lg:flex-row gap-8 pt-24 lg:pt-28 lg:gap-16 items-start">
             <!-- Left Text -->
-            <div class="flex-1">
+            <div class="flex-1 lg:sticky lg:top-28">
                 <h2 class="section-title">
                     Ceramic granules finishing
                 </h2>
@@ -454,42 +459,71 @@
                 </p>
             </div>
 
-            <!-- Right List -->
-            <div class="flex-1 flex flex-col gap-6">
+            <!-- Right List with Dynamic Hover Animation -->
+            <div class="flex-1 flex flex-col border-y border-border-light divide-y divide-border-light w-full">
                 <!-- Item 1 -->
-                <div class="flex items-center gap-6 border-b border-border-light pb-4">
-                    <span class="text-xl font-bold font-heading text-primary/40">01</span>
-                    <p class="text-base lg:text-[1.1rem] text-text-gray font-medium">
-                        Stronger UV resistance
-                    </p>
+                <div class="relative overflow-hidden group cursor-default transition-all duration-300 py-4 lg:py-5 px-3 lg:px-4">
+                    <div class="absolute inset-0 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out pointer-events-none"></div>
+                    <div class="relative z-10 flex items-center gap-5 lg:gap-6 transition-transform duration-300 group-hover:translate-x-2">
+                        <span class="text-lg lg:text-xl font-bold font-heading text-primary/50 group-hover:text-emerald-300 transition-colors duration-300 w-8 shrink-0">
+                            01
+                        </span>
+                        <p class="text-base lg:text-[1.05rem] text-text-dark group-hover:text-white font-medium transition-colors duration-300">
+                            Stronger UV resistance
+                        </p>
+                    </div>
                 </div>
+
                 <!-- Item 2 -->
-                <div class="flex items-center gap-6 border-b border-border-light pb-4">
-                    <span class="text-xl font-bold font-heading text-primary/40">02</span>
-                    <p class="text-base lg:text-[1.1rem] text-text-gray font-medium">
-                        A more robust surface
-                    </p>
+                <div class="relative overflow-hidden group cursor-default transition-all duration-300 py-4 lg:py-5 px-3 lg:px-4">
+                    <div class="absolute inset-0 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out pointer-events-none"></div>
+                    <div class="relative z-10 flex items-center gap-5 lg:gap-6 transition-transform duration-300 group-hover:translate-x-2">
+                        <span class="text-lg lg:text-xl font-bold font-heading text-primary/50 group-hover:text-emerald-300 transition-colors duration-300 w-8 shrink-0">
+                            02
+                        </span>
+                        <p class="text-base lg:text-[1.05rem] text-text-dark group-hover:text-white font-medium transition-colors duration-300">
+                            A more robust surface
+                        </p>
+                    </div>
                 </div>
+
                 <!-- Item 3 -->
-                <div class="flex items-center gap-6 border-b border-border-light pb-4">
-                    <span class="text-xl font-bold font-heading text-primary/40">03</span>
-                    <p class="text-base lg:text-[1.1rem] text-text-gray font-medium">
-                        Less chip loss
-                    </p>
+                <div class="relative overflow-hidden group cursor-default transition-all duration-300 py-4 lg:py-5 px-3 lg:px-4">
+                    <div class="absolute inset-0 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out pointer-events-none"></div>
+                    <div class="relative z-10 flex items-center gap-5 lg:gap-6 transition-transform duration-300 group-hover:translate-x-2">
+                        <span class="text-lg lg:text-xl font-bold font-heading text-primary/50 group-hover:text-emerald-300 transition-colors duration-300 w-8 shrink-0">
+                            03
+                        </span>
+                        <p class="text-base lg:text-[1.05rem] text-text-dark group-hover:text-white font-medium transition-colors duration-300">
+                            Less chip loss
+                        </p>
+                    </div>
                 </div>
+
                 <!-- Item 4 -->
-                <div class="flex items-center gap-6 border-b border-border-light pb-4">
-                    <span class="text-xl font-bold font-heading text-primary/40">04</span>
-                    <p class="text-base lg:text-[1.1rem] text-text-gray font-medium">
-                        Less colour fade
-                    </p>
+                <div class="relative overflow-hidden group cursor-default transition-all duration-300 py-4 lg:py-5 px-3 lg:px-4">
+                    <div class="absolute inset-0 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out pointer-events-none"></div>
+                    <div class="relative z-10 flex items-center gap-5 lg:gap-6 transition-transform duration-300 group-hover:translate-x-2">
+                        <span class="text-lg lg:text-xl font-bold font-heading text-primary/50 group-hover:text-emerald-300 transition-colors duration-300 w-8 shrink-0">
+                            04
+                        </span>
+                        <p class="text-base lg:text-[1.05rem] text-text-dark group-hover:text-white font-medium transition-colors duration-300">
+                            Less colour fade
+                        </p>
+                    </div>
                 </div>
+
                 <!-- Item 5 -->
-                <div class="flex items-center gap-6 pb-2">
-                    <span class="text-xl font-bold font-heading text-primary/40">05</span>
-                    <p class="text-base lg:text-[1.1rem] text-text-gray font-medium">
-                        An aesthetically superior and more uniform finish
-                    </p>
+                <div class="relative overflow-hidden group cursor-default transition-all duration-300 py-4 lg:py-5 px-3 lg:px-4">
+                    <div class="absolute inset-0 bg-primary origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out pointer-events-none"></div>
+                    <div class="relative z-10 flex items-center gap-5 lg:gap-6 transition-transform duration-300 group-hover:translate-x-2">
+                        <span class="text-lg lg:text-xl font-bold font-heading text-primary/50 group-hover:text-emerald-300 transition-colors duration-300 w-8 shrink-0">
+                            05
+                        </span>
+                        <p class="text-base lg:text-[1.05rem] text-text-dark group-hover:text-white font-medium transition-colors duration-300">
+                            An aesthetically superior and more uniform finish
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -509,8 +543,7 @@
         <div class="flex flex-col lg:flex-row gap-10 lg:gap-16">
             <!-- Left Image Placeholder -->
             <div class="w-full lg:w-1/2 rounded-xl overflow-hidden border border-border-light">
-                <!-- Placeholder using an existing image to avoid broken images -->
-                <img src="assets/rbm_system_img.png" alt="System Build-Up"
+                <img src="assets/saturn_30_system.jpg" alt="Saturn 30 System Build-Up"
                     class="w-full h-full object-cover aspect-[4/3] bg-[#f0f0f0]">
             </div>
 
