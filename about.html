@@ -161,7 +161,7 @@
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M1 9L5 5L1 1" />
                                 </svg>
-                                Consulting & Planning
+                                Roof Conditioning Surveys
                             </a>
                             <a href="services.html#service-2"
                                 class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
@@ -169,7 +169,7 @@
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M1 9L5 5L1 1" />
                                 </svg>
-                                Custom Manufacturing
+                                Material Supply
                             </a>
                             <a href="services.html#service-3"
                                 class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
@@ -177,7 +177,15 @@
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M1 9L5 5L1 1" />
                                 </svg>
-                                Solar Panels Integration
+                                Complete Support
+                            </a>
+                            <a href="services.html#service-4"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Aftercare and Maintenance
                             </a>
                         </div>
                     </div>
@@ -298,33 +306,43 @@
 
     <!-- HERO SECTION -->
     <section id="about-hero"
-        class="relative h-[500vh] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
-        <div class="sticky top-0 h-[100vh] w-full flex items-center max-w-[1200px] mx-auto px-4 lg:px-10 pt-[80px]">
-            <div class="relative w-full h-full">
+        class="relative h-[220vh] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
+        <div id="about-hero-container"
+            class="sticky top-0 h-[100vh] w-full max-w-[1200px] mx-auto px-4 lg:px-10 pt-[100px] pb-[10vh] overflow-hidden relative z-10 flex flex-col justify-end">
+            <div id="about-content-box" class="relative w-full h-full">
                 <!-- Title -->
                 <h1 id="about-title"
-                    class="text-white text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold absolute top-[75%] left-0 -translate-y-1/2 w-full will-change-transform tracking-[-1px]">
+                    class="text-white text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px] absolute left-0 bottom-0 will-change-transform">
                     About Us
                 </h1>
 
                 <!-- Text -->
                 <div id="about-text"
-                    class="text-[#fdfdfd] text-[1.125rem] md:text-[1.5rem] font-normal leading-[1.6] max-w-[800px] absolute top-[45%] left-0">
-                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">Every great name tells
+                    class="text-[#fdfdfd] text-[1.125rem] md:text-[1.4rem] lg:text-[1.45rem] font-normal leading-[1.6] max-w-[820px] absolute left-0 top-[90px] md:top-[100px] lg:top-[115px]">
+                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">Every great name tells
                         a story. Ours starts with <strong class="font-bold">a promise</strong>.</p>
-                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">When we founded <strong
+                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">When we founded <strong
                             class="font-bold">Guaranteed Material UK</strong>, we weren't just choosing a name,</p>
-                    <p class="mb-4 opacity-0 translate-y-[20px] will-change-[opacity,transform]">We were making a
+                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">We were making a
                         commitment to everyone looking for a <strong class="font-bold">professional</strong>, <strong
                             class="font-bold">guaranteed</strong> and <strong class="font-bold">durable
                             solution</strong> for flat roofing.</p>
+                </div>
+            </div>
+
+            <!-- Scroll indicator hint -->
+            <div id="hero-scroll-hint"
+                class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 pointer-events-none transition-all duration-300">
+                <span class="text-[10px] uppercase tracking-[2px] text-white/50 font-semibold">Scroll</span>
+                <div class="w-4 h-6 rounded-full border border-white/30 flex justify-center pt-1">
+                    <div class="w-1 h-1.5 bg-white/70 rounded-full animate-bounce"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- WHO WE ARE SECTION -->
-    <section id="who-we-are" class="section-padding section-container">
+    <section id="who-we-are" class="section-padding section-container scroll-mt-24">
         <div class="section-indicator">
             <span class="section-badge">1</span>
             <h6 class="section-eyebrow">WHO WE ARE</h6>
@@ -333,24 +351,43 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
             <!-- Text Column -->
-            <div class="w-full lg:w-3/5 flex flex-col items-start justify-center">
-                <h2 class="section-title">Our Team</h2>
-                <p class="section-desc text-base lg:text-[1.1rem]">
-                    With roots in the construction business dating back to the '90s, our team combines extensive
-                    professional experience from leading organisations across the sector, bringing strategic depth and
-                    technical knowledge to every engagement. That background gives us a deep understanding of the
-                    industry &mdash; and the insight to deliver waterproofing solutions that are both innovative and
-                    built to last. Every project is different, and we tailor our approach to match. It's that
-                    combination of expertise, dedication and track record that makes Guaranteed Material UK a partner
-                    you can genuinely count on.
+            <div class="w-full lg:w-1/2 flex flex-col justify-center">
+                <h2 class="section-title">
+                    Our Team
+                </h2>
+                <p class="section-desc mb-6">
+                    With roots in the construction business dating back to the '90s, our team combines extensive professional experience from leading organisations across the sector, bringing strategic depth and technical insight to every engagement.
                 </p>
+
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start gap-3 section-desc">
+                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
+                        <span><strong class="text-text-dark font-semibold">Deep Industry Insight:</strong> Proven background across the roofing sector to deliver waterproofing solutions that are both innovative and built to last.</span>
+                    </div>
+                    <div class="flex items-start gap-3 section-desc">
+                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
+                        <span><strong class="text-text-dark font-semibold">Tailored Partnership:</strong> Every project is different. We tailor our technical approach to match, offering dedication and track record you can genuinely count on.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="contact.html" class="btn btn-primary inline-flex items-center gap-2 group/btn">
+                        Contact Us
+                        <svg class="transition-transform group-hover/btn:translate-x-1 ml-1" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
+
             <!-- Image Column -->
-            <div class="lg:w-2/5 relative overflow-hidden rounded-sm min-h-[300px] lg:min-h-0 flex justify-end">
+            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl border border-border-light aspect-[4/3] bg-gray-50 shadow-sm">
                 <img src="assets/team_working.png" alt="Our Team at Work"
-                    class="h-full w-auto max-w-full object-cover object-right lg:absolute lg:inset-y-0 lg:right-0 rounded-sm">
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
             </div>
         </div>
     </section>
@@ -373,7 +410,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
-                class="bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary transition-all duration-300 group cursor-default">
+                class="reveal-on-scroll opacity-0 translate-y-8 bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary hover:-translate-y-2 transition-all duration-500 group cursor-default">
                 <div
                     class="text-gray-300 font-bold text-5xl mb-6 group-hover:text-primary transition-colors duration-300">
                     01.</div>
@@ -384,7 +421,7 @@
                 </p>
             </div>
             <div
-                class="bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary transition-all duration-300 group cursor-default">
+                class="reveal-on-scroll opacity-0 translate-y-8 bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary hover:-translate-y-2 transition-all duration-500 delay-100 group cursor-default">
                 <div
                     class="text-gray-300 font-bold text-5xl mb-6 group-hover:text-primary transition-colors duration-300">
                     02.</div>
@@ -394,7 +431,7 @@
                     constantly seek better, more durable waterproofing solutions to stay ahead of industry demands.</p>
             </div>
             <div
-                class="bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary transition-all duration-300 group cursor-default">
+                class="reveal-on-scroll opacity-0 translate-y-8 bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary hover:-translate-y-2 transition-all duration-500 delay-200 group cursor-default">
                 <div
                     class="text-gray-300 font-bold text-5xl mb-6 group-hover:text-primary transition-colors duration-300">
                     03.</div>
@@ -404,7 +441,7 @@
                     is our bond. When we make a commitment, we deliver on time and to the highest standard.</p>
             </div>
             <div
-                class="bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary transition-all duration-300 group cursor-default">
+                class="reveal-on-scroll opacity-0 translate-y-8 bg-white border border-border-light p-8 rounded-xl hover:shadow-xl hover:border-primary hover:-translate-y-2 transition-all duration-500 delay-300 group cursor-default">
                 <div
                     class="text-gray-300 font-bold text-5xl mb-6 group-hover:text-primary transition-colors duration-300">
                     04.</div>
@@ -433,7 +470,7 @@
             <div>
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Mission</h4>
                 <h2 class="section-title">What we do every day</h2>
-                <p class="section-desc text-base md:text-[1.25rem]">
+                <p class="section-desc">
                     We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep
                     industry
                     expertise with a tailored approach, we put every client's unique needs first.
@@ -443,7 +480,7 @@
             <div>
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Vision</h4>
                 <h2 class="section-title">How we see the future</h2>
-                <p class="section-desc text-base md:text-[1.25rem]">
+                <p class="section-desc">
                     We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new
                     industry
                     standards for quality, continuous innovation, and lasting partnerships.
@@ -610,7 +647,7 @@
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M1 9L5 5L1 1" />
                     </svg>
-                    Consulting & Planning
+                    Roof Conditioning Surveys
                 </a>
                 <a href="services.html#service-2"
                     class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
@@ -618,7 +655,7 @@
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M1 9L5 5L1 1" />
                     </svg>
-                    Custom Manufacturing
+                    Material Supply
                 </a>
                 <a href="services.html#service-3"
                     class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
@@ -626,7 +663,15 @@
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M1 9L5 5L1 1" />
                     </svg>
-                    Solar Panels Integration
+                    Complete Support
+                </a>
+                <a href="services.html#service-4"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Aftercare and Maintenance
                 </a>
             </div>
         </div>
@@ -794,14 +839,12 @@
 
                     if (entry.isIntersecting) {
                         if (targetWidth) {
-                            // Small delay makes it feel more natural when scrolling
                             setTimeout(() => {
                                 bar.classList.remove('w-0');
                                 bar.classList.add(targetWidth);
-                            }, 150);
+                            }, 80);
                         }
                     } else {
-                        // Reset when it goes out of view so it can animate again
                         if (targetWidth) {
                             bar.classList.remove(targetWidth);
                             bar.classList.add('w-0');
@@ -819,92 +862,126 @@
                     bar.classList.remove(widthClass);
                     bar.classList.add('w-0');
 
-                    bar.classList.remove('duration-500');
-                    bar.classList.add('duration-[1500ms]', 'ease-in-out');
+                    bar.classList.remove('duration-500', 'duration-[1500ms]');
+                    bar.classList.add('duration-[800ms]', 'ease-out');
 
                     observer.observe(bar);
                 }
             });
-            // Scroll Reveal Animation for Vertical Cards
+
+            // Scroll Reveal Animation
             const revealElements = document.querySelectorAll('.reveal-on-scroll');
             const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Slide up and fade in (once only)
-                        entry.target.classList.remove('opacity-0', 'translate-y-16');
+                        entry.target.classList.remove('opacity-0', 'translate-y-8');
                         entry.target.classList.add('opacity-100', 'translate-y-0');
                         revealObserver.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.15 }); // Triggers when 15% of the card is visible
+            }, { threshold: 0.1 });
 
             revealElements.forEach(el => revealObserver.observe(el));
-            // About Us Hero Animation
+
+            // About Us Hero Fast & Fluid Animation
             const aboutHero = document.getElementById('about-hero');
             const aboutTitle = document.getElementById('about-title');
+            const aboutContentBox = document.getElementById('about-content-box');
             const aboutTextLines = document.querySelectorAll('#about-text p');
+            const scrollHint = document.getElementById('hero-scroll-hint');
 
             if (aboutHero && aboutTitle && aboutTextLines.length > 0) {
                 let targetProgress = 0;
                 let currentProgress = 0;
+                let isTicking = false;
+                let travelDistance = 0;
 
-                window.addEventListener('scroll', () => {
+                const updateDimensions = () => {
+                    if (aboutContentBox && aboutTitle) {
+                        travelDistance = -(aboutContentBox.offsetHeight - aboutTitle.offsetHeight);
+                    }
+                };
+
+                const updateTargetProgress = () => {
                     const rect = aboutHero.getBoundingClientRect();
                     const windowHeight = window.innerHeight;
-
                     const scrollableDistance = rect.height - windowHeight;
-                    let progress = -rect.top / scrollableDistance;
-                    targetProgress = Math.max(0, Math.min(1, progress));
-                });
+                    if (scrollableDistance > 0) {
+                        const progress = -rect.top / scrollableDistance;
+                        targetProgress = Math.max(0, Math.min(1, progress));
+                    }
+                    if (!isTicking) {
+                        isTicking = true;
+                        requestAnimationFrame(render);
+                    }
+                };
+
+                window.addEventListener('scroll', updateTargetProgress, { passive: true });
+                window.addEventListener('resize', () => {
+                    updateDimensions();
+                    updateTargetProgress();
+                }, { passive: true });
 
                 function render() {
-                    // Lerp per rendere l'animazione estremamente fluida
-                    currentProgress += (targetProgress - currentProgress) * 0.08;
-
-                    // Fase 1: Il titolo si muove (da 0 a 0.35 del progresso totale)
-                    const titlePhaseEnd = 0.35;
-                    let titleProgress = Math.min(currentProgress / titlePhaseEnd, 1);
-
-                    const startTitleTop = 75;
-                    const endTitleTop = 20;
-                    const currentTitleTop = startTitleTop - (titleProgress * (startTitleTop - endTitleTop));
-                    aboutTitle.style.top = `${currentTitleTop}%`;
-
-                    // Fase 2: Il testo compare (dopo che il titolo Ã¨ arrivato, da 0.35 a 1.0)
-                    const textPhaseStart = 0.35;
-                    const textPhaseLength = 1 - textPhaseStart;
-
-                    let textPhaseProgress = 0;
-                    if (currentProgress > textPhaseStart) {
-                        textPhaseProgress = (currentProgress - textPhaseStart) / textPhaseLength;
+                    const diff = targetProgress - currentProgress;
+                    if (Math.abs(diff) < 0.0005) {
+                        currentProgress = targetProgress;
+                    } else {
+                        // Fast, fluid inertia with snappy responsiveness (0.16)
+                        currentProgress += diff * 0.16;
                     }
 
-                    const fadeLength = 0.4;
-                    const stagger = 0.08;
+                    // 1. Scroll hint fade out
+                    if (scrollHint) {
+                        const hintOpacity = Math.max(0, 1 - currentProgress * 5);
+                        scrollHint.style.opacity = hintOpacity;
+                        scrollHint.style.transform = `translate3d(-50%, ${currentProgress * 25}px, 0)`;
+                        scrollHint.style.pointerEvents = hintOpacity <= 0.05 ? 'none' : 'auto';
+                    }
+
+                    // 2. Title Animation: dynamic ascent from exact cover position to top
+                    const titlePhaseEnd = 0.30;
+                    const rawTitleProgress = Math.min(Math.max(0, currentProgress / titlePhaseEnd), 1);
+                    const easeTitle = 1 - Math.pow(1 - rawTitleProgress, 3);
+                    const currentTitleY = travelDistance * easeTitle;
+                    aboutTitle.style.transform = `translate3d(0, ${currentTitleY}px, 0)`;
+
+                    // 3. Text lines reveal: progressive, dynamic cascade (0.20 to 0.85)
+                    const textPhaseStart = 0.20;
+                    const textPhaseEnd = 0.85;
+                    const textPhaseLength = textPhaseEnd - textPhaseStart;
+
+                    const normalizedTextProgress = Math.max(0, Math.min(1, (currentProgress - textPhaseStart) / textPhaseLength));
+                    const stagger = 0.25;
+                    const lineDuration = 0.45;
 
                     aboutTextLines.forEach((line, index) => {
                         const lineStart = index * stagger;
                         let lineProgress = 0;
-
-                        if (textPhaseProgress > lineStart) {
-                            lineProgress = (textPhaseProgress - lineStart) / fadeLength;
+                        if (normalizedTextProgress > lineStart) {
+                            lineProgress = Math.min(1, (normalizedTextProgress - lineStart) / lineDuration);
                         }
-                        lineProgress = Math.max(0, Math.min(1, lineProgress));
 
-                        // Easing out cubic for smoother motion
-                        const easedProgress = 1 - Math.pow(1 - lineProgress, 3);
+                        const eased = 1 - Math.pow(1 - lineProgress, 3);
+                        const translateY = (1 - eased) * 24; // 24px to 0px
+                        const opacity = lineProgress;
+                        const blur = (1 - lineProgress) * 4;
 
-                        // Smoothly scale opacity linearly, but use easing for the translation (starts from 40px below)
-                        line.style.opacity = lineProgress;
-                        line.style.transform = `translateY(${40 - (easedProgress * 40)}px)`;
+                        line.style.transform = `translate3d(0, ${translateY}px, 0)`;
+                        line.style.opacity = opacity;
+                        line.style.filter = blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : 'none';
                     });
 
-                    requestAnimationFrame(render);
+                    if (Math.abs(diff) >= 0.0005) {
+                        requestAnimationFrame(render);
+                    } else {
+                        isTicking = false;
+                    }
                 }
 
-                // Initialize
-                window.dispatchEvent(new Event('scroll'));
-                render();
+                // Initial frame setup
+                updateDimensions();
+                updateTargetProgress();
             }
         });
     </script>
