@@ -895,6 +895,7 @@
 
     <!-- ABOUT US SECTION -->
     <section id="about-us" class="section-padding section-container scroll-mt-24">
+        <!-- Section Indicator -->
         <div class="section-indicator">
             <span class="section-badge">4</span>
             <h6 class="section-eyebrow">ABOUT US</h6>
@@ -903,43 +904,64 @@
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
-            <!-- Text Column -->
-            <div class="w-full lg:w-1/2 flex flex-col justify-center">
-                <h2 class="section-title">
-                    Discover Our Journey to Excellence
-                </h2>
-                <p class="section-desc mb-6">
-                    We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed and durable flat roof solutions, all backed by a strong, collaborative partnership approach.
-                </p>
+        <!-- Narrative Headline with Scroll-Reveal Effect -->
+        <div class="mb-10 lg:mb-14 max-w-5xl">
+            <p id="about-scroll-text" class="text-xl md:text-2xl lg:text-[1.7rem] font-medium leading-[1.48] tracking-tight text-gray-300">
+                <span class="scroll-word transition-colors duration-200">We</span>
+                <span class="scroll-word transition-colors duration-200">provide</span>
+                <span class="scroll-word transition-colors duration-200">industry-leading</span>
+                <span class="scroll-word transition-colors duration-200">waterproofing</span>
+                <span class="scroll-word transition-colors duration-200">materials,</span>
+                <span class="scroll-word transition-colors duration-200">leveraging</span>
+                <span class="scroll-word transition-colors duration-200">our</span>
+                <span class="scroll-word transition-colors duration-200">expertise</span>
+                <span class="scroll-word transition-colors duration-200">to</span>
+                <span class="scroll-word transition-colors duration-200">create</span>
+                <span class="scroll-word transition-colors duration-200">guaranteed</span>
+                <span class="scroll-word transition-colors duration-200">and</span>
+                <span class="scroll-word transition-colors duration-200">durable</span>
+                <span class="scroll-word transition-colors duration-200" data-accent="true">flat</span>
+                <span class="scroll-word transition-colors duration-200" data-accent="true">roof</span>
+                <span class="scroll-word transition-colors duration-200" data-accent="true">solutions,</span>
+                <span class="scroll-word transition-colors duration-200">all</span>
+                <span class="scroll-word transition-colors duration-200">backed</span>
+                <span class="scroll-word transition-colors duration-200">by</span>
+                <span class="scroll-word transition-colors duration-200">a</span>
+                <span class="scroll-word transition-colors duration-200">strong,</span>
+                <span class="scroll-word transition-colors duration-200">collaborative</span>
+                <span class="scroll-word transition-colors duration-200">partnership</span>
+                <span class="scroll-word transition-colors duration-200">approach.</span>
+            </p>
+        </div>
 
-                <div class="space-y-4 mb-8">
-                    <div class="flex items-start gap-3 section-desc">
-                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
-                        <span><strong class="text-text-dark font-semibold">Reliability &amp; Heritage:</strong> Proven expertise delivering high-performance, guaranteed flat roofing solutions tailored to every project.</span>
-                    </div>
-                    <div class="flex items-start gap-3 section-desc">
-                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
-                        <span><strong class="text-text-dark font-semibold">Collaborative Approach:</strong> Dedicated technical support and trusted partnership from specification through to completion.</span>
-                    </div>
+        <!-- Bottom Row: Split Cards Layout (compact height with brand colors & landscape image) -->
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 items-stretch">
+            <!-- Left Feature Card: exact 35% width, compact height, brand colors -->
+            <div class="w-full lg:w-[35%] shrink-0 bg-[#131d18] border border-white/10 rounded-[22px] p-6 lg:p-7 flex flex-col justify-between shadow-xl min-h-[290px] lg:h-[340px]">
+                <div>
+                    <h3 class="text-xl lg:text-[1.5rem] font-bold font-heading text-white leading-[1.2] tracking-tight">
+                        Trusted Flat Roofing &amp; Waterproofing Experts
+                    </h3>
                 </div>
 
-                <div>
-                    <a href="about.html" class="btn btn-primary inline-flex items-center gap-2 group/btn">
-                        About Us
-                        <svg class="transition-transform group-hover/btn:translate-x-1 ml-1" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
+                <div class="mt-4 lg:mt-6">
+                    <p class="text-gray-300 text-xs lg:text-[13px] leading-relaxed mb-5">
+                        We deliver durable construction for flat roofs and commercial buildings, backed by skilled technical advisory and care.
+                    </p>
+                    <a href="about.html"
+                        class="inline-flex items-center gap-2 bg-primary hover:bg-[#17322a] text-white border border-primary/50 px-5 py-2.5 rounded-full font-semibold text-xs lg:text-sm transition-all duration-300 shadow-md hover:shadow-primary/30 group/btn self-start">
+                        More About Us
+                        <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Image Column -->
-            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl border border-border-light aspect-[4/3] bg-gray-50 shadow-sm">
-                <img src="assets/team_working.png" alt="Our Team at Work"
-                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <!-- Right Card: Horizontal Landscape Image, exact 65% width -->
+            <div class="w-full lg:w-[65%] overflow-hidden rounded-[22px] border border-border-light min-h-[260px] lg:h-[340px] relative group/img shadow-sm bg-gray-50">
+                <img src="assets/service_supply.jpg" alt="Guaranteed Material Flat Roofing Project"
+                    class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover/img:scale-105">
             </div>
         </div>
     </section>
@@ -1379,6 +1401,50 @@
         window.addEventListener('scroll', updateStackingCards, { passive: true });
         window.addEventListener('resize', updateStackingCards);
         document.addEventListener('DOMContentLoaded', updateStackingCards);
+
+        // About Us Narrative Text Scroll-Reveal Animation
+        const updateAboutTextReveal = () => {
+            const textEl = document.getElementById('about-scroll-text');
+            if (!textEl) return;
+            const words = textEl.querySelectorAll('.scroll-word');
+            if (!words.length) return;
+
+            const rect = textEl.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Start reveal when element enters 85% of window, complete when at 40%
+            const startY = windowHeight * 0.85;
+            const endY = windowHeight * 0.40;
+
+            let progress = (startY - rect.top) / (startY - endY);
+            progress = Math.max(0, Math.min(1, progress));
+
+            const totalWords = words.length;
+            words.forEach((word, index) => {
+                const wordThreshold = index / totalWords;
+                const isAccent = word.hasAttribute('data-accent');
+
+                if (progress >= wordThreshold) {
+                    if (isAccent) {
+                        word.style.color = '#2ea36f';
+                        word.style.fontWeight = '700';
+                    } else {
+                        word.style.color = '#1a1a1a';
+                    }
+                } else {
+                    if (isAccent) {
+                        word.style.color = '#a7dfc6';
+                        word.style.fontWeight = '500';
+                    } else {
+                        word.style.color = '#cbd5e1';
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', updateAboutTextReveal, { passive: true });
+        window.addEventListener('resize', updateAboutTextReveal);
+        document.addEventListener('DOMContentLoaded', updateAboutTextReveal);
     </script>
 </body>
 

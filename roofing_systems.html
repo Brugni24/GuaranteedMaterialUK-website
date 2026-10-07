@@ -325,7 +325,8 @@
     </section>
 
     <!-- OUR PROPOSAL SECTION -->
-    <section id="our-proposal" class="section-padding section-container">
+    <section id="our-proposal" class="section-padding section-container scroll-mt-24">
+        <!-- Section Indicator -->
         <div class="section-indicator">
             <span class="section-badge">1</span>
             <h6 class="section-eyebrow">OUR PROPOSAL</h6>
@@ -333,23 +334,61 @@
                 <div class="h-[2px] bg-text-dark w-1/4 transition-all duration-500"></div>
             </div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-stretch">
-            <!-- Text Column -->
-            <div class="w-full flex flex-col items-start justify-center">
-                <div class="section-title whitespace-nowrap mb-6">
-                    <h2>Proven Performance.</h2>
-                    <h2>Build to Last.</h2>
-                    <h2>Designed for Tomorrow.</h2>
+
+        <!-- 3-Line Title with Scroll-Reveal Effect -->
+        <div class="mb-6 max-w-5xl">
+            <h2 id="proposal-scroll-title" class="text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-gray-300 leading-[1.18] tracking-tight">
+                <span class="block">
+                    <span class="scroll-word transition-colors duration-200">Proven</span>
+                    <span class="scroll-word transition-colors duration-200">Performance.</span>
+                </span>
+                <span class="block">
+                    <span class="scroll-word transition-colors duration-200">Build</span>
+                    <span class="scroll-word transition-colors duration-200">to</span>
+                    <span class="scroll-word transition-colors duration-200">Last.</span>
+                </span>
+                <span class="block">
+                    <span class="scroll-word transition-colors duration-200">Designed</span>
+                    <span class="scroll-word transition-colors duration-200">for</span>
+                    <span class="scroll-word transition-colors duration-200">Tomorrow.</span>
+                </span>
+            </h2>
+        </div>
+
+        <!-- Paragraph -->
+        <p class="section-desc text-base lg:text-[1.1rem] max-w-4xl mb-10 lg:mb-12">
+            We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed
+            and durable flat roof solutions, all backed by a strong, collaborative partnership approach.
+        </p>
+
+        <!-- Bottom Row: Split Cards Layout (from index.html About Us) -->
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 items-stretch">
+            <!-- Left Feature Card: exact 35% width, compact height, brand colors -->
+            <div class="w-full lg:w-[35%] shrink-0 bg-[#131d18] border border-white/10 rounded-[22px] p-6 lg:p-7 flex flex-col justify-between shadow-xl min-h-[290px] lg:h-[340px]">
+                <div>
+                    <h3 class="text-xl lg:text-[1.5rem] font-bold font-heading text-white leading-[1.2] tracking-tight">
+                        Trusted Flat Roofing &amp; Waterproofing Experts
+                    </h3>
                 </div>
-                <p class="section-desc text-base lg:text-[1.1rem]">
-                    We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed
-                    and durable flat roof solutions, all backed by a strong, collaborative partnership approach.
-                </p>
+
+                <div class="mt-4 lg:mt-6">
+                    <p class="text-gray-300 text-xs lg:text-[13px] leading-relaxed mb-5">
+                        We deliver durable construction for flat roofs and commercial buildings, backed by skilled technical advisory and care.
+                    </p>
+                    <a href="about.html"
+                        class="inline-flex items-center gap-2 bg-primary hover:bg-[#17322a] text-white border border-primary/50 px-5 py-2.5 rounded-full font-semibold text-xs lg:text-sm transition-all duration-300 shadow-md hover:shadow-primary/30 group/btn self-start">
+                        More About Us
+                        <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <!-- Image Column -->
-            <div class="w-full relative overflow-hidden rounded-sm min-h-[280px] lg:min-h-0">
-                <img src="assets/flat_roof_worker.png" alt="Flat Roof Solution"
-                    class="w-full h-full object-cover aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0 rounded-sm">
+
+            <!-- Right Card: Horizontal Landscape Image, exact 65% width -->
+            <div class="w-full lg:w-[65%] overflow-hidden rounded-[22px] border border-border-light min-h-[260px] lg:h-[340px] relative group/img shadow-sm bg-gray-50">
+                <img src="assets/service_supply.jpg" alt="Guaranteed Material Flat Roofing Project"
+                    class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover/img:scale-105">
             </div>
         </div>
     </section>
@@ -1655,6 +1694,38 @@
 
             revealElements.forEach(el => revealObserver.observe(el));
         });
+
+        // Our Proposal 3-Line Title Scroll-Reveal Animation
+        const updateProposalScrollTitle = () => {
+            const titleEl = document.getElementById('proposal-scroll-title');
+            if (!titleEl) return;
+            const words = titleEl.querySelectorAll('.scroll-word');
+            if (!words.length) return;
+
+            const rect = titleEl.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Start reveal when element enters 85% of window, complete when at 40%
+            const startY = windowHeight * 0.85;
+            const endY = windowHeight * 0.40;
+
+            let progress = (startY - rect.top) / (startY - endY);
+            progress = Math.max(0, Math.min(1, progress));
+
+            const totalWords = words.length;
+            words.forEach((word, index) => {
+                const wordThreshold = index / totalWords;
+                if (progress >= wordThreshold) {
+                    word.style.color = '#1a1a1a';
+                } else {
+                    word.style.color = '#cbd5e1';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', updateProposalScrollTitle, { passive: true });
+        window.addEventListener('resize', updateProposalScrollTitle);
+        document.addEventListener('DOMContentLoaded', updateProposalScrollTitle);
     </script>
 </body>
 
