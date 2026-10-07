@@ -263,6 +263,14 @@
                     <div
                         class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
                         <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="about.html#our-story"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Our Story
+                            </a>
                             <a href="about.html#who-we-are"
                                 class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
                                 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
@@ -305,89 +313,154 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="about-hero"
-        class="relative h-[220vh] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
-        <div id="about-hero-container"
-            class="sticky top-0 h-[100vh] w-full max-w-[1200px] mx-auto px-4 lg:px-10 pt-[100px] pb-[10vh] overflow-hidden relative z-10 flex flex-col justify-end">
-            <div id="about-content-box" class="relative w-full h-full">
-                <!-- Title -->
-                <h1 id="about-title"
-                    class="text-white text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px] absolute left-0 bottom-0 will-change-transform">
-                    About Us
-                </h1>
+    <section
+        class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
+        <div
+            class="max-w-[1200px] mx-auto w-full px-4 lg:px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
+            <h1
+                class="text-white text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px]">
+                About Us</h1>
+        </div>
 
-                <!-- Text -->
-                <div id="about-text"
-                    class="text-[#fdfdfd] text-[1.125rem] md:text-[1.4rem] lg:text-[1.45rem] font-normal leading-[1.6] max-w-[820px] absolute left-0 top-[90px] md:top-[100px] lg:top-[115px]">
-                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">Every great name tells
-                        a story. Ours starts with <strong class="font-bold">a promise</strong>.</p>
-                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">When we founded <strong
-                            class="font-bold">Guaranteed Material UK</strong>, we weren't just choosing a name,</p>
-                    <p class="mb-4 opacity-0 will-change-[opacity,transform,filter]">We were making a
-                        commitment to everyone looking for a <strong class="font-bold">professional</strong>, <strong
-                            class="font-bold">guaranteed</strong> and <strong class="font-bold">durable
-                            solution</strong> for flat roofing.</p>
-                </div>
+        <!-- Scroll indicator hint -->
+        <div
+            class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 pointer-events-none z-20">
+            <span class="text-[10px] uppercase tracking-[2px] text-white/50 font-semibold">Scroll</span>
+            <div class="w-4 h-6 rounded-full border border-white/30 flex justify-center pt-1">
+                <div class="w-1 h-1.5 bg-white/70 rounded-full animate-bounce"></div>
             </div>
+        </div>
+    </section>
 
-            <!-- Scroll indicator hint -->
-            <div id="hero-scroll-hint"
-                class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 pointer-events-none transition-all duration-300">
-                <span class="text-[10px] uppercase tracking-[2px] text-white/50 font-semibold">Scroll</span>
-                <div class="w-4 h-6 rounded-full border border-white/30 flex justify-center pt-1">
-                    <div class="w-1 h-1.5 bg-white/70 rounded-full animate-bounce"></div>
-                </div>
+    <!-- OUR STORY SECTION -->
+    <section id="our-story" class="section-padding section-container scroll-mt-24">
+        <!-- Section Indicator -->
+        <div class="section-indicator">
+            <span class="section-badge">1</span>
+            <h6 class="section-eyebrow">OUR STORY</h6>
+            <div class="flex-1 h-px bg-border-light relative flex items-center">
+                <div class="h-[2px] bg-text-dark w-1/4 transition-all duration-500"></div>
+            </div>
+        </div>
+
+        <!-- Narrative Content with Scroll-Reveal Effect -->
+        <div class="max-w-4xl">
+            <div id="about-scroll-narrative" class="text-2xl md:text-3xl lg:text-[2.25rem] font-bold font-heading leading-[1.35] tracking-tight text-gray-300 space-y-6">
+                <p>
+                    <span class="scroll-word transition-colors duration-200">Every</span>
+                    <span class="scroll-word transition-colors duration-200">great</span>
+                    <span class="scroll-word transition-colors duration-200">name</span>
+                    <span class="scroll-word transition-colors duration-200">tells</span>
+                    <span class="scroll-word transition-colors duration-200">a</span>
+                    <span class="scroll-word transition-colors duration-200">story.</span>
+                    <span class="scroll-word transition-colors duration-200">Ours</span>
+                    <span class="scroll-word transition-colors duration-200">starts</span>
+                    <span class="scroll-word transition-colors duration-200">with</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">a</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">promise.</span>
+                </p>
+                <p>
+                    <span class="scroll-word transition-colors duration-200">When</span>
+                    <span class="scroll-word transition-colors duration-200">we</span>
+                    <span class="scroll-word transition-colors duration-200">founded</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">Guaranteed</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">Material</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">UK,</span>
+                    <span class="scroll-word transition-colors duration-200">we</span>
+                    <span class="scroll-word transition-colors duration-200">weren't</span>
+                    <span class="scroll-word transition-colors duration-200">just</span>
+                    <span class="scroll-word transition-colors duration-200">choosing</span>
+                    <span class="scroll-word transition-colors duration-200">a</span>
+                    <span class="scroll-word transition-colors duration-200">name,</span>
+                </p>
+                <p>
+                    <span class="scroll-word transition-colors duration-200">We</span>
+                    <span class="scroll-word transition-colors duration-200">were</span>
+                    <span class="scroll-word transition-colors duration-200">making</span>
+                    <span class="scroll-word transition-colors duration-200">a</span>
+                    <span class="scroll-word transition-colors duration-200">commitment</span>
+                    <span class="scroll-word transition-colors duration-200">to</span>
+                    <span class="scroll-word transition-colors duration-200">everyone</span>
+                    <span class="scroll-word transition-colors duration-200">looking</span>
+                    <span class="scroll-word transition-colors duration-200">for</span>
+                    <span class="scroll-word transition-colors duration-200">a</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">professional,</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">guaranteed</span>
+                    <span class="scroll-word transition-colors duration-200">and</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">durable</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">solution</span>
+                    <span class="scroll-word transition-colors duration-200">for</span>
+                    <span class="scroll-word transition-colors duration-200">flat</span>
+                    <span class="scroll-word transition-colors duration-200">roofing.</span>
+                </p>
             </div>
         </div>
     </section>
 
     <!-- WHO WE ARE SECTION -->
     <section id="who-we-are" class="section-padding section-container scroll-mt-24">
+        <!-- Section Indicator -->
         <div class="section-indicator">
-            <span class="section-badge">1</span>
+            <span class="section-badge">2</span>
             <h6 class="section-eyebrow">WHO WE ARE</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/3 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-2/4 transition-all duration-500"></div>
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
-            <!-- Text Column -->
-            <div class="w-full lg:w-1/2 flex flex-col justify-center">
-                <h2 class="section-title">
-                    Our Team
-                </h2>
-                <p class="section-desc mb-6">
-                    With roots in the construction business dating back to the '90s, our team combines extensive professional experience from leading organisations across the sector, bringing strategic depth and technical insight to every engagement.
-                </p>
+        <!-- Section Title & Extended Paragraph -->
+        <div class="max-w-4xl mb-10 lg:mb-12">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-desc">
+                With roots in the construction business dating back to the '90s, our team combines extensive professional experience from leading organisations across the sector, bringing strategic depth and technical insight to every engagement.
+            </p>
+        </div>
 
-                <div class="space-y-4 mb-8">
-                    <div class="flex items-start gap-3 section-desc">
-                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
-                        <span><strong class="text-text-dark font-semibold">Deep Industry Insight:</strong> Proven background across the roofing sector to deliver waterproofing solutions that are both innovative and built to last.</span>
+        <!-- Split Row: Feature Card + Image Card -->
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 items-stretch">
+            <!-- Left Feature Card with the 2 list points -->
+            <div class="w-full lg:w-[42%] shrink-0 bg-[#131d18] border border-white/10 rounded-[22px] p-6 lg:p-8 flex flex-col justify-between shadow-xl min-h-[320px] lg:h-[380px]">
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex items-center gap-2.5 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-[#2ea36f] shrink-0"></span>
+                            <h3 class="text-base lg:text-lg font-bold font-heading text-white tracking-tight">
+                                Deep Industry Insight
+                            </h3>
+                        </div>
+                        <p class="text-gray-300 text-xs lg:text-[13px] leading-relaxed pl-4 border-l border-white/10 ml-1">
+                            Proven background across the roofing sector to deliver waterproofing solutions that are both innovative and built to last.
+                        </p>
                     </div>
-                    <div class="flex items-start gap-3 section-desc">
-                        <span class="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"></span>
-                        <span><strong class="text-text-dark font-semibold">Tailored Partnership:</strong> Every project is different. We tailor our technical approach to match, offering dedication and track record you can genuinely count on.</span>
+
+                    <div>
+                        <div class="flex items-center gap-2.5 mb-2">
+                            <span class="w-2 h-2 rounded-full bg-[#2ea36f] shrink-0"></span>
+                            <h3 class="text-base lg:text-lg font-bold font-heading text-white tracking-tight">
+                                Tailored Partnership
+                            </h3>
+                        </div>
+                        <p class="text-gray-300 text-xs lg:text-[13px] leading-relaxed pl-4 border-l border-white/10 ml-1">
+                            Every project is different. We tailor our technical approach to match, offering dedication and track record you can genuinely count on.
+                        </p>
                     </div>
                 </div>
 
-                <div>
-                    <a href="contact.html" class="btn btn-primary inline-flex items-center gap-2 group/btn">
+                <div class="mt-6 pt-5">
+                    <a href="contact.html"
+                        class="inline-flex items-center gap-2 bg-primary hover:bg-[#17322a] text-white border border-primary/50 px-5 py-2.5 rounded-full font-semibold text-xs lg:text-sm transition-all duration-300 shadow-md hover:shadow-primary/30 group/btn self-start">
                         Contact Us
-                        <svg class="transition-transform group-hover/btn:translate-x-1 ml-1" width="18" height="18"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
+                        <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
                         </svg>
                     </a>
                 </div>
             </div>
 
-            <!-- Image Column -->
-            <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl border border-border-light aspect-[4/3] bg-gray-50 shadow-sm">
+            <!-- Right Image Card -->
+            <div class="w-full lg:w-[58%] overflow-hidden rounded-[22px] border border-border-light min-h-[280px] lg:h-[380px] relative group/img shadow-sm bg-gray-50">
                 <img src="assets/team_working.png" alt="Our Team at Work"
-                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover/img:scale-105">
             </div>
         </div>
     </section>
@@ -395,10 +468,10 @@
     <!-- OUR VALUES SECTION -->
     <section id="our-values" class="section-padding section-container">
         <div class="section-indicator">
-            <span class="section-badge">2</span>
+            <span class="section-badge">3</span>
             <h6 class="section-eyebrow">OUR VALUES</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
-                <div class="h-[2px] bg-text-dark w-1/2 transition-all duration-500"></div>
+                <div class="h-[2px] bg-text-dark w-3/4 transition-all duration-500"></div>
             </div>
         </div>
 
@@ -458,7 +531,7 @@
     <section id="our-goal" class="section-padding section-container relative overflow-hidden">
         <!-- Chapter Header -->
         <div class="section-indicator">
-            <span class="section-badge">3</span>
+            <span class="section-badge">4</span>
             <h6 class="section-eyebrow">OUR GOAL</h6>
             <div class="flex-1 h-px bg-border-light relative flex items-center">
                 <div class="h-[2px] bg-text-dark w-full transition-all duration-500"></div>
@@ -471,9 +544,7 @@
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Mission</h4>
                 <h2 class="section-title">What we do every day</h2>
                 <p class="section-desc">
-                    We deliver professional, reliable, and long-lasting flat roofing solutions. By combining deep
-                    industry
-                    expertise with a tailored approach, we put every client's unique needs first.
+                    We deliver professional, reliable, and <strong class="text-text-dark font-semibold">long-lasting flat roofing solutions</strong>. By combining deep industry expertise with a <strong class="text-text-dark font-semibold">tailored approach</strong>, we put every client's unique needs first.
                 </p>
             </div>
             <!-- Vision -->
@@ -481,9 +552,7 @@
                 <h4 class="text-sm font-bold text-gray-400 tracking-[2px] uppercase mb-3">Our Vision</h4>
                 <h2 class="section-title">How we see the future</h2>
                 <p class="section-desc">
-                    We aim to be the most trusted name in flat roof waterproofing across the UK. Our goal is to set new
-                    industry
-                    standards for quality, continuous innovation, and lasting partnerships.
+                    We aim to be the <strong class="text-text-dark font-semibold">most trusted name</strong> in flat roof waterproofing across the UK. Our goal is to set <strong class="text-text-dark font-semibold">new industry standards</strong> for quality, continuous innovation, and lasting partnerships.
                 </p>
             </div>
         </div>
@@ -736,6 +805,14 @@
                 <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
             </button>
             <div class="hidden flex-col pb-4 pl-4 gap-3">
+                <a href="about.html#our-story"
+                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
+                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 9L5 5L1 1" />
+                    </svg>
+                    Our Story
+                </a>
                 <a href="about.html#who-we-are"
                     class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
                     <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -882,108 +959,51 @@
             }, { threshold: 0.1 });
 
             revealElements.forEach(el => revealObserver.observe(el));
+        });
 
-            // About Us Hero Fast & Fluid Animation
-            const aboutHero = document.getElementById('about-hero');
-            const aboutTitle = document.getElementById('about-title');
-            const aboutContentBox = document.getElementById('about-content-box');
-            const aboutTextLines = document.querySelectorAll('#about-text p');
-            const scrollHint = document.getElementById('hero-scroll-hint');
+        // About Us Narrative Scroll-Reveal Animation
+        const updateAboutNarrativeScroll = () => {
+            const container = document.getElementById('about-scroll-narrative');
+            if (!container) return;
+            const words = container.querySelectorAll('.scroll-word');
+            if (!words.length) return;
 
-            if (aboutHero && aboutTitle && aboutTextLines.length > 0) {
-                let targetProgress = 0;
-                let currentProgress = 0;
-                let isTicking = false;
-                let travelDistance = 0;
+            const rect = container.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
 
-                const updateDimensions = () => {
-                    if (aboutContentBox && aboutTitle) {
-                        travelDistance = -(aboutContentBox.offsetHeight - aboutTitle.offsetHeight);
-                    }
-                };
+            // Slower, smooth progression: starts at 85% of window, completes as top approaches 5%
+            const startY = windowHeight * 0.85;
+            const endY = windowHeight * 0.05;
 
-                const updateTargetProgress = () => {
-                    const rect = aboutHero.getBoundingClientRect();
-                    const windowHeight = window.innerHeight;
-                    const scrollableDistance = rect.height - windowHeight;
-                    if (scrollableDistance > 0) {
-                        const progress = -rect.top / scrollableDistance;
-                        targetProgress = Math.max(0, Math.min(1, progress));
-                    }
-                    if (!isTicking) {
-                        isTicking = true;
-                        requestAnimationFrame(render);
-                    }
-                };
+            let progress = (startY - rect.top) / (startY - endY);
+            progress = Math.max(0, Math.min(1, progress));
 
-                window.addEventListener('scroll', updateTargetProgress, { passive: true });
-                window.addEventListener('resize', () => {
-                    updateDimensions();
-                    updateTargetProgress();
-                }, { passive: true });
+            const totalWords = words.length;
+            words.forEach((word, index) => {
+                const wordThreshold = index / totalWords;
+                const isAccent = word.hasAttribute('data-accent');
 
-                function render() {
-                    const diff = targetProgress - currentProgress;
-                    if (Math.abs(diff) < 0.0005) {
-                        currentProgress = targetProgress;
+                if (progress >= wordThreshold) {
+                    if (isAccent) {
+                        word.style.color = '#2ea36f';
+                        word.style.fontWeight = '700';
                     } else {
-                        // Fast, fluid inertia with snappy responsiveness (0.16)
-                        currentProgress += diff * 0.16;
+                        word.style.color = '#1a1a1a';
                     }
-
-                    // 1. Scroll hint fade out
-                    if (scrollHint) {
-                        const hintOpacity = Math.max(0, 1 - currentProgress * 5);
-                        scrollHint.style.opacity = hintOpacity;
-                        scrollHint.style.transform = `translate3d(-50%, ${currentProgress * 25}px, 0)`;
-                        scrollHint.style.pointerEvents = hintOpacity <= 0.05 ? 'none' : 'auto';
-                    }
-
-                    // 2. Title Animation: dynamic ascent from exact cover position to top
-                    const titlePhaseEnd = 0.30;
-                    const rawTitleProgress = Math.min(Math.max(0, currentProgress / titlePhaseEnd), 1);
-                    const easeTitle = 1 - Math.pow(1 - rawTitleProgress, 3);
-                    const currentTitleY = travelDistance * easeTitle;
-                    aboutTitle.style.transform = `translate3d(0, ${currentTitleY}px, 0)`;
-
-                    // 3. Text lines reveal: progressive, dynamic cascade (0.20 to 0.85)
-                    const textPhaseStart = 0.20;
-                    const textPhaseEnd = 0.85;
-                    const textPhaseLength = textPhaseEnd - textPhaseStart;
-
-                    const normalizedTextProgress = Math.max(0, Math.min(1, (currentProgress - textPhaseStart) / textPhaseLength));
-                    const stagger = 0.25;
-                    const lineDuration = 0.45;
-
-                    aboutTextLines.forEach((line, index) => {
-                        const lineStart = index * stagger;
-                        let lineProgress = 0;
-                        if (normalizedTextProgress > lineStart) {
-                            lineProgress = Math.min(1, (normalizedTextProgress - lineStart) / lineDuration);
-                        }
-
-                        const eased = 1 - Math.pow(1 - lineProgress, 3);
-                        const translateY = (1 - eased) * 24; // 24px to 0px
-                        const opacity = lineProgress;
-                        const blur = (1 - lineProgress) * 4;
-
-                        line.style.transform = `translate3d(0, ${translateY}px, 0)`;
-                        line.style.opacity = opacity;
-                        line.style.filter = blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : 'none';
-                    });
-
-                    if (Math.abs(diff) >= 0.0005) {
-                        requestAnimationFrame(render);
+                } else {
+                    if (isAccent) {
+                        word.style.color = '#a7dfc6';
+                        word.style.fontWeight = '500';
                     } else {
-                        isTicking = false;
+                        word.style.color = '#cbd5e1';
                     }
                 }
+            });
+        };
 
-                // Initial frame setup
-                updateDimensions();
-                updateTargetProgress();
-            }
-        });
+        window.addEventListener('scroll', updateAboutNarrativeScroll, { passive: true });
+        window.addEventListener('resize', updateAboutNarrativeScroll);
+        document.addEventListener('DOMContentLoaded', updateAboutNarrativeScroll);
     </script>
 </body>
 
