@@ -13,8 +13,8 @@
     <!-- Favicon per chi usa il tema scuro (icona chiara/bianca) -->
     <link rel="icon" href="assets/favicon-light.svg" media="(prefers-color-scheme: dark)">
     
-    <!-- Fallback per i browser piÃ¹ vecchi (di default usiamo quella scura) -->
-    <link rel="icon" href="assets/favicon-dark.svg">
+    <!-- Preload Hero Background Image -->
+    <link rel="preload" as="image" href="assets/team_working.png" fetchpriority="high">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -382,7 +382,7 @@
         <div class="max-w-[1200px] w-full mx-auto px-4 lg:px-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
             <!-- Column 1: Logo & Address -->
             <div class="flex flex-col justify-between gap-6 w-48 lg:w-56 shrink-0 h-full">
-                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-full h-auto">
+                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-full h-auto" loading="lazy" decoding="async">
                 <p class="text-[13px] text-gray-400 leading-relaxed text-left">
                     Olympus House, 2 Howley Park, Business Village, Morley, West Yorkshire, Leeds LS27 0BZ
                 </p>
