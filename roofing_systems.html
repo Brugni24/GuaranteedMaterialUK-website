@@ -59,43 +59,110 @@
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
             }
             .section-container {
-                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+                @apply max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10;
             }
             .section-indicator {
-                @apply flex items-center mb-10 lg:mb-12;
+                @apply flex items-center mb-8 sm:mb-10 lg:mb-12;
             }
             .section-badge {
-                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+                @apply inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 border border-text-dark text-sm sm:text-base font-semibold font-heading mr-3 sm:mr-4 lg:mr-5 bg-white shrink-0;
             }
             .section-eyebrow {
-                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+                @apply text-xs sm:text-sm font-bold tracking-[1px] uppercase mr-3 sm:mr-4 lg:mr-5 shrink-0 text-text-dark;
             }
             .section-header-block {
-                @apply mb-10 lg:mb-14;
+                @apply mb-8 sm:mb-10 lg:mb-14;
             }
             .section-title {
-                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+                @apply text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-3 sm:mb-4;
             }
             .section-desc {
-                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
+                @apply text-sm sm:text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
             }
         }
         @layer utilities {
             .section-padding {
-                @apply py-[60px] lg:py-[100px];
+                @apply py-12 sm:py-16 md:py-[80px] lg:py-[100px];
+            }
+        }
+    </style>
+    <style>
+        /* Desktop-only dark hover effect for Section 2 (RBM Systems) */
+        @media (min-width: 1024px) {
+            .system-row {
+                transition: background-color 800ms ease-out;
+            }
+            .system-row:hover {
+                background-color: #030712 !important;
+            }
+            .system-row:hover .system-title {
+                color: #ffffff !important;
+            }
+            .system-row:hover .system-category {
+                color: #9ca3af !important;
+            }
+            .system-row:hover .system-desc {
+                color: #d1d5db !important;
+            }
+            .system-row:hover .system-spec-label {
+                color: #9ca3af !important;
+            }
+            .system-row:hover .system-spec-val {
+                color: #ffffff !important;
+            }
+            .system-row:hover .system-spec-border {
+                border-color: #374151 !important;
+            }
+        }
+
+        /* Mobile & Tablet (< 1024px): Keep cards crisp white with dark readable text on hover/focus */
+        @media (max-width: 1023px) {
+            .system-row,
+            .system-row:hover,
+            .system-row:focus-within {
+                background-color: #ffffff !important;
+            }
+            .system-row:hover .system-title,
+            .system-row:focus-within .system-title {
+                color: #1a1a1a !important;
+            }
+            .system-row:hover .system-category,
+            .system-row:focus-within .system-category {
+                color: #777777 !important;
+            }
+            .system-row:hover .system-desc,
+            .system-row:focus-within .system-desc {
+                color: #555555 !important;
+            }
+            .system-row:hover .system-spec-label,
+            .system-row:focus-within .system-spec-label {
+                color: #555555 !important;
+            }
+            .system-row:hover .system-spec-val,
+            .system-row:focus-within .system-spec-val {
+                color: #1a1a1a !important;
+            }
+            .system-row:hover .system-spec-border,
+            .system-row:focus-within .system-spec-border {
+                border-color: rgba(224, 224, 224, 0.7) !important;
+            }
+            .system-btn {
+                background-color: #1a1a1a !important;
+                color: #ffffff !important;
+                border-color: #1a1a1a !important;
             }
         }
     </style>
 </head>
 
 <body class="font-body text-text-dark bg-bg-light leading-[1.6] antialiased">
-    <header id="main-header" class="fixed top-4 md:top-6 left-0 w-full z-50 px-4 transition-transform duration-300">
+    <header id="main-header" class="fixed top-3 sm:top-4 md:top-6 left-0 w-full z-50 px-3 sm:px-4 transition-transform duration-300">
         <div
-            class="max-w-[1200px] mx-auto w-full h-[70px] px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
+            class="max-w-[1200px] mx-auto w-full h-[60px] sm:h-[70px] px-4 sm:px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
             <a href="index.html">
                 <div class="flex items-center gap-3 shrink-0">
                     <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo"
-                        class="h-8 w-auto">
+                        class="h-[26px] sm:h-8 w-auto">
                 </div>
             </a>
             <nav class="hidden lg:flex flex-1 justify-center h-full px-10 gap-5 justify-evenly">
@@ -306,17 +373,17 @@
 
     <!-- HERO SECTION -->
     <section
-        class="relative h-[100vh] min-h-[700px] w-full bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
+        class="relative h-[60vh] sm:h-[65vh] min-h-[440px] sm:min-h-[500px] md:min-h-[580px] lg:h-[100vh] lg:min-h-[700px] w-full bg-cover bg-center md:bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A]">
         <div
-            class="max-w-[1200px] mx-auto w-full px-4 lg:px-10 h-full flex flex-col justify-end relative z-10 pt-[100px] pb-[10vh]">
+            class="max-w-[1200px] mx-auto w-full px-4 sm:px-6 lg:px-10 h-full flex flex-col justify-end relative z-10 pt-[90px] sm:pt-[100px] pb-12 sm:pb-16 lg:pb-[10vh]">
             <h1
-                class="text-white text-[2.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold mb-6 leading-[1.1] tracking-[-1px] reveal-on-scroll opacity-0 translate-y-10 transition-all duration-[800ms] ease-out">
+                class="text-white text-[2.25rem] sm:text-[2.75rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold mb-4 sm:mb-6 leading-[1.1] tracking-[-1px] reveal-on-scroll opacity-0 translate-y-10 transition-all duration-[800ms] ease-out">
                 Roofing Systems</h1>
         </div>
 
         <!-- Scroll indicator hint -->
         <div
-            class="absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 pointer-events-none z-20">
+            class="hidden md:flex absolute bottom-3 left-1/2 -translate-x-1/2 flex-col items-center gap-1.5 pointer-events-none z-20">
             <span class="text-[10px] uppercase tracking-[2px] text-white/50 font-semibold">Scroll</span>
             <div class="w-4 h-6 rounded-full border border-white/30 flex justify-center pt-1">
                 <div class="w-1 h-1.5 bg-white/70 rounded-full animate-bounce"></div>
@@ -337,7 +404,7 @@
 
         <!-- 3-Line Title with Scroll-Reveal Effect -->
         <div class="mb-6 max-w-5xl">
-            <h2 id="proposal-scroll-title" class="text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-gray-300 leading-[1.18] tracking-tight">
+            <h2 id="proposal-scroll-title" class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-gray-300 leading-[1.18] tracking-tight">
                 <span class="block">
                     <span class="scroll-word transition-colors duration-200">Proven</span>
                     <span class="scroll-word transition-colors duration-200">Performance.</span>
@@ -356,15 +423,15 @@
         </div>
 
         <!-- Paragraph -->
-        <p class="section-desc text-base lg:text-[1.1rem] max-w-4xl mb-10 lg:mb-12 reveal-on-scroll opacity-0 translate-y-10 transition-all duration-[800ms] ease-out">
+        <p class="section-desc text-sm sm:text-base lg:text-[1.1rem] max-w-4xl mb-8 sm:mb-10 lg:mb-12 reveal-on-scroll opacity-0 translate-y-10 transition-all duration-[800ms] ease-out">
             We provide industry-leading waterproofing materials, leveraging our expertise to create guaranteed
             and durable flat roof solutions, all backed by a strong, collaborative partnership approach.
         </p>
 
         <!-- Bottom Row: Split Cards Layout (from index.html About Us) -->
-        <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 items-stretch">
+        <div class="flex flex-col md:flex-row gap-5 lg:gap-6 items-stretch">
             <!-- Left Feature Card: exact 35% width, compact height, brand colors -->
-            <div class="w-full lg:w-[35%] shrink-0 bg-primary border border-white/10 rounded-[22px] p-6 lg:p-7 flex flex-col justify-between shadow-xl min-h-[290px] lg:h-[340px] reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
+            <div class="w-full md:w-[42%] lg:w-[35%] shrink-0 bg-primary border border-white/10 rounded-[22px] p-6 lg:p-7 flex flex-col justify-between shadow-xl min-h-[280px] md:min-h-[300px] lg:h-[340px] reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
                 <div>
                     <h3 class="text-xl lg:text-[1.5rem] font-bold font-heading text-white leading-[1.2] tracking-tight">
                         Trusted Flat Roofing &amp; Waterproofing Experts
@@ -387,7 +454,7 @@
             </div>
 
             <!-- Right Card: Horizontal Landscape Image, exact 65% width -->
-            <div class="w-full lg:w-[65%] overflow-hidden rounded-[22px] border border-border-light min-h-[260px] lg:h-[340px] relative group/img shadow-sm bg-gray-50 reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out delay-200">
+            <div class="w-full md:w-[58%] lg:w-[65%] overflow-hidden rounded-[22px] border border-border-light min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:h-[340px] relative group/img shadow-sm bg-gray-50 reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out delay-200">
                 <img src="assets/service_supply.jpg" alt="Guaranteed Material Flat Roofing Project" loading="lazy" decoding="async"
                     class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover/img:scale-105">
             </div>
@@ -417,27 +484,27 @@
         </div>
 
         <!-- Separator -->
-        <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+        <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-6 sm:gap-8 lg:gap-0 group/list">
             <!-- System 1: Phoenix Super 35 -->
             <div id="phoenix-super-35"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 FULL APAO COMPOUND - NO AGEING
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 PHOENIX SUPER 35
                             </h3>
                         </div>
                         <a href="phoenix_super_35.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -449,63 +516,77 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="phoenix_super_35.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="phoenix_super_35.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/phoenix_super_35_system.jpg" alt="Phoenix Super 35 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             Phoenix Super membranes feature the APAO modified compound, combining the high-temperature
                             and UV resistance of APP with the low-temperature elasticity of SBS.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">35
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">35
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">APAO</span>
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">APAO</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="phoenix_super_35.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
             <!-- System 2: Saturn 30 -->
             <div id="saturn-30"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 SBS COMPOUND - HIGH-END
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 SATURN 30
                             </h3>
                         </div>
                         <a href="saturn_30.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -517,63 +598,77 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="saturn_30.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="saturn_30.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/saturn_30_system.jpg" alt="Saturn 30 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             Saturn membranes feature a high-end SBS modified compound with superior cold flexibility
                             (-30°C) and elastic behaviour, providing exceptional performance and durability for UK roofs.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">30
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">30
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">SBS</span>
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">SBS</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="saturn_30.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
             <!-- System 3: Phoenix Super 25 -->
             <div id="phoenix-super-25"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 APAO AND SA COMPOUNDS - HYBRID
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 PHOENIX SUPER 25
                             </h3>
                         </div>
                         <a href="phoenix_super_25.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -585,64 +680,78 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="phoenix_super_25.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="phoenix_super_25.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/phoenix_super_25_system.jpg" alt="Phoenix Super 25 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             This hybrid system combines an APAO Phoenix Super cap sheet with a self-adhesive
                             Halley Tech underlay, delivering high durability and safe flame-free application.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">25
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">25
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">APAO
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">APAO
                                     & SA</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="phoenix_super_25.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
-            <!-- System 5: Halley 20 -->
+            <!-- System 4: Halley 20 -->
             <div id="halley-20"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 SA COMPOUND - FLAME FREE
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 HALLEY 20
                             </h3>
                         </div>
                         <a href="halley_20.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -654,63 +763,77 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="halley_20.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="halley_20.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/halley_20_system.jpg" alt="Halley 20 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             Halley membranes feature a special self-adhesive compound allowing for excellent
                             flame-free application, ensuring maximum safety and zero CO<sub>2</sub> emissions.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">20
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">20
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">SA</span>
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">SA</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="halley_20.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
-            <!-- System 4: Mercury 20 -->
+            <!-- System 5: Mercury 20 -->
             <div id="mercury-20"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 SBS COMPOUND - ROBUST SYSTEM
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 MERCURY 20
                             </h3>
                         </div>
                         <a href="mercury_20.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -722,63 +845,77 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="mercury_20.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="mercury_20.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/mercury_20_system.jpg" alt="Mercury 20 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             Mercury membranes feature an SBS (Styrene-Butadiene-Styrene) modified compound with reliable performance
                             and robust characteristics, standing alongside the best SBS membranes on the market.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">20
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">20
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">SBS</span>
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">SBS</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="mercury_20.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
             <!-- System 6: Mercury 10 -->
             <div id="mercury-10"
-                class="py-10 px-8 -mx-8 group hover:border-transparent hover:bg-gray-950 rounded-2xl transition-all duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out">
-                <div class="flex flex-col lg:flex-row lg:min-h-[250px] transition-transform duration-500 group-hover:scale-[1.02]">
+                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
                             <p
-                                class="text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-4 transition-colors duration-500 group-hover:text-gray-400">
+                                class="system-category text-[#777] text-[11px] font-semibold tracking-widest uppercase mb-2 sm:mb-3 lg:mb-4 transition-colors duration-500">
                                 SBS COMPOUND
                             </p>
                             <h3
-                                class="text-[2rem] lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-8 lg:mb-0 transition-colors duration-500 group-hover:text-white">
+                                class="system-title text-xl sm:text-2xl lg:text-[2.2rem] font-bold font-heading leading-[1.2] text-text-dark mb-4 lg:mb-0 transition-colors duration-500">
                                 MERCURY 10
                             </h3>
                         </div>
                         <a href="mercury_10.html"
-                            class="btn bg-black text-white border border-black group-hover:bg-white group-hover:text-black group-hover:border-white transition-colors duration-500 inline-flex items-center self-start gap-2 group/btn mt-8 lg:mt-0">
+                            class="hidden lg:inline-flex system-btn btn bg-black text-white border border-black hover:bg-black/90 lg:group-hover:bg-white lg:group-hover:text-black lg:group-hover:border-white transition-colors duration-500 items-center self-start gap-2 group/btn mt-0">
                             Discover
                             <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -790,44 +927,58 @@
                     </div>
 
                     <!-- Middle: Image -->
-                    <div class="h-[250px] lg:w-2/4 flex my-auto overflow-hidden px-12">
-                        <a href="mercury_10.html" class="block h-full overflow-hidden">
+                    <div class="h-[190px] sm:h-[240px] lg:h-[250px] w-full lg:w-2/4 flex my-auto overflow-hidden px-0 lg:px-12 py-0">
+                        <a href="mercury_10.html" class="block w-full h-full overflow-hidden rounded-xl">
                             <img src="assets/mercury_10_system.jpg" alt="Mercury 10 System" loading="lazy" decoding="async"
-                                class="h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-110">
+                                class="w-full h-full object-cover aspect-[16/9] transition-transform duration-700 ease-in-out group-hover:scale-105 lg:group-hover:scale-110">
                         </a>
                     </div>
 
                     <!-- Right: Specs -->
-                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto">
+                    <div class="w-full lg:w-1/4 flex flex-col justify-between h-auto mt-2 lg:mt-0">
                         <p
-                            class="text-[#555] text-[15px] leading-relaxed mb-6 transition-colors duration-500 group-hover:text-gray-300">
+                            class="system-desc text-[#555] text-sm sm:text-[15px] leading-relaxed mb-4 sm:mb-6 lg:mb-6 transition-colors duration-500">
                             Mercury membranes feature an SBS (Styrene-Butadiene-Styrene) modified compound with reliable performance
                             and robust characteristics, standing alongside the best SBS membranes on the market.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto">
+                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">GUARANTEE</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">GUARANTEE</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">10
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">10
                                     Years</span>
                             </div>
                             <div
-                                class="flex justify-between items-center w-full border-t border-border-light py-3 transition-colors duration-500 group-hover:border-gray-700">
+                                class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
-                                    class="text-text-gray text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500 group-hover:text-gray-400">COMPOUND</span>
+                                    class="system-spec-label text-text-gray text-[10px] sm:text-[11px] font-bold uppercase tracking-[1.5px] transition-colors duration-500">COMPOUND</span>
                                 <span
-                                    class="text-text-dark font-bold text-[14px] transition-colors duration-500 group-hover:text-white">SBS</span>
+                                    class="system-spec-val text-text-dark font-bold text-[13px] sm:text-[14px] transition-colors duration-500">SBS</span>
                             </div>
+                        </div>
+
+                        <!-- Mobile Discover Button -->
+                        <div class="mt-5 flex lg:hidden">
+                            <a href="mercury_10.html"
+                                class="system-btn btn bg-black text-white border border-black hover:bg-black/90 inline-flex items-center self-start gap-2 group/btn">
+                                Discover
+                                <svg class="transition-transform group-hover/btn:translate-x-1" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Separator -->
-            <div class="h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+            <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
         </div>
     </section>
 
@@ -849,7 +1000,15 @@
             </p>
         </div>
 
-        <div class="overflow-x-auto reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
+        <!-- Mobile Swipe Indicator Hint -->
+        <div class="lg:hidden flex items-center gap-1.5 text-xs text-text-gray mb-3 px-1">
+            <svg class="w-4 h-4 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+            </svg>
+            <span>Scroll horizontally to view full comparison</span>
+        </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-border-light bg-white shadow-sm p-3 sm:p-5 reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
             <table class="w-full text-left border-collapse min-w-[900px]">
                 <thead>
                     <tr class="border-b-2 border-text-dark text-text-gray text-[11px] tracking-widest uppercase">
@@ -955,7 +1114,7 @@
 
         <div class="flex flex-col lg:flex-row gap-5 lg:gap-6 items-stretch">
             <!-- Left Feature Card: Brand Primary -->
-            <div class="w-full lg:w-[38%] shrink-0 bg-primary border border-white/10 rounded-[22px] p-7 lg:p-8 flex flex-col justify-between shadow-xl text-white reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
+            <div class="w-full lg:w-[38%] shrink-0 bg-primary border border-white/10 rounded-[22px] p-6 sm:p-7 lg:p-8 flex flex-col justify-between shadow-xl text-white reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
                 <div>
                     <h3 class="text-xl lg:text-2xl font-bold font-heading text-white leading-snug tracking-tight mb-4">
                         Beyond Product Performance Alone
@@ -1028,9 +1187,9 @@
         </div>
 
         <!-- Process Graphic -->
-        <div class="my-24 lg:my-32 max-w-5xl mx-auto reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
+        <div class="my-14 sm:my-20 lg:my-32 max-w-5xl mx-auto reveal-on-scroll opacity-0 translate-y-12 transition-all duration-[800ms] ease-out">
             <!-- Mobile View (Vertical List) -->
-            <div class="flex flex-col lg:hidden gap-12 items-center relative">
+            <div class="flex flex-col lg:hidden gap-10 sm:gap-12 items-center relative">
                 <!-- Connecting Line -->
                 <div class="absolute top-0 bottom-0 left-1/2 w-[2px] bg-border-light -translate-x-1/2 z-0"></div>
 
@@ -1351,8 +1510,17 @@
 
         <!-- The Table -->
         <div class="mb-10 reveal-on-scroll opacity-0 translate-y-10 transition-all duration-[800ms] ease-out">
-            <h3 class="text-xl font-bold mb-6">Guarantees available:</h3>
-            <div class="overflow-x-auto">
+            <h3 class="text-xl font-bold mb-4 sm:mb-6">Guarantees available:</h3>
+
+            <!-- Mobile Swipe Indicator Hint -->
+            <div class="lg:hidden flex items-center gap-1.5 text-xs text-text-gray mb-3 px-1">
+                <svg class="w-4 h-4 text-primary animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+                <span>Scroll horizontally to view available guarantees</span>
+            </div>
+
+            <div class="overflow-x-auto rounded-2xl border border-border-light bg-white shadow-sm p-3 sm:p-5">
                 <table class="w-full text-left border-collapse min-w-[700px]">
                     <thead>
                         <tr class="border-b-2 border-text-dark text-text-gray text-[11px] tracking-widest uppercase">
@@ -1421,23 +1589,23 @@
 
     <!-- FOOTER -->
     <footer
-        class="bg-cover bg-center bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-16 lg:pt-24 pb-8 lg:pb-12 w-full mt-10 lg:mt-20">
-        <div class="max-w-[1200px] w-full mx-auto px-4 lg:px-10 flex flex-col lg:flex-row gap-12 lg:gap-20">
+        class="bg-cover bg-center md:bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-12 sm:pt-16 lg:pt-24 pb-8 lg:pb-12 w-full mt-10 lg:mt-20">
+        <div class="max-w-[1200px] w-full mx-auto px-4 lg:px-10 flex flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-20 items-center lg:items-start">
             <!-- Column 1: Logo & Address -->
-            <div class="flex flex-col justify-between gap-6 w-48 lg:w-56 shrink-0 h-full">
-                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-full h-auto" loading="lazy" decoding="async">
-                <p class="text-[13px] text-gray-400 leading-relaxed text-left">
+            <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-none lg:w-56 mx-auto lg:mx-0 shrink-0 h-full">
+                <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-40 sm:w-48 lg:w-full h-auto" loading="lazy" decoding="async">
+                <p class="text-[13px] text-gray-400 leading-relaxed text-center lg:text-left">
                     Olympus House, 2 Howley Park, Business Village, Morley, West Yorkshire, Leeds LS27 0BZ
                 </p>
             </div>
 
             <!-- Links Sections -->
             <div
-                class="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-12 flex-1 w-full mt-4 lg:mt-0 justify-items-start sm:justify-items-center lg:justify-items-end">
+                class="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-12 flex-1 w-full mt-6 lg:mt-0 justify-items-center lg:justify-items-end">
                 <!-- MENU -->
-                <div class="flex flex-col w-full sm:w-auto h-full">
-                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold shrink-0">MENU</h4>
-                    <ul class="flex flex-col gap-4 flex-1 justify-between">
+                <div class="flex flex-col items-center lg:items-start w-full sm:w-auto h-full text-center lg:text-left">
+                    <h4 class="text-[12px] text-white tracking-widest uppercase mb-4 sm:mb-6 font-bold shrink-0">MENU</h4>
+                    <ul class="flex flex-col items-center lg:items-start gap-3.5 sm:gap-4 flex-1 justify-between">
                         <li><a href="index.html"
                                 class="text-[13px] text-gray-400 hover:text-white transition-colors">Home</a>
                         </li>
@@ -1455,10 +1623,10 @@
                 </div>
 
                 <!-- LEGAL & EMAIL -->
-                <div class="flex flex-col gap-10 w-full sm:w-auto h-full justify-between">
-                    <div>
-                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">LEGAL</h4>
-                        <ul class="flex flex-col gap-4">
+                <div class="flex flex-col items-center lg:items-start gap-8 sm:gap-10 w-full sm:w-auto h-full text-center lg:text-left justify-between">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-4 sm:mb-6 font-bold">LEGAL</h4>
+                        <ul class="flex flex-col items-center lg:items-start gap-3.5 sm:gap-4">
                             <li><a href="terms_and_conditions.html" class="text-[13px] text-gray-400 hover:text-white transition-colors">Terms &
                                     Conditions</a></li>
                             <li><a href="privacy_policy.html" class="text-[13px] text-gray-400 hover:text-white transition-colors">Privacy
@@ -1467,9 +1635,9 @@
                                     Policy</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">EMAIL</h4>
-                        <ul class="flex flex-col gap-4">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-4 sm:mb-6 font-bold">EMAIL</h4>
+                        <ul class="flex flex-col items-center lg:items-start gap-3.5 sm:gap-4">
                             <li><a href="mailto:office@gmukltd.co.uk"
                                     class="text-[13px] text-gray-400 hover:text-white transition-colors break-all">office@gmukltd.co.uk</a>
                             </li>
@@ -1478,10 +1646,10 @@
                 </div>
 
                 <!-- SOCIAL & CONTACT US -->
-                <div class="flex flex-col gap-10 w-full sm:w-auto h-full justify-between">
-                    <div>
-                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">SOCIAL</h4>
-                        <ul class="flex flex-col gap-4">
+                <div class="flex flex-col items-center lg:items-start gap-8 sm:gap-10 w-full sm:w-auto h-full text-center lg:text-left justify-between">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-4 sm:mb-6 font-bold">SOCIAL</h4>
+                        <ul class="flex flex-col items-center lg:items-start gap-3.5 sm:gap-4">
                             <li><a href="#"
                                     class="text-[13px] text-gray-400 hover:text-white transition-colors">Facebook</a>
                             </li>
@@ -1490,9 +1658,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-6 font-bold">CONTACT US</h4>
-                        <ul class="flex flex-col gap-4">
+                    <div class="flex flex-col items-center lg:items-start">
+                        <h4 class="text-[12px] text-white tracking-widest uppercase mb-4 sm:mb-6 font-bold">CONTACT US</h4>
+                        <ul class="flex flex-col items-center lg:items-start gap-3.5 sm:gap-4">
                             <li><a href="#" class="text-[13px] text-gray-400 hover:text-white transition-colors">+ 44
                                     xxxxxxxxxx</a></li>
                         </ul>
@@ -1500,7 +1668,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="max-w-[1200px] mx-auto px-4 lg:px-10 flex flex-col justify-center mt-12 lg:mt-20">
             <div class="h-[1px] bg-white/20 w-full mb-6"></div>
@@ -1511,11 +1678,11 @@
 
     <!-- Mobile Side Menu Overlay -->
     <div id="mobile-menu-overlay"
-        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55]"></div>
+        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55] lg:hidden"></div>
 
     <!-- Mobile Side Menu -->
     <div id="mobile-side-menu"
-        class="fixed inset-y-0 right-0 w-[280px] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[60] flex flex-col pt-20 px-8 overflow-y-auto pb-10">
+        class="fixed inset-y-0 right-0 w-[280px] sm:w-[320px] max-w-[85vw] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[60] lg:hidden flex flex-col pt-20 px-6 sm:px-8 overflow-y-auto pb-10">
         <button id="close-menu-btn" class="absolute top-6 right-6 text-text-dark p-2 focus:outline-none"
             aria-label="Close Menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1523,176 +1690,48 @@
             </svg>
         </button>
 
-        <div class="mobile-menu-item border-b border-border-light">
-            <button
-                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
-                Roofing Systems
-                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
-            </button>
-            <div class="hidden flex-col pb-4 pl-4 gap-3">
-                <a href="roofing_systems.html#our-proposal"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Our Proposal
-                </a>
-                <a href="roofing_systems.html#rbm-systems"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    RBM Systems
-                </a>
-                <a href="roofing_systems.html#comparison"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    System Comparison
-                </a>
-                <a href="roofing_systems.html#guarantees"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Guarantees
-                </a>
-            </div>
-        </div>
+        <!-- Direct Page Links -->
+        <nav class="flex flex-col flex-1">
+            <a href="index.html"
+                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
+                <span>Home</span>
+                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
 
-        <div class="mobile-menu-item border-b border-border-light">
-            <button
-                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
-                Services
-                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
-            </button>
-            <div class="hidden flex-col pb-4 pl-4 gap-3">
-                <a href="services.html#service-1"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Roof Conditioning Surveys
-                </a>
-                <a href="services.html#service-2"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Material Supply
-                </a>
-                <a href="services.html#service-3"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Complete Support
-                </a>
-                <a href="services.html#service-4"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Aftercare and Maintenance
-                </a>
-            </div>
-        </div>
+            <a href="roofing_systems.html"
+                class="text-base font-semibold py-4 border-b border-border-light text-primary flex items-center justify-between group">
+                <span>Roofing Systems</span>
+                <svg class="w-4 h-4 text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
 
-        <div class="mobile-menu-item border-b border-border-light">
-            <button
-                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
-                Download
-                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
-            </button>
-            <div class="hidden flex-col pb-4 pl-4 gap-3">
-                <a href="download.html"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    TDS
-                </a>
-                <a href="download.html"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    MSDS
-                </a>
-                <a href="download.html"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Drawings
-                </a>
-                <a href="download.html"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Guarantees
-                </a>
-                <a href="download.html"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    More Information
-                </a>
-            </div>
-        </div>
+            <a href="services.html"
+                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
+                <span>Services</span>
+                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
 
-        <a href="#"
-            class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary">References</a>
+            <a href="references.html"
+                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
+                <span>References</span>
+                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
 
-        <div class="mobile-menu-item border-b border-border-light">
-            <button
-                class="w-full flex justify-between items-center text-base font-semibold py-4 text-text-dark hover:text-primary focus:outline-none">
-                About Us
-                <img src="assets/down_arrow.svg" alt="" class="w-3 transition-transform duration-300 transform">
-            </button>
-            <div class="hidden flex-col pb-4 pl-4 gap-3">
-                <a href="about.html#who-we-are"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Who We Are
-                </a>
-                <a href="about.html#our-values"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Our Values
-                </a>
-                <a href="about.html#our-goal"
-                    class="text-[14px] text-text-gray hover:text-primary transition-colors flex items-center gap-2">
-                    <svg width="5" height="8" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M1 9L5 5L1 1" />
-                    </svg>
-                    Our Goal
-                </a>
-            </div>
-        </div>
+            <a href="about.html"
+                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
+                <span>About Us</span>
+                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </nav>
 
         <a href="contact.html" class="btn btn-primary mt-8 text-center w-full">Contact Us</a>
     </div>
@@ -1715,27 +1754,13 @@
         closeMenuBtn.addEventListener('click', toggleMobileMenu);
         mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
 
-        // Mobile submenu toggle
-        const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
-        mobileMenuItems.forEach(item => {
-            const btn = item.querySelector('button');
-            const submenu = item.querySelector('div');
-            const arrow = item.querySelector('img');
-
-            if (btn && submenu && arrow) {
-                btn.addEventListener('click', () => {
-                    const isHidden = submenu.classList.contains('hidden');
-                    if (isHidden) {
-                        submenu.classList.remove('hidden');
-                        submenu.classList.add('flex');
-                        arrow.classList.add('rotate-180');
-                    } else {
-                        submenu.classList.add('hidden');
-                        submenu.classList.remove('flex');
-                        arrow.classList.remove('rotate-180');
-                    }
-                });
-            }
+        // Close mobile menu when clicking a link
+        mobileSideMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileSideMenu.classList.contains('translate-x-full')) {
+                    toggleMobileMenu();
+                }
+            });
         });
 
         // Header scroll behavior
@@ -1770,14 +1795,12 @@
 
                     if (entry.isIntersecting) {
                         if (targetWidth) {
-                            // Small delay makes it feel more natural when scrolling
                             setTimeout(() => {
                                 bar.classList.remove('w-0');
                                 bar.classList.add(targetWidth);
                             }, 150);
                         }
                     } else {
-                        // Reset when it goes out of view so it can animate again
                         if (targetWidth) {
                             bar.classList.remove(targetWidth);
                             bar.classList.add('w-0');
@@ -1801,12 +1824,12 @@
                     observer.observe(bar);
                 }
             });
+
             // Scroll Reveal Animation
             const revealElements = document.querySelectorAll('.reveal-on-scroll');
             const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Slide up and fade in (once only)
                         entry.target.classList.remove('opacity-0', 'translate-y-16', 'translate-y-12', 'translate-y-10', 'translate-y-8', 'translate-y-6', 'translate-y-4');
                         entry.target.classList.add('opacity-100', 'translate-y-0');
                         revealObserver.unobserve(entry.target);
@@ -1831,7 +1854,6 @@
             const rect = titleEl.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            // Start reveal when element enters 85% of window, complete when at 40%
             const startY = windowHeight * 0.85;
             const endY = windowHeight * 0.40;
 
