@@ -85,6 +85,14 @@
                 @apply py-[50px] sm:py-[70px] lg:py-[100px];
             }
         }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
@@ -350,54 +358,119 @@
             </p>
         </div>
 
-        <!-- 6 Offerings Grid -->
-        <div id="services-offerings-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+        <!-- 6 Offerings Slider & Grid -->
+        <div id="services-offerings-grid"
+            class="flex flex-row lg:grid lg:grid-cols-3 overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none scroll-smooth no-scrollbar -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-0 scroll-px-4 sm:scroll-px-6 lg:scroll-px-0 gap-4 sm:gap-6 pb-2 lg:pb-0 items-stretch">
+            
+            <!-- Offering 01 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">01</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Refurbishment roof evaluation service</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">01</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Refurbishment roof evaluation service
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
             </div>
 
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+            <!-- Offering 02 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">02</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Roof Asset Management</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">02</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Roof Asset Management
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
             </div>
 
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+            <!-- Offering 03 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">03</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Design &amp; Specification</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">03</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Design &amp; Specification
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
             </div>
 
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+            <!-- Offering 04 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">04</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Installation expertise through approved roofing contractors under constant site inspection</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">04</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Installation expertise through approved roofing contractors under constant site inspection
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
             </div>
 
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+            <!-- Offering 05 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">05</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Project completion and guarantee</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">05</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Project completion and guarantee
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
             </div>
 
-            <div class="relative p-5 sm:p-6 bg-white rounded-2xl border border-border-light shadow-sm hover:bg-primary hover:border-primary hover:scale-[1.02] sm:hover:scale-[1.03] hover:shadow-xl hover:z-10 transition-all duration-[700ms] ease-out reveal-on-scroll opacity-0 translate-y-10 flex flex-col justify-between group cursor-pointer">
+            <!-- Offering 06 -->
+            <div
+                class="service-offering-card shrink-0 lg:shrink snap-start lg:snap-align-none w-[80vw] sm:w-[320px] lg:w-auto max-w-[82vw] sm:max-w-[340px] lg:max-w-none relative p-5 sm:p-6 rounded-2xl border transition-all duration-300 lg:duration-[700ms] ease-out flex flex-col justify-between group cursor-pointer h-full min-h-[195px] sm:min-h-[210px] bg-primary border-primary shadow-md lg:bg-white lg:border-border-light lg:shadow-sm lg:hover:bg-primary lg:hover:border-primary lg:hover:scale-[1.02] sm:lg:hover:scale-[1.03] lg:hover:shadow-xl lg:hover:z-10 reveal-on-scroll opacity-0 translate-y-10">
                 <div>
-                    <span class="text-xs font-bold text-primary group-hover:text-white/80 tracking-widest uppercase mb-2 sm:mb-3 block group-hover:translate-x-0.5 transition-all duration-300">06</span>
-                    <h3 class="text-base sm:text-lg font-bold text-text-dark group-hover:text-white leading-snug transition-colors duration-300">Maintenance scheme</h3>
+                    <span
+                        class="text-xs font-bold tracking-widest uppercase mb-2 sm:mb-3 block transition-all duration-300 text-white/80 lg:text-primary lg:group-hover:text-white/80 group-hover:translate-x-0.5">06</span>
+                    <h3
+                        class="text-base sm:text-lg font-bold font-heading leading-snug transition-colors duration-300 text-white lg:text-text-dark lg:group-hover:text-white">
+                        Maintenance scheme
+                    </h3>
                 </div>
-                <div class="h-1 w-8 bg-primary/20 group-hover:w-16 group-hover:bg-white rounded-full mt-5 sm:mt-6 transition-all duration-300"></div>
+                <div
+                    class="h-1 rounded-full mt-5 sm:mt-6 transition-all duration-300 w-14 bg-white lg:w-8 lg:bg-primary/20 lg:group-hover:w-16 lg:group-hover:bg-white">
+                </div>
+            </div>
+
+            <!-- Mobile End Spacer for right padding -->
+            <div class="block lg:hidden shrink-0 w-1 pointer-events-none" aria-hidden="true"></div>
+        </div>
+
+        <!-- Mobile Slider Dots -->
+        <div class="flex lg:hidden items-center justify-center mt-5 sm:mt-6">
+            <div id="services-slider-dots" class="flex items-center gap-1.5">
+                <button type="button" aria-label="Go to service 1" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-6 bg-black cursor-pointer" data-index="0"></button>
+                <button type="button" aria-label="Go to service 2" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="1"></button>
+                <button type="button" aria-label="Go to service 3" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="2"></button>
+                <button type="button" aria-label="Go to service 4" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="3"></button>
+                <button type="button" aria-label="Go to service 5" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="4"></button>
+                <button type="button" aria-label="Go to service 6" class="services-slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="5"></button>
             </div>
         </div>
     </section>
@@ -950,6 +1023,84 @@
         window.addEventListener('scroll', updateServicesScrollTitle, { passive: true });
         window.addEventListener('resize', updateServicesScrollTitle);
         document.addEventListener('DOMContentLoaded', updateServicesScrollTitle);
+
+        // Mobile Services Offerings Horizontal Slider
+        const initServicesSlider = () => {
+            const slider = document.getElementById('services-offerings-grid');
+            if (!slider) return;
+
+            const cards = Array.from(slider.querySelectorAll('.service-offering-card'));
+            const dots = Array.from(document.querySelectorAll('.services-slider-dot'));
+
+            if (!cards.length) return;
+
+            let currentIndex = 0;
+
+            const updateActiveState = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                currentIndex = index;
+
+                dots.forEach((dot, i) => {
+                    if (i === currentIndex) {
+                        dot.classList.remove('w-2', 'bg-gray-300');
+                        dot.classList.add('w-6', 'bg-black');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-black', 'bg-primary');
+                        dot.classList.add('w-2', 'bg-gray-300');
+                    }
+                });
+            };
+
+            const scrollToCard = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                const card = cards[index];
+                const sliderLeft = slider.getBoundingClientRect().left;
+                const cardLeft = card.getBoundingClientRect().left;
+                const scrollOffset = cardLeft - sliderLeft - (parseFloat(getComputedStyle(slider).paddingLeft) || 16);
+
+                slider.scrollBy({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                updateActiveState(index);
+            };
+
+            let scrollDebounce;
+            slider.addEventListener('scroll', () => {
+                clearTimeout(scrollDebounce);
+                scrollDebounce = setTimeout(() => {
+                    const sliderLeft = slider.getBoundingClientRect().left;
+                    const paddingLeft = parseFloat(getComputedStyle(slider).paddingLeft) || 16;
+                    let closestIndex = 0;
+                    let minDiff = Infinity;
+
+                    cards.forEach((card, i) => {
+                        const diff = Math.abs(card.getBoundingClientRect().left - sliderLeft - paddingLeft);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestIndex = i;
+                        }
+                    });
+
+                    updateActiveState(closestIndex);
+                }, 40);
+            }, { passive: true });
+
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    const idx = parseInt(dot.getAttribute('data-index'), 10);
+                    if (!isNaN(idx)) scrollToCard(idx);
+                });
+            });
+
+            updateActiveState(0);
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initServicesSlider);
+        } else {
+            initServicesSlider();
+        }
     </script>
 </body>
 

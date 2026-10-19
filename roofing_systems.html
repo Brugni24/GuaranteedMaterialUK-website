@@ -152,6 +152,14 @@
                 border-color: #1a1a1a !important;
             }
         }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
@@ -486,11 +494,11 @@
         <!-- Separator -->
         <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
 
-        <div class="flex flex-col gap-6 sm:gap-8 lg:gap-0 group/list">
+        <div id="systems-slider" class="flex flex-row lg:flex-col overflow-x-auto lg:overflow-visible snap-x snap-mandatory lg:snap-none scroll-smooth no-scrollbar -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-0 scroll-px-4 sm:scroll-px-6 lg:scroll-px-0 gap-4 sm:gap-6 lg:gap-0 pb-4 lg:pb-0 group/list">
             <!-- System 1: Phoenix Super 35 -->
             <div id="phoenix-super-35"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -531,7 +539,7 @@
                             and UV resistance of APP with the low-temperature elasticity of SBS.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -571,8 +579,8 @@
 
             <!-- System 2: Saturn 30 -->
             <div id="saturn-30"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -613,7 +621,7 @@
                             (-30°C) and elastic behaviour, providing exceptional performance and durability for UK roofs.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -653,8 +661,8 @@
 
             <!-- System 3: Phoenix Super 25 -->
             <div id="phoenix-super-25"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -695,7 +703,7 @@
                             Halley Tech underlay, delivering high durability and safe flame-free application.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -736,8 +744,8 @@
 
             <!-- System 4: Halley 20 -->
             <div id="halley-20"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -778,7 +786,7 @@
                             flame-free application, ensuring maximum safety and zero CO<sub>2</sub> emissions.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -818,8 +826,8 @@
 
             <!-- System 5: Mercury 20 -->
             <div id="mercury-20"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -860,7 +868,7 @@
                             and robust characteristics, standing alongside the best SBS membranes on the market.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -900,8 +908,8 @@
 
             <!-- System 6: Mercury 10 -->
             <div id="mercury-10"
-                class="system-row bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
-                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px]">
+                class="system-row shrink-0 lg:shrink snap-start lg:snap-align-none w-[85vw] sm:w-[480px] lg:w-full max-w-[85vw] sm:max-w-[480px] lg:max-w-none flex flex-col justify-between bg-white border border-border-light rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-sm hover:shadow-md transition-all duration-300 lg:bg-transparent lg:border-transparent lg:shadow-none lg:rounded-2xl lg:p-0 lg:py-10 lg:px-8 lg:-mx-8 lg:duration-[800ms] reveal-on-scroll opacity-0 translate-y-12 ease-out group">
+                <div class="flex flex-col lg:flex-row transition-transform duration-500 group-hover:scale-[1.01] lg:group-hover:scale-[1.02] gap-4 sm:gap-5 lg:gap-0 lg:min-h-[250px] flex-1 justify-between">
                     <!-- Left: Details -->
                     <div class="w-full lg:w-1/4 flex flex-col justify-between">
                         <div>
@@ -942,7 +950,7 @@
                             and robust characteristics, standing alongside the best SBS membranes on the market.
                         </p>
 
-                        <div class="flex flex-col w-full mt-auto bg-gray-50/70 lg:bg-transparent rounded-xl lg:rounded-none p-3.5 sm:p-4 lg:p-0">
+                        <div class="flex flex-col w-full mt-auto">
                             <div
                                 class="system-spec-border flex justify-between items-center w-full border-b lg:border-b-0 lg:border-t border-border-light/70 lg:border-border-light py-2 lg:py-3 transition-colors duration-500">
                                 <span
@@ -977,8 +985,23 @@
                 </div>
             </div>
 
+            <!-- Mobile End Spacer for right padding -->
+            <div class="block lg:hidden shrink-0 w-1 pointer-events-none" aria-hidden="true"></div>
+
             <!-- Separator -->
             <div class="hidden lg:block h-px bg-border-light transition-opacity duration-500 group-hover/list:opacity-0"></div>
+        </div>
+
+        <!-- Mobile Slider Dots -->
+        <div class="flex lg:hidden items-center justify-center mt-4">
+            <div id="slider-dots" class="flex items-center gap-1.5">
+                <button type="button" aria-label="Go to slide 1" class="slider-dot transition-all duration-300 h-2 rounded-full w-6 bg-black cursor-pointer" data-index="0"></button>
+                <button type="button" aria-label="Go to slide 2" class="slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="1"></button>
+                <button type="button" aria-label="Go to slide 3" class="slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="2"></button>
+                <button type="button" aria-label="Go to slide 4" class="slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="3"></button>
+                <button type="button" aria-label="Go to slide 5" class="slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="4"></button>
+                <button type="button" aria-label="Go to slide 6" class="slider-dot transition-all duration-300 h-2 rounded-full w-2 bg-gray-300 hover:bg-gray-400 cursor-pointer" data-index="5"></button>
+            </div>
         </div>
     </section>
 
@@ -1196,18 +1219,11 @@
                 <!-- Step 1 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-                            </path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            1</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        1
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Roof Survey</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Roof Survey</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Professional, experienced roof survey to thoroughly evaluate project conditions and requirements.
                     </p>
                 </div>
@@ -1215,18 +1231,11 @@
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
-                            </path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            2</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        2
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Design Spec</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Design Spec</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Precise technical design specification ensuring the most appropriate roofing system is selected.
                     </p>
                 </div>
@@ -1234,18 +1243,11 @@
                 <!-- Step 3 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                            </path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            3</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        3
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Installation</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Installation</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Correct installation carried out by our carefully selected network of approved installers.
                     </p>
                 </div>
@@ -1253,17 +1255,11 @@
                 <!-- Step 4 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            4</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        4
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Inspection</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Inspection</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Constant on-site inspection throughout the project to ensure the highest quality standards.
                     </p>
                 </div>
@@ -1271,18 +1267,11 @@
                 <!-- Step 5 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
-                            </path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            5</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        5
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Guarantee</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Guarantee</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Issuing a comprehensive guarantee based directly on the certified system as installed.
                     </p>
                 </div>
@@ -1290,20 +1279,11 @@
                 <!-- Step 6 -->
                 <div class="flex flex-col items-center text-center relative z-10 group">
                     <div
-                        class="w-20 h-20 rounded-full bg-white border-2 border-text-dark flex flex-col items-center justify-center mb-3 transition-all duration-500 group-hover:bg-[#457861] group-hover:border-[#457861] group-hover:text-white shadow-sm relative">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
-                            </path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                        <div
-                            class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-text-dark text-white flex items-center justify-center text-[11px] font-bold border-[3px] border-white transition-colors duration-500 group-hover:bg-[#457861]">
-                            6</div>
+                        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-105 shadow-md font-bold font-heading text-xl sm:text-2xl relative">
+                        6
                     </div>
-                    <h4 class="font-bold text-[13px] tracking-widest uppercase bg-white px-2">Maintenance</h4>
-                    <p class="text-[11px] text-text-gray max-w-[260px] mt-1 bg-white px-2 leading-relaxed">
+                    <h4 class="font-heading font-bold text-base sm:text-lg tracking-wide uppercase text-text-dark bg-white px-3">Maintenance</h4>
+                    <p class="text-sm sm:text-[15px] text-[#555] max-w-[290px] sm:max-w-[320px] mt-1.5 bg-white px-3 leading-relaxed">
                         Ongoing roof maintenance carried out by the approved installer according to our specifications.
                     </p>
                 </div>
@@ -1367,7 +1347,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     1
                                 </span>
                                 <h4
@@ -1391,7 +1371,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     2
                                 </span>
                                 <h4
@@ -1415,7 +1395,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     3
                                 </span>
                                 <h4
@@ -1439,7 +1419,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     4
                                 </span>
                                 <h4
@@ -1463,7 +1443,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     5
                                 </span>
                                 <h4
@@ -1487,7 +1467,7 @@
                             class="bg-white/95 backdrop-blur-sm border border-gray-200 group-hover:border-[#457861] rounded-[24px] px-4 py-2.5 group-hover:p-4 shadow-md group-hover:shadow-xl transition-all duration-300 ease-out w-[240px] text-center flex flex-col items-center">
                             <div class="flex items-center gap-2.5">
                                 <span
-                                    class="w-6 h-6 rounded-full bg-[#457861] text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
+                                    class="w-6 h-6 rounded-full bg-primary text-white flex items-center justify-center font-heading font-bold text-xs shrink-0 shadow-sm transition-transform duration-300 group-hover:scale-110">
                                     6
                                 </span>
                                 <h4
@@ -1874,6 +1854,101 @@
         window.addEventListener('scroll', updateProposalScrollTitle, { passive: true });
         window.addEventListener('resize', updateProposalScrollTitle);
         document.addEventListener('DOMContentLoaded', updateProposalScrollTitle);
+
+        // Mobile Systems Horizontal Slider
+        const initSystemsSlider = () => {
+            const slider = document.getElementById('systems-slider');
+            if (!slider) return;
+
+            const cards = Array.from(slider.querySelectorAll('.system-row'));
+            const dots = Array.from(document.querySelectorAll('.slider-dot'));
+
+            if (!cards.length) return;
+
+            // Ensure all slider cards reveal smoothly when slider enters view on mobile
+            const sliderObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        cards.forEach(card => {
+                            card.classList.remove('opacity-0', 'translate-y-16', 'translate-y-12', 'translate-y-10');
+                            card.classList.add('opacity-100', 'translate-y-0');
+                        });
+                        sliderObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05 });
+            sliderObserver.observe(slider);
+
+            let currentIndex = 0;
+
+            const updateActiveState = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                currentIndex = index;
+
+                // Update animated dots
+                dots.forEach((dot, i) => {
+                    if (i === currentIndex) {
+                        dot.classList.remove('w-2', 'bg-gray-300');
+                        dot.classList.add('w-6', 'bg-black');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-black', 'bg-primary');
+                        dot.classList.add('w-2', 'bg-gray-300');
+                    }
+                });
+            };
+
+            const scrollToCard = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                const card = cards[index];
+                const sliderLeft = slider.getBoundingClientRect().left;
+                const cardLeft = card.getBoundingClientRect().left;
+                const scrollOffset = cardLeft - sliderLeft - (parseFloat(getComputedStyle(slider).paddingLeft) || 16);
+
+                slider.scrollBy({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                updateActiveState(index);
+            };
+
+            // Detect active card on scroll
+            let scrollDebounce;
+            slider.addEventListener('scroll', () => {
+                clearTimeout(scrollDebounce);
+                scrollDebounce = setTimeout(() => {
+                    const sliderLeft = slider.getBoundingClientRect().left;
+                    let closestIndex = 0;
+                    let minDiff = Infinity;
+
+                    cards.forEach((card, i) => {
+                        const diff = Math.abs(card.getBoundingClientRect().left - sliderLeft - 16);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestIndex = i;
+                        }
+                    });
+
+                    updateActiveState(closestIndex);
+                }, 40);
+            }, { passive: true });
+
+            // Dot click listeners
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    const idx = parseInt(dot.getAttribute('data-index'), 10);
+                    if (!isNaN(idx)) scrollToCard(idx);
+                });
+            });
+
+            // Initial state
+            updateActiveState(0);
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initSystemsSlider);
+        } else {
+            initSystemsSlider();
+        }
     </script>
 </body>
 
