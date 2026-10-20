@@ -85,13 +85,34 @@
                 @apply py-[60px] lg:py-[100px];
             }
         }
+    
+        /* Mobile Navbar Extension Animation */
+        #mobile-menu-wrapper {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 360ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #mobile-menu-wrapper.is-open {
+            grid-template-rows: 1fr;
+        }
+        #mobile-menu-content {
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 150ms ease-out;
+        }
+        #mobile-menu-wrapper.is-open #mobile-menu-content {
+            opacity: 1;
+            transition: opacity 280ms ease-out 140ms;
+        }
     </style>
 </head>
 
 <body class="font-body text-text-dark bg-bg-light leading-[1.6] antialiased">
         <header id="main-header" class="fixed top-3 sm:top-4 md:top-6 left-0 w-full z-50 px-3 sm:px-4 transition-transform duration-300">
-        <div
-            class="max-w-[1200px] mx-auto w-full h-[60px] sm:h-[70px] px-4 sm:px-5 lg:px-6 flex justify-between items-center bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-full shadow-sm">
+        <div id="navbar-capsule"
+            class="max-w-[1200px] mx-auto w-full bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-[30px] sm:rounded-[35px] shadow-sm">
+            <!-- Top bar -->
+            <div class="h-[60px] sm:h-[70px] px-4 sm:px-5 lg:px-6 flex justify-between items-center">
             <a href="index.html">
                 <div class="flex items-center gap-3 shrink-0">
                     <img src="assets/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo"
@@ -291,18 +312,41 @@
                     </div>
                 </div>
             </nav>
-            <div class="flex items-center gap-4 shrink-0">
+                        <div class="flex items-center gap-4 shrink-0">
                 <a href="contact.html" class="btn btn-primary hidden lg:inline-block">Contact Us</a>
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="lg:hidden flex flex-col gap-[5px] p-2 z-50 focus:outline-none"
-                    aria-label="Open Menu">
-                    <div class="w-6 h-0.5 bg-text-dark"></div>
-                    <div class="w-6 h-0.5 bg-text-dark"></div>
-                    <div class="w-6 h-0.5 bg-text-dark"></div>
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px] p-1 z-50 focus:outline-none cursor-pointer"
+                    aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="hamburger-line-1 w-5 h-0.5 bg-text-dark transition-all duration-300 origin-center"></span>
+                    <span class="hamburger-line-2 w-5 h-0.5 bg-text-dark transition-all duration-300"></span>
+                    <span class="hamburger-line-3 w-5 h-0.5 bg-text-dark transition-all duration-300 origin-center"></span>
                 </button>
             </div>
         </div>
-    </header>
+
+        <!-- Mobile Menu (Extension of the Navbar) -->
+        <div id="mobile-menu-wrapper" class="lg:hidden">
+            <div id="mobile-menu-content" class="px-6 sm:px-8">
+                <div class="h-px bg-gray-400/20 w-full mb-3"></div>
+                <nav class="flex flex-col gap-1 text-left">
+                    <a href="index.html"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Home</a>
+                    <a href="roofing_systems.html"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Roofing Systems</a>
+                    <a href="services.html"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Services</a>
+                    <a href="references.html"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">References</a>
+                    <a href="about.html"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">About Us</a>
+                </nav>
+                <div class="pt-4 pb-6">
+                    <a href="contact.html" class="btn btn-primary text-center w-full block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
     <!-- HERO SECTION -->
     <section
@@ -729,98 +773,69 @@
         </div>
     </footer>
 
-        <!-- Mobile Side Menu Overlay -->
+        <!-- Mobile Menu Backdrop Overlay -->
     <div id="mobile-menu-overlay"
-        class="fixed inset-0 bg-black/50 opacity-0 pointer-events-none transition-opacity duration-300 z-[55] lg:hidden"></div>
+        class="fixed inset-0 bg-black/20 backdrop-blur-[2px] opacity-0 pointer-events-none transition-opacity duration-300 z-40 lg:hidden"></div>
 
-    <!-- Mobile Side Menu -->
-    <div id="mobile-side-menu"
-        class="fixed inset-y-0 right-0 w-[280px] sm:w-[320px] max-w-[85vw] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out z-[60] lg:hidden flex flex-col pt-20 px-6 sm:px-8 overflow-y-auto pb-10">
-        <button id="close-menu-btn" class="absolute top-6 right-6 text-text-dark p-2 focus:outline-none"
-            aria-label="Close Menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-        </button>
-
-        <!-- Direct Page Links -->
-        <nav class="flex flex-col flex-1">
-            <a href="index.html"
-                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
-                <span>Home</span>
-                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-
-            <a href="roofing_systems.html"
-                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
-                <span>Roofing Systems</span>
-                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-
-            <a href="services.html"
-                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
-                <span>Services</span>
-                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-
-            <a href="references.html"
-                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
-                <span>References</span>
-                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-
-            <a href="about.html"
-                class="text-base font-semibold py-4 border-b border-border-light text-text-dark hover:text-primary transition-colors flex items-center justify-between group">
-                <span>About Us</span>
-                <svg class="w-4 h-4 text-text-gray/40 group-hover:text-primary group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </a>
-        </nav>
-
-        <a href="contact.html" class="btn btn-primary mt-8 text-center w-full">Contact Us</a>
-    </div>
-
-        <!-- Mobile Menu Script -->
+    <!-- Scripts -->
     <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const closeMenuBtn = document.getElementById('close-menu-btn');
-        const mobileSideMenu = document.getElementById('mobile-side-menu');
+        const mobileMenuWrapper = document.getElementById('mobile-menu-wrapper');
+        const navbarCapsule = document.getElementById('navbar-capsule');
         const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const line1 = mobileMenuBtn ? mobileMenuBtn.querySelector('.hamburger-line-1') : null;
+        const line2 = mobileMenuBtn ? mobileMenuBtn.querySelector('.hamburger-line-2') : null;
+        const line3 = mobileMenuBtn ? mobileMenuBtn.querySelector('.hamburger-line-3') : null;
 
         function toggleMobileMenu() {
-            mobileSideMenu.classList.toggle('translate-x-full');
-            mobileMenuOverlay.classList.toggle('opacity-0');
-            mobileMenuOverlay.classList.toggle('pointer-events-none');
-            document.body.classList.toggle('overflow-hidden');
+            const isOpen = mobileMenuWrapper.classList.contains('is-open');
+            if (isOpen) {
+                // Close menu: text fades out and navbar glides up
+                mobileMenuWrapper.classList.remove('is-open');
+                if (mobileMenuOverlay) {
+                    mobileMenuOverlay.classList.add('opacity-0', 'pointer-events-none');
+                }
+                if (line1) line1.classList.remove('rotate-45', 'translate-y-[7px]');
+                if (line2) line2.classList.remove('opacity-0');
+                if (line3) line3.classList.remove('-rotate-45', '-translate-y-[7px]');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            } else {
+                // Open menu: navbar stretches down, then text smoothly appears
+                mobileMenuWrapper.classList.add('is-open');
+                if (mobileMenuOverlay) {
+                    mobileMenuOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                }
+                if (line1) line1.classList.add('rotate-45', 'translate-y-[7px]');
+                if (line2) line2.classList.add('opacity-0');
+                if (line3) line3.classList.add('-rotate-45', '-translate-y-[7px]');
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            }
         }
 
-        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
-        closeMenuBtn.addEventListener('click', toggleMobileMenu);
-        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        }
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+        }
 
         // Close mobile menu when clicking a link
-        mobileSideMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (!mobileSideMenu.classList.contains('translate-x-full')) {
-                    toggleMobileMenu();
-                }
+        if (mobileMenuWrapper) {
+            mobileMenuWrapper.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (mobileMenuWrapper && mobileMenuWrapper.classList.contains('is-open')) {
+                        toggleMobileMenu();
+                    }
+                });
             });
-        });
+        }
 
         // Header scroll behavior
         const header = document.getElementById('main-header');
         let lastScrollY = window.scrollY;
 
         window.addEventListener('scroll', () => {
+            if (mobileMenuWrapper && mobileMenuWrapper.classList.contains('is-open')) return;
             if (window.scrollY > lastScrollY && window.scrollY > 100) {
                 // Scroll down: hide header
                 header.classList.add('-translate-y-[150%]');
