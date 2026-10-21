@@ -482,23 +482,33 @@
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                             <div class="space-y-1.5 sm:space-y-2">
-                                <label for="firstName" class="text-xs sm:text-sm font-medium text-text-dark">First Name <span class="text-primary font-bold">*</span></label>
-                                <input type="text" id="firstName" name="firstName" placeholder="John" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                                <label for="firstName" class="text-xs sm:text-sm font-medium text-text-dark">First name <span class="text-primary font-bold">*</span></label>
+                                <input type="text" id="firstName" name="firstName" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                             </div>
                             <div class="space-y-1.5 sm:space-y-2">
-                                <label for="lastName" class="text-xs sm:text-sm font-medium text-text-dark">Last Name <span class="text-primary font-bold">*</span></label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Doe" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                                <label for="lastName" class="text-xs sm:text-sm font-medium text-text-dark">Last name <span class="text-primary font-bold">*</span></label>
+                                <input type="text" id="lastName" name="lastName" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                             </div>
                         </div>
                         
                         <div class="space-y-1.5 sm:space-y-2">
-                            <label for="email" class="text-xs sm:text-sm font-medium text-text-dark">Email Address <span class="text-primary font-bold">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                            <label for="email" class="text-xs sm:text-sm font-medium text-text-dark">Email <span class="text-primary font-bold">*</span></label>
+                            <input type="email" id="email" name="email" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                        </div>
+
+                        <div class="space-y-1.5 sm:space-y-2">
+                            <label for="phone" class="text-xs sm:text-sm font-medium text-text-dark">Phone <span class="text-xs text-text-gray font-normal">(incl. country code, e.g. +44)</span> <span class="text-primary font-bold">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. +44 7123 456789" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                        </div>
+
+                        <div class="space-y-1.5 sm:space-y-2">
+                            <label for="businessName" class="text-xs sm:text-sm font-medium text-text-dark">Business name <span class="text-primary font-bold">*</span></label>
+                            <input type="text" id="businessName" name="businessName" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                         </div>
                         
                         <div class="space-y-1.5 sm:space-y-2">
-                            <label for="message" class="text-xs sm:text-sm font-medium text-text-dark">Message <span class="text-primary font-bold">*</span></label>
-                            <textarea id="message" name="message" rows="4" placeholder="Your message here..." class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white resize-none" required></textarea>
+                            <label for="message" class="text-xs sm:text-sm font-medium text-text-dark">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message here" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white resize-none" required></textarea>
                         </div>
 
                         <!-- Privacy consent checkbox -->
@@ -512,8 +522,8 @@
                         <!-- Status notification message -->
                         <div id="form-status" class="hidden text-center p-3.5 rounded-xl text-sm font-medium transition-all duration-300"></div>
                         
-                        <button type="submit" id="submit-btn" class="w-full btn btn-primary mt-2 flex items-center justify-center gap-2 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-md hover:shadow-lg active:scale-[0.98] transition-all">
-                            <span id="submit-btn-text">Send Message</span>
+                        <button type="submit" id="submit-btn" class="w-full btn btn-primary mt-2 flex items-center justify-center gap-2 py-3.5 sm:py-4 text-sm sm:text-base font-bold tracking-wider uppercase shadow-md hover:shadow-lg active:scale-[0.98] transition-all">
+                            <span id="submit-btn-text">SEND MESSAGE</span>
                             <svg id="submit-spinner" class="hidden animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -846,22 +856,24 @@
                 })
                 .then(async (response) => {
                     let res = await response.json();
-                    if (response.status === 200) {
+                    if (response.status === 200 && res.success) {
                         formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 text-center';
-                        formStatus.textContent = res.message || 'Thank you! Your message has been sent successfully.';
+                        formStatus.textContent = 'Thank you! Your message has been sent successfully.';
                         contactForm.reset();
                     } else {
+                        console.error('Web3Forms response details:', res);
                         formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-red-50 text-red-800 border border-red-200 text-center';
-                        formStatus.textContent = res.message || 'Something went wrong. Please try again or email us directly at office@gmukltd.co.uk.';
+                        formStatus.textContent = 'Something went wrong. Please try again or contact us directly at office@gmukltd.co.uk.';
                     }
                 })
                 .catch((error) => {
+                    console.error('Form submission error:', error);
                     formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-red-50 text-red-800 border border-red-200 text-center';
-                    formStatus.textContent = 'Unable to send message. Please check your internet connection or email us directly at office@gmukltd.co.uk.';
+                    formStatus.textContent = 'Something went wrong. Please try again or contact us directly at office@gmukltd.co.uk.';
                 })
                 .finally(() => {
                     if (submitBtn) submitBtn.disabled = false;
-                    if (submitBtnText) submitBtnText.textContent = 'Send Message';
+                    if (submitBtnText) submitBtnText.textContent = 'SEND MESSAGE';
                     if (submitSpinner) submitSpinner.classList.add('hidden');
                 });
             });
