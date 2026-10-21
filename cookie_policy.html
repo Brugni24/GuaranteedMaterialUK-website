@@ -22,6 +22,9 @@
     <!-- Fallback per i browser più vecchi -->
     <link rel="icon" href="assets/favicon-dark.svg">
 
+    <!-- Cookie Consent & Google Analytics (Consent Mode v2) -->
+    <script src="assets/cookie-consent.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -387,84 +390,121 @@
                 </h2>
 
                 <p class="text-text-gray text-base leading-relaxed">
-                    Our website uses the following categories of cookies in compliance with the Privacy and Electronic Communications Regulations (PECR) and UK GDPR:
+                    Our website uses the following categories of cookies in strict compliance with the Privacy and Electronic Communications Regulations (PECR) and UK GDPR:
                 </p>
 
                 <ul class="space-y-4 pt-2 text-text-gray text-[15px] leading-relaxed">
                     <li class="flex items-start gap-3">
                         <span class="w-1.5 h-1.5 rounded-full bg-text-dark mt-2.5 shrink-0"></span>
                         <span>
-                            <strong class="font-medium text-text-dark">Strictly Necessary Cookies:</strong> These cookies are essential for you to browse the website and use its core features, such as page navigation, secure header states, and form submissions. Without these cookies, the website cannot function properly.
+                            <strong class="font-medium text-text-dark">Strictly Necessary Cookies:</strong> These cookies are essential for you to browse the website, ensure network security, enable core navigation features, and store your cookie consent preferences. Under PECR and UK GDPR, these cookies do not require prior consent because the website cannot function properly without them.
                         </span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="w-1.5 h-1.5 rounded-full bg-text-dark mt-2.5 shrink-0"></span>
                         <span>
-                            <strong class="font-medium text-text-dark">Performance & Analytics Cookies:</strong> These cookies collect aggregated, anonymous information about how visitors use our site (e.g. which roofing system pages are visited most often, page loading speeds, and referral sources). This helps us improve the user journey and optimize site responsiveness.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="w-1.5 h-1.5 rounded-full bg-text-dark mt-2.5 shrink-0"></span>
-                        <span>
-                            <strong class="font-medium text-text-dark">Functionality Cookies:</strong> These cookies enable the website to remember choices you make (such as preferences or language settings) to provide enhanced and more personalized features.
+                            <strong class="font-medium text-text-dark">Performance & Analytics Cookies:</strong> Optional cookies that collect aggregated, pseudonymous information about how visitors interact with our website (such as page visit frequency, popular roofing system specifications, session duration, and referral sources). These cookies are only activated if you provide explicit prior consent.
                         </span>
                     </li>
                 </ul>
+
+                <!-- COOKIE INVENTORY TABLE -->
+                <div class="overflow-x-auto pt-3">
+                    <table class="w-full text-left text-xs md:text-sm border border-border-light rounded-lg overflow-hidden">
+                        <thead class="bg-gray-100 text-text-dark font-heading uppercase text-[11px] tracking-wider border-b border-border-light">
+                            <tr>
+                                <th class="p-3">Cookie Name</th>
+                                <th class="p-3">Provider</th>
+                                <th class="p-3">Category</th>
+                                <th class="p-3">Browser Lifespan</th>
+                                <th class="p-3">Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-border-light text-text-gray">
+                            <tr>
+                                <td class="p-3 font-mono font-semibold text-text-dark">gmuk_cookie_consent</td>
+                                <td class="p-3">Guaranteed Material UK (First-party)</td>
+                                <td class="p-3"><span class="bg-gray-200 text-text-dark px-2 py-0.5 rounded text-[11px] font-semibold">Strictly Necessary</span></td>
+                                <td class="p-3">Up to 12 months</td>
+                                <td class="p-3">Stores your consent choices and preferences regarding optional cookies.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-mono font-semibold text-text-dark">_ga</td>
+                                <td class="p-3">Google Ireland Ltd / Google LLC</td>
+                                <td class="p-3"><span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-[11px] font-semibold">Analytics (Optional)</span></td>
+                                <td class="p-3">Up to 2 years (client-side)</td>
+                                <td class="p-3">Calculates visitor, session, and campaign data for site analytics reports. Activated only after explicit consent.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 font-mono font-semibold text-text-dark">_ga_&lt;container-id&gt;</td>
+                                <td class="p-3">Google Ireland Ltd / Google LLC</td>
+                                <td class="p-3"><span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-[11px] font-semibold">Analytics (Optional)</span></td>
+                                <td class="p-3">Up to 2 years (client-side)</td>
+                                <td class="p-3">Persists session state across page views for Google Analytics 4. Activated only after explicit consent.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
 
-            <!-- SECTION 4: THIRD-PARTY COOKIES -->
+            <!-- SECTION 4: THIRD-PARTY COOKIES & GOOGLE ANALYTICS 4 -->
             <section class="space-y-4">
                 <h2 class="text-2xl md:text-[1.75rem] font-bold font-heading text-text-dark tracking-tight">
-                    Third-Party Technologies
+                    Google Analytics 4 & Third-Party Technologies
                 </h2>
 
                 <p class="text-text-gray text-base leading-relaxed">
-                    In some instances, we may use third-party services that set cookies on our behalf. For example:
+                    Subject to your opt-in consent, our website uses <strong class="font-semibold text-text-dark">Google Analytics 4 (GA4)</strong>, a web analysis service provided by Google Ireland Limited (for users located in the UK and European Economic Area) and Google LLC (United States).
                 </p>
 
-                <ul class="space-y-3 pt-2 text-text-gray text-[15px] leading-relaxed">
-                    <li class="flex items-start gap-3">
-                        <span class="w-1.5 h-1.5 rounded-full bg-text-dark mt-2.5 shrink-0"></span>
-                        <span>
-                            <strong class="font-medium text-text-dark">Web Analytics:</strong> To help us measure web traffic and compile anonymous site performance statistics.
-                        </span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="w-1.5 h-1.5 rounded-full bg-text-dark mt-2.5 shrink-0"></span>
-                        <span>
-                            <strong class="font-medium text-text-dark">Content Delivery Networks (CDNs) & Fonts:</strong> To load fonts (such as Google Fonts) and script libraries securely and efficiently across global server nodes.
-                        </span>
-                    </li>
-                </ul>
-
-                <p class="text-text-gray text-base leading-relaxed">
-                    These third parties are subject to their own privacy policies and contractual standards regarding data protection.
-                </p>
+                <div class="bg-gray-50 border border-border-light rounded-xl p-5 space-y-3 text-text-gray text-sm leading-relaxed">
+                    <p>
+                        <strong class="font-semibold text-text-dark">Technical Architecture & Basic Consent Mode:</strong> We implement Google Consent Mode v2 in <em>Basic</em> mode. This means no Google Analytics script is loaded, and no measurement hits or cookie requests are sent to Google servers prior to your explicit consent.
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-text-dark">IP Processing in GA4:</strong> In Google Analytics 4, IP addresses are not logged, stored, or made accessible to the site owner. IP addresses are used solely at the edge collection servers to derive coarse geographic location data (country, city) and are immediately discarded.
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-text-dark">Client Lifespan vs. Server-Side Data Retention:</strong> A distinction exists between the duration of cookies stored in your browser (up to 2 years by default, unless deleted sooner by your browser settings) and the retention of event-level and user-level data stored on Google Analytics servers. Server-side event retention can be configured in the Google Analytics admin panel between 2 months and 14 months; the exact operational retention period is determined by Guaranteed Material UK Ltd's administration settings.
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-text-dark">International Transfers:</strong> Where data is processed outside the UK or EEA, Google relies on the UK International Data Transfer Addendum, EU Standard Contractual Clauses (SCCs), and certification under the EU-U.S. Data Privacy Framework (and UK Extension).
+                    </p>
+                </div>
             </section>
 
             <!-- SECTION 5: HOW TO MANAGE OR DISABLE COOKIES -->
             <section class="space-y-4">
                 <h2 class="text-2xl md:text-[1.75rem] font-bold font-heading text-text-dark tracking-tight">
-                    Managing and Disabling Cookies
+                    Managing and Withdrawing Cookie Consent
                 </h2>
 
                 <p class="text-text-gray text-base leading-relaxed">
-                    You can control, block, or delete cookies at any time through your internet browser settings. Most browsers allow you to decline all cookies, accept only certain cookies, or alert you every time a cookie is sent to your device.
+                    You have full control over your cookie choices. You can modify or withdraw your consent for optional analytics cookies at any time directly on this website:
                 </p>
 
+                <div class="pt-1 pb-2">
+                    <button type="button" class="cookie-settings-trigger inline-flex items-center gap-2 bg-primary text-white hover:bg-[#17322a] px-6 py-3 rounded-full text-sm font-semibold transition-all duration-200 cursor-pointer shadow-sm">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                            <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14.5A6.5 6.5 0 1110 3.5a6.5 6.5 0 010 13zm-1-10.5h2v2H9V6zm0 4h2v5H9v-5z"/>
+                        </svg>
+                        Manage Cookie Preferences
+                    </button>
+                </div>
+
                 <p class="text-text-gray text-base leading-relaxed">
-                    To manage cookies on common web browsers, please refer to the official support documentation:
+                    You can also control or delete cookies through your web browser settings. Most browsers allow you to decline all cookies, accept only first-party cookies, or receive an alert when a cookie is placed on your device:
                 </p>
 
                 <ul class="space-y-2 pt-1 text-text-gray text-[15px] leading-relaxed">
                     <li><strong class="font-medium text-text-dark">Google Chrome:</strong> Settings &gt; Privacy and security &gt; Cookies and other site data</li>
-                    <li><strong class="font-medium text-text-dark">Apple Safari:</strong> Preferences &gt; Privacy &gt; Manage Website Data</li>
-                    <li><strong class="font-medium text-text-dark">Mozilla Firefox:</strong> Options &gt; Privacy &amp; Security &gt; Enhanced Tracking Protection</li>
+                    <li><strong class="font-medium text-text-dark">Apple Safari:</strong> Settings / Preferences &gt; Privacy &gt; Manage Website Data</li>
+                    <li><strong class="font-medium text-text-dark">Mozilla Firefox:</strong> Settings &gt; Privacy &amp; Security &gt; Cookies and Site Data</li>
                     <li><strong class="font-medium text-text-dark">Microsoft Edge:</strong> Settings &gt; Cookies and site permissions &gt; Manage and delete cookies</li>
                 </ul>
 
                 <p class="text-text-gray text-base leading-relaxed pt-2">
-                    Please note that if you choose to block strictly necessary cookies, some sections or functionalities of our website may not operate as intended.
+                    Please note that strictly necessary cookies cannot be disabled through our consent manager as they are indispensable for secure navigation and site operation.
                 </p>
             </section>
 
@@ -545,6 +585,8 @@
                                     policy</a></li>
                             <li><a href="cookie_policy.html" class="text-[13px] text-gray-400 hover:text-white transition-colors">Cookie
                                     Policy</a></li>
+                            <li><button type="button" class="cookie-settings-trigger text-[13px] text-gray-400 hover:text-white transition-colors cursor-pointer text-left">Cookie
+                                    Settings</button></li>
                         </ul>
                     </div>
                     <div class="flex flex-col items-center lg:items-start">

@@ -22,6 +22,9 @@
     <!-- Fallback per i browser più vecchi -->
     <link rel="icon" href="assets/favicon-dark.svg">
 
+    <!-- Cookie Consent & Google Analytics (Consent Mode v2) -->
+    <script src="assets/cookie-consent.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -543,12 +546,24 @@
             <!-- SECTION 7: COOKIES & TRACKING -->
             <section class="space-y-4">
                 <h2 class="text-2xl md:text-[1.75rem] font-bold font-heading text-text-dark tracking-tight">
-                    Cookies & Tracking Technologies
+                    Cookies & Tracking Technologies (Google Analytics 4)
                 </h2>
 
                 <p class="text-text-gray text-base leading-relaxed">
-                    Our website uses strictly necessary cookies for core browsing security and optional analytics cookies to measure page performance. You may configure or block cookies at any time via your browser settings.
+                    Our website uses strictly necessary cookies for core browsing security and platform integrity. In addition, subject to your prior opt-in consent, we utilize <strong class="font-semibold text-text-dark">Google Analytics 4 (GA4)</strong>, an analytics service provided by Google Ireland Limited / Google LLC, to compile aggregated statistics on website traffic and user engagement with our roofing systems.
                 </p>
+
+                <div class="bg-gray-50 border border-border-light rounded-xl p-5 space-y-3 text-text-gray text-sm leading-relaxed">
+                    <p>
+                        <strong class="font-semibold text-text-dark">Legal Basis:</strong> Explicit Consent (Art. 6(1)(a) UK GDPR / EU GDPR). No analytics tracking scripts or measurement hits are fired until you choose "Accept All" or enable analytics via our cookie banner.
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-text-dark">Data Processed:</strong> Pseudonymous client identifiers (stored in cookies such as <code class="bg-gray-200 px-1 py-0.5 rounded text-text-dark font-mono text-xs">_ga</code>), pages visited, referral URLs, technical device and browser specifications. GA4 does not log or store full IP addresses; geographic attribution is derived at edge ingress servers and IP addresses are immediately discarded.
+                    </p>
+                    <p>
+                        <strong class="font-semibold text-text-dark">Consent Management & Revocation:</strong> You can modify or withdraw your consent at any time by clicking the <button type="button" class="cookie-settings-trigger text-primary font-semibold underline underline-offset-2 cursor-pointer">Cookie Settings</button> link present in our website footer or through our dedicated <a href="cookie_policy.html" class="text-primary font-semibold underline underline-offset-2">Cookie Policy</a>.
+                    </p>
+                </div>
             </section>
 
             <!-- SECTION 8: CONTACT US -->
@@ -622,6 +637,8 @@
                                     policy</a></li>
                             <li><a href="cookie_policy.html" class="text-[13px] text-gray-400 hover:text-white transition-colors">Cookie
                                     Policy</a></li>
+                            <li><button type="button" class="cookie-settings-trigger text-[13px] text-gray-400 hover:text-white transition-colors cursor-pointer text-left">Cookie
+                                    Settings</button></li>
                         </ul>
                     </div>
                     <div class="flex flex-col items-center lg:items-start">
