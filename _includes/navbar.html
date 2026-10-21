@@ -1,0 +1,239 @@
+<header id="main-header" class="fixed top-3 sm:top-4 md:top-6 left-0 w-full z-50 px-3 sm:px-4 transition-transform duration-300">
+    <div id="navbar-capsule"
+        class="max-w-[1200px] mx-auto w-full bg-white/30 backdrop-blur-md border border-gray-400/50 rounded-[30px] sm:rounded-[35px] shadow-sm">
+        <!-- Top bar -->
+        <div class="h-[60px] sm:h-[70px] px-4 sm:px-5 lg:px-6 flex justify-between items-center">
+            <a href="/">
+                <div class="flex items-center gap-3 shrink-0">
+                    <img src="/assets/icons/logos/horizontal_logo_green_black.svg" alt="Guaranteed Material UK Logo"
+                        class="h-[26px] sm:h-8 w-auto">
+                </div>
+            </a>
+            <nav class="hidden lg:flex flex-1 justify-center h-full px-10 gap-5 justify-evenly">
+                <!-- Dropdown 1: Roofing Systems -->
+                <div class="relative group h-full flex items-center">
+                    <a href="/systems/"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer {% if page.active_nav == 'systems' %}text-primary font-semibold{% else %}text-text-dark{% endif %}">
+                        Roofing Systems <img src="/assets/icons/ui/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="/systems/#our-proposal"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Our Proposal
+                            </a>
+                            <a href="/systems/#rbm-systems"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                RBM Systems
+                            </a>
+                            <a href="/systems/#comparison"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                System Comparison
+                            </a>
+                            <a href="/systems/#guarantees"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Guarantees
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 2: Services -->
+                <div class="relative group h-full flex items-center">
+                    <a href="/services/"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer {% if page.active_nav == 'services' %}text-primary font-semibold{% else %}text-text-dark{% endif %}">
+                        Services <img src="/assets/icons/ui/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="/services/#service-1"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Roof Conditioning Surveys
+                            </a>
+                            <a href="/services/#service-2"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Material Supply
+                            </a>
+                            <a href="/services/#service-3"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Complete Support
+                            </a>
+                            <a href="/services/#service-4"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Aftercare and Maintenance
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown 3: Download -->
+                <div class="hidden group h-full flex items-center">
+                    <a href="/download/"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer {% if page.active_nav == 'download' %}text-primary font-semibold{% else %}text-text-dark{% endif %}">
+                        Download <img src="/assets/icons/ui/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="/download/"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                TDS
+                            </a>
+                            <a href="/download/"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                MSDS
+                            </a>
+                            <a href="/download/"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Drawings
+                            </a>
+                            <a href="/download/"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Guarantees
+                            </a>
+                            <a href="/download/"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                More Information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Link 4: References -->
+                <div class="relative group h-full flex items-center">
+                    <a href="/references/"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer {% if page.active_nav == 'references' %}text-primary font-semibold{% else %}text-text-dark{% endif %}">
+                        References
+                    </a>
+                </div>
+
+                <!-- Dropdown 5: About Us -->
+                <div class="relative group h-full flex items-center">
+                    <a href="/about/"
+                        class="text-sm font-medium whitespace-nowrap flex items-center gap-1.5 transition-colors group-hover:text-primary py-4 cursor-pointer {% if page.active_nav == 'about' %}text-primary font-semibold{% else %}text-text-dark{% endif %}">
+                        About Us <img src="/assets/icons/ui/down_arrow.svg" alt=""
+                            class="w-3 transition-transform group-hover:rotate-180 duration-500">
+                    </a>
+                    <div
+                        class="absolute left-0 top-full pt-1 w-[220px] opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-500 z-50">
+                        <div class="bg-white rounded-xl shadow-lg py-3 flex flex-col border border-border-light/50">
+                            <a href="/about/#who-we-are"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Who We Are
+                            </a>
+                            <a href="/about/#our-values"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Our Values
+                            </a>
+                            <a href="/about/#our-goal"
+                                class="px-6 py-2 text-[14px] text-text-dark flex items-center gap-3 underline decoration-transparent hover:decoration-current transition-colors duration-300 underline-offset-4">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 9L5 5L1 1" />
+                                </svg>
+                                Our Goal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="flex items-center gap-4 shrink-0">
+                <a href="/contact/" class="btn btn-primary hidden lg:inline-block">Contact Us</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px] p-1 z-50 focus:outline-none cursor-pointer"
+                    aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="hamburger-line-1 w-5 h-0.5 bg-text-dark transition-all duration-300 origin-center"></span>
+                    <span class="hamburger-line-2 w-5 h-0.5 bg-text-dark transition-all duration-300"></span>
+                    <span class="hamburger-line-3 w-5 h-0.5 bg-text-dark transition-all duration-300 origin-center"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Extension of the Navbar) -->
+        <div id="mobile-menu-wrapper" class="lg:hidden">
+            <div id="mobile-menu-content" class="px-6 sm:px-8">
+                <div class="h-px bg-gray-400/20 w-full mb-3"></div>
+                <nav class="flex flex-col gap-1 text-left">
+                    <a href="/"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Home</a>
+                    <a href="/systems/"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Roofing Systems</a>
+                    <a href="/services/"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">Services</a>
+                    <a href="/references/"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">References</a>
+                    <a href="/about/"
+                        class="text-[15px] font-medium text-text-dark hover:text-primary transition-colors py-2.5 text-left block">About Us</a>
+                </nav>
+                <div class="pt-4 pb-6">
+                    <a href="/contact/" class="btn btn-primary text-center w-full block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

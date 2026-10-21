@@ -1,0 +1,15 @@
+title: "Guaranteed Material UK"
+email: "technical@guaranteedmaterial.co.uk"
+description: "Leading UK supplier of BBA-certified bituminous roofing membranes, liquid systems, and single-ply membranes."
+url: "https://www.guaranteedmaterial.co.uk"
+baseurl: ""
+
+# Jekyll settings
+permalink: pretty
+markdown: kramdown
+
+exclude:
+  - README.md
+  - serve.py
+  - assets/originali_backup
+  - .DS_Store

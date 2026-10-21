@@ -1,0 +1,126 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- Open Graph / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Guaranteed Material UK">
+<meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.twitter_title | default: page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.twitter_description | default: page.description | default: site.description }}">
+<meta name="twitter:image" content="{{ site.url }}{{ page.twitter_image | default: page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Favicon per chi usa il tema chiaro (icona scura) -->
+<link rel="icon" href="/assets/icons/favicons/favicon-dark.svg" media="(prefers-color-scheme: light)">
+
+<!-- Favicon per chi usa il tema scuro (icona chiara/bianca) -->
+<link rel="icon" href="/assets/icons/favicons/favicon-light.svg" media="(prefers-color-scheme: dark)">
+
+{% if page.preload_image %}
+<!-- Preload Hero Background Image -->
+<link rel="preload" as="image" href="{{ page.preload_image }}" fetchpriority="high">
+{% endif %}
+
+<!-- Cookie Consent & Google Analytics (Consent Mode v2) -->
+<script src="/assets/js/cookie-consent.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#214339',
+                    'text-dark': '#1a1a1a',
+                    'text-gray': '#555555',
+                    'border-light': '#e0e0e0',
+                    'bg-light': '#fdfdfd',
+                },
+                fontFamily: {
+                    heading: ['Montserrat', 'sans-serif'],
+                    body: ['Montserrat', 'sans-serif'],
+                }
+            }
+        }
+    }
+</script>
+<style type="text/tailwindcss">
+    @layer base {
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-heading text-text-dark leading-[1.2];
+        }
+    }
+    @layer components {
+        .btn {
+            @apply inline-block px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 cursor-pointer;
+        }
+        .btn-primary {
+            @apply bg-primary text-white border-2 border-primary hover:bg-[#17322a] hover:border-[#17322a];
+        }
+        .btn-outline-white {
+            @apply bg-transparent text-white border-2 border-white hover:bg-white hover:text-text-dark;
+        }
+        .btn-white {
+            @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
+        }
+        .section-container {
+            @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+        }
+        .section-indicator {
+            @apply flex items-center mb-8 sm:mb-10 lg:mb-12;
+        }
+        .section-badge {
+            @apply inline-flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 border border-text-dark text-sm sm:text-base font-semibold font-heading mr-3 sm:mr-4 lg:mr-5 bg-white shrink-0;
+        }
+        .section-eyebrow {
+            @apply text-xs sm:text-sm font-bold tracking-[1px] uppercase mr-3 sm:mr-4 lg:mr-5 shrink-0 text-text-dark;
+        }
+        .section-header-block {
+            @apply mb-8 sm:mb-10 lg:mb-14;
+        }
+        .section-title {
+            @apply text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-3 sm:mb-4;
+        }
+        .section-desc {
+            @apply text-sm sm:text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
+        }
+    }
+    @layer utilities {
+        .section-padding {
+            @apply py-12 sm:py-16 md:py-[80px] lg:py-[100px];
+        }
+    }
+
+    /* Mobile Navbar Extension Animation */
+    #mobile-menu-wrapper {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 360ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #mobile-menu-wrapper.is-open {
+        grid-template-rows: 1fr;
+    }
+    #mobile-menu-content {
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 150ms ease-out;
+    }
+    #mobile-menu-wrapper.is-open #mobile-menu-content {
+        opacity: 1;
+        transition: opacity 280ms ease-out 140ms;
+    }
+</style>
