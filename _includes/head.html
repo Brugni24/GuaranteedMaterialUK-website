@@ -3,7 +3,7 @@
 <title>{{ page.title | default: site.title }}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
 <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website">
@@ -11,32 +11,32 @@
 <meta property="og:site_name" content="Guaranteed Material UK">
 <meta property="og:title" content="{{ page.og_title | default: page.title | default: site.title }}">
 <meta property="og:description" content="{{ page.og_description | default: page.description | default: site.description }}">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}{{ page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.twitter_title | default: page.title | default: site.title }}">
 <meta name="twitter:description" content="{{ page.twitter_description | default: page.description | default: site.description }}">
-<meta name="twitter:image" content="{{ site.url }}{{ page.twitter_image | default: page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.twitter_image | default: page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- Favicon per chi usa il tema chiaro (icona scura) -->
-<link rel="icon" href="/assets/icons/favicons/favicon-dark.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" href="{{ site.baseurl }}/assets/icons/favicons/favicon-dark.svg" media="(prefers-color-scheme: light)">
 
 <!-- Favicon per chi usa il tema scuro (icona chiara/bianca) -->
-<link rel="icon" href="/assets/icons/favicons/favicon-light.svg" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ site.baseurl }}/assets/icons/favicons/favicon-light.svg" media="(prefers-color-scheme: dark)">
 
 {% if page.preload_image %}
 <!-- Preload Hero Background Image -->
-<link rel="preload" as="image" href="{{ page.preload_image }}" fetchpriority="high">
+<link rel="preload" as="image" href="{{ site.baseurl }}{{ page.preload_image }}" fetchpriority="high">
 {% endif %}
 
 <!-- Cookie Consent & Google Analytics (Consent Mode v2) -->
-<script src="/assets/js/cookie-consent.js"></script>
+<script src="{{ site.baseurl }}/assets/js/cookie-consent.js"></script>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>

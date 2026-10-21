@@ -77,6 +77,7 @@ def render_jekyll_page(filepath):
     rendered = rendered.replace("{{ page.og_description | default: page.description | default: site.description }}", desc)
     rendered = rendered.replace("{{ page.twitter_title | default: page.title | default: site.title }}", title)
     rendered = rendered.replace("{{ page.twitter_description | default: page.description | default: site.description }}", desc)
+    rendered = rendered.replace("{{ site.baseurl }}", "")
     rendered = rendered.replace("{{ site.url }}{{ page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}", f"http://localhost:{PORT}/assets/images/hero/gemini_hero_bg.jpg")
     rendered = rendered.replace("{{ site.url }}{{ page.twitter_image | default: page.og_image | default: '/assets/images/hero/gemini_hero_bg.jpg' }}", f"http://localhost:{PORT}/assets/images/hero/gemini_hero_bg.jpg")
 

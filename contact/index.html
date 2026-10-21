@@ -4,7 +4,7 @@ title: "Contact Us | Leeds Office & Technical Advisory | Guaranteed Material UK"
 description: "Contact Guaranteed Material UK in Leeds. Speak with our technical team for flat roofing quotes, site surveys, CPD seminars, and specification support."
 url: "/contact/"
 active_nav: "contact"
-preload_image: "/assets/images/hero/team_working.png"
+preload_image: "{{ site.baseurl }}/assets/images/hero/team_working.png"
 ---
 
 <script type="application/ld+json">
@@ -47,7 +47,7 @@ preload_image: "/assets/images/hero/team_working.png"
 </script>
 
 <!-- HERO SECTION -->
-    <section class="relative min-h-[380px] sm:min-h-[440px] md:min-h-[500px] h-[52vh] sm:h-[58vh] lg:h-[66vh] w-full bg-cover bg-center md:bg-fixed bg-no-repeat flex items-center justify-center" style="background-image: url('/assets/images/hero/team_working.png');">
+    <section class="relative min-h-[380px] sm:min-h-[440px] md:min-h-[500px] h-[52vh] sm:h-[58vh] lg:h-[66vh] w-full bg-cover bg-center md:bg-fixed bg-no-repeat flex items-center justify-center" style="background-image: url('{{ site.baseurl }}/assets/images/hero/team_working.png');">
         <div class="absolute inset-0 bg-black/60"></div>
         <div class="relative z-10 text-center px-4 sm:px-6 max-w-[800px] pt-16 sm:pt-20">
             <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-bold mb-3 sm:mb-4 leading-tight tracking-tight reveal-on-scroll opacity-0 translate-y-12 sm:translate-y-16 transition-all duration-700 ease-out">Contact Us</h1>
@@ -175,7 +175,7 @@ preload_image: "/assets/images/hero/team_working.png"
                         <div class="flex items-start gap-3 pt-1">
                             <input type="checkbox" id="privacyConsent" name="privacyConsent" class="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary/30 accent-primary cursor-pointer shrink-0" required>
                             <label for="privacyConsent" class="text-xs text-text-gray leading-relaxed cursor-pointer select-none">
-                                I agree to the processing of my personal details in accordance with the <a href="/legal/privacy/" target="_blank" class="text-primary font-medium underline hover:text-[#17322a]">Privacy Policy</a>. <span class="text-primary font-bold">*</span>
+                                I agree to the processing of my personal details in accordance with the <a href="{{ site.baseurl }}/legal/privacy/" target="_blank" class="text-primary font-medium underline hover:text-[#17322a]">Privacy Policy</a>. <span class="text-primary font-bold">*</span>
                             </label>
                         </div>
 

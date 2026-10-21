@@ -1,8 +1,8 @@
 title: "Guaranteed Material UK"
 email: "technical@guaranteedmaterial.co.uk"
 description: "Leading UK supplier of BBA-certified bituminous roofing membranes, liquid systems, and single-ply membranes."
-url: "https://www.guaranteedmaterial.co.uk"
-baseurl: ""
+url: "https://brugni24.github.io"
+baseurl: "/GuaranteedMaterialUK-website"
 
 # Jekyll settings
 permalink: pretty

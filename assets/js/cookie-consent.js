@@ -10,6 +10,8 @@
  */
 
 (function () {
+    const GMUK_BASE_PATH = window.location.pathname.startsWith('/GuaranteedMaterialUK-website') ? '/GuaranteedMaterialUK-website' : '';
+
     'use strict';
 
     // =========================================================================
@@ -397,7 +399,7 @@
                     <button type="button" id="gmuk-open-preferences-banner" class="gmuk-btn-text">
                         Customize Preferences
                     </button>
-                    <a href="/legal/cookies/" class="gmuk-btn-text" style="color: #6b7280;">
+                    <a href="' + GMUK_BASE_PATH + '/legal/cookies/" class="gmuk-btn-text" style="color: #6b7280;">
                         Read Policy
                     </a>
                 </div>
@@ -443,7 +445,7 @@
                 </div>
 
                 <p style="font-size: 0.8125rem; color: #555555; line-height: 1.55; margin-bottom: 1.25rem;">
-                    You can choose which categories of cookies to enable. Strictly necessary cookies cannot be disabled as they are required for basic site operations and security. For more details, consult our <a href="/legal/cookies/" style="color: #214339; font-weight: 600; text-decoration: underline;">Cookie Policy</a>.
+                    You can choose which categories of cookies to enable. Strictly necessary cookies cannot be disabled as they are required for basic site operations and security. For more details, consult our <a href="' + GMUK_BASE_PATH + '/legal/cookies/" style="color: #214339; font-weight: 600; text-decoration: underline;">Cookie Policy</a>.
                 </p>
 
                 <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem;">
