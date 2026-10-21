@@ -115,30 +115,30 @@
                 @apply bg-white text-text-dark border-2 border-white hover:bg-[#f0f0f0] hover:border-[#f0f0f0];
             }
             .section-container {
-                @apply max-w-[1200px] mx-auto px-4 lg:px-10;
+                @apply max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10;
             }
             .section-indicator {
-                @apply flex items-center mb-10 lg:mb-12;
+                @apply flex items-center mb-8 sm:mb-10 lg:mb-12;
             }
             .section-badge {
-                @apply inline-flex items-center justify-center w-11 h-11 border border-text-dark text-base font-semibold font-heading mr-4 lg:mr-5 bg-white shrink-0;
+                @apply inline-flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 border border-text-dark text-sm sm:text-base font-semibold font-heading mr-3 sm:mr-4 lg:mr-5 bg-white shrink-0;
             }
             .section-eyebrow {
-                @apply text-sm font-bold tracking-[1px] uppercase mr-4 lg:mr-5 shrink-0 text-text-dark;
+                @apply text-xs sm:text-sm font-bold tracking-[1px] uppercase mr-3 sm:mr-4 lg:mr-5 shrink-0 text-text-dark;
             }
             .section-header-block {
-                @apply mb-10 lg:mb-14;
+                @apply mb-8 sm:mb-10 lg:mb-14;
             }
             .section-title {
-                @apply text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-4;
+                @apply text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold font-heading text-text-dark leading-[1.15] tracking-tight mb-3 sm:mb-4;
             }
             .section-desc {
-                @apply text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
+                @apply text-sm sm:text-base lg:text-[1.05rem] text-text-gray leading-relaxed;
             }
         }
         @layer utilities {
             .section-padding {
-                @apply py-[60px] lg:py-[100px];
+                @apply py-12 sm:py-16 md:py-20 lg:py-24;
             }
         }
     
@@ -384,97 +384,137 @@
 
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-[520px] h-[64vh] lg:h-[70vh] w-full bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center" style="background-image: url('assets/team_working.png');">
+    <section class="relative min-h-[380px] sm:min-h-[440px] md:min-h-[500px] h-[52vh] sm:h-[58vh] lg:h-[66vh] w-full bg-cover bg-center md:bg-fixed bg-no-repeat flex items-center justify-center" style="background-image: url('assets/team_working.png');">
         <div class="absolute inset-0 bg-black/60"></div>
-        <div class="relative z-10 text-center px-4 max-w-[800px] mt-16">
-            <h1 class="text-white text-[2.5rem] md:text-[4rem] font-bold mb-4 leading-tight tracking-tight reveal-on-scroll opacity-0 translate-y-16 transition-all duration-700 ease-out">Contact Us</h1>
-            <p class="text-white/90 text-base md:text-xl font-medium reveal-on-scroll opacity-0 translate-y-16 transition-all duration-700 ease-out delay-100">We're here to help. Reach out for expert advice, quotes, or support.</p>
+        <div class="relative z-10 text-center px-4 sm:px-6 max-w-[800px] pt-16 sm:pt-20">
+            <h1 class="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] font-bold mb-3 sm:mb-4 leading-tight tracking-tight reveal-on-scroll opacity-0 translate-y-12 sm:translate-y-16 transition-all duration-700 ease-out">Contact Us</h1>
+            <p class="text-white/90 text-sm sm:text-base md:text-xl font-medium max-w-xl mx-auto reveal-on-scroll opacity-0 translate-y-12 sm:translate-y-16 transition-all duration-700 ease-out delay-100">We're here to help. Reach out for expert advice, quotes, or support.</p>
         </div>
     </section>
 
     <!-- CONTACT DETAILS & FORM -->
     <section class="section-padding bg-bg-light relative overflow-hidden">
         <!-- Decorative elements -->
-        <div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute top-0 right-0 w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-72 sm:w-96 h-72 sm:h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div class="section-container relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-start max-w-2xl lg:max-w-none mx-auto">
                 
                 <!-- Contact Information -->
-                <div class="reveal-on-scroll opacity-0 translate-y-16 transition-all duration-700 ease-out">
+                <div class="reveal-on-scroll opacity-0 translate-y-12 sm:translate-y-16 transition-all duration-700 ease-out">
                     <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-desc mb-10">Whether you need technical assistance, a quote for a roofing project, or just have a general inquiry, our team is ready to assist you.</p>
+                    <p class="section-desc mb-6 sm:mb-8 lg:mb-10">Whether you need technical assistance, a quote for a roofing project, or just have a general inquiry, our team is ready to assist you.</p>
                     
-                    <div class="space-y-8">
+                    <div class="space-y-4 sm:space-y-5 lg:space-y-6">
                         <!-- Phone -->
-                        <div class="flex items-start gap-5 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary/30 transition-colors duration-300">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <a href="tel:+44xxxxxxxxxx" class="group flex items-center justify-between gap-3.5 sm:gap-5 p-4 sm:p-5 md:p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary active:border-primary hover:bg-primary/[0.02] active:bg-primary/[0.04] hover:shadow-[0_12px_32px_rgba(33,67,57,0.12)] active:shadow-[0_12px_32px_rgba(33,67,57,0.12)] hover:scale-[1.02] active:scale-[1.02] transition-all duration-300 cursor-pointer block">
+                            <div class="flex items-center gap-3.5 sm:gap-5 min-w-0">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-active:bg-primary group-hover:text-white group-active:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                                    <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                </div>
+                                <div class="min-w-0">
+                                    <h3 class="text-base sm:text-lg font-bold text-text-dark mb-0.5 sm:mb-1 group-hover:text-primary group-active:text-primary transition-colors">Call Us</h3>
+                                    <span class="text-sm sm:text-base text-text-gray group-hover:text-primary group-active:text-primary transition-colors truncate block">+44 xxxxxxxxxx</span>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-text-dark mb-1">Call Us</h3>
-                                <a href="tel:+44xxxxxxxxxx" class="text-text-gray hover:text-primary transition-colors">+44 xxxxxxxxxx</a>
+                            <div class="text-primary/30 group-hover:text-primary group-active:text-primary group-hover:translate-x-1 group-active:translate-x-1 transition-all duration-300 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Email -->
-                        <div class="flex items-start gap-5 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary/30 transition-colors duration-300">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <a href="mailto:office@gmukltd.co.uk" class="group flex items-center justify-between gap-3.5 sm:gap-5 p-4 sm:p-5 md:p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary active:border-primary hover:bg-primary/[0.02] active:bg-primary/[0.04] hover:shadow-[0_12px_32px_rgba(33,67,57,0.12)] active:shadow-[0_12px_32px_rgba(33,67,57,0.12)] hover:scale-[1.02] active:scale-[1.02] transition-all duration-300 cursor-pointer block">
+                            <div class="flex items-center gap-3.5 sm:gap-5 min-w-0">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-active:bg-primary group-hover:text-white group-active:text-white flex items-center justify-center shrink-0 transition-all duration-300">
+                                    <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div class="min-w-0">
+                                    <h3 class="text-base sm:text-lg font-bold text-text-dark mb-0.5 sm:mb-1 group-hover:text-primary group-active:text-primary transition-colors">Email Us</h3>
+                                    <span class="text-sm sm:text-base text-text-gray group-hover:text-primary group-active:text-primary transition-colors truncate block">office@gmukltd.co.uk</span>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-text-dark mb-1">Email Us</h3>
-                                <a href="mailto:office@gmukltd.co.uk" class="text-text-gray hover:text-primary transition-colors">office@gmukltd.co.uk</a>
+                            <div class="text-primary/30 group-hover:text-primary group-active:text-primary group-hover:translate-x-1 group-active:translate-x-1 transition-all duration-300 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </div>
-                        </div>
+                        </a>
 
                         <!-- Address -->
-                        <div class="flex items-start gap-5 p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary/30 transition-colors duration-300">
-                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <a href="https://maps.google.com/?q=1-2+Howley+Park+Business+Village+Leeds" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between gap-3.5 sm:gap-5 p-4 sm:p-5 md:p-6 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-border-light/40 hover:border-primary active:border-primary hover:bg-primary/[0.02] active:bg-primary/[0.04] hover:shadow-[0_12px_32px_rgba(33,67,57,0.12)] active:shadow-[0_12px_32px_rgba(33,67,57,0.12)] hover:scale-[1.02] active:scale-[1.02] transition-all duration-300 cursor-pointer block">
+                            <div class="flex items-start gap-3.5 sm:gap-5 min-w-0">
+                                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-primary/10 text-primary group-hover:bg-primary group-active:bg-primary group-hover:text-white group-active:text-white flex items-center justify-center shrink-0 transition-all duration-300 mt-0.5">
+                                    <svg class="w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div class="min-w-0">
+                                    <h3 class="text-base sm:text-lg font-bold text-text-dark mb-0.5 sm:mb-1 group-hover:text-primary group-active:text-primary transition-colors">Office Address</h3>
+                                    <p class="text-xs sm:text-sm md:text-base text-text-gray group-hover:text-primary/90 group-active:text-primary/90 leading-relaxed transition-colors">
+                                        1-2 Howley Park, Business Village,<br>
+                                        Pullan Way, Morley, Leeds, LS27 0BZ
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-text-dark mb-1">Office Address</h3>
-                                <p class="text-text-gray">1-2 Howley Park, Business Village,<br>Pullan Way, Morley, Leeds, LS27, 0BZ</p>
+                            <div class="text-primary/30 group-hover:text-primary group-active:text-primary group-hover:translate-x-1 group-active:translate-x-1 transition-all duration-300 shrink-0 self-center">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </div>
-                            <a href="https://maps.google.com/?q=1-2+Howley+Park+Business+Village+Leeds" target="_blank" class="btn btn-primary whitespace-nowrap px-8 py-4 text-base shadow-lg shadow-primary/20 hover:shadow-primary/40 shrink-0">Get Directions &rarr;</a>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="bg-white p-8 md:p-10 rounded-3xl shadow-[0_20px_60px_rgb(0,0,0,0.08)] border border-border-light/30 reveal-on-scroll opacity-0 translate-y-16 transition-all duration-700 ease-out delay-200">
-                    <h3 class="text-2xl font-bold text-text-dark mb-6">Send a Message</h3>
-                    <form action="#" method="POST" class="space-y-5">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                            <div class="space-y-2">
-                                <label for="firstName" class="text-sm font-medium text-text-dark">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="John" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                <div class="bg-white p-5 sm:p-7 md:p-10 rounded-2xl sm:rounded-3xl shadow-[0_12px_40px_rgb(0,0,0,0.06)] md:shadow-[0_20px_60px_rgb(0,0,0,0.08)] border border-border-light/40 reveal-on-scroll opacity-0 translate-y-12 sm:translate-y-16 transition-all duration-700 ease-out delay-150">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 mb-5 sm:mb-6">
+                        <h3 class="text-xl sm:text-2xl font-bold text-text-dark">Send a Message</h3>
+                        <span class="text-xs text-text-gray"><span class="text-primary font-bold">*</span> Required fields</span>
+                    </div>
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4 sm:space-y-5">
+                        <!-- Web3Forms Access Key (Replace with your key from web3forms.com) -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                        <!-- Custom Email Subject & Sender Name -->
+                        <input type="hidden" name="subject" value="New Inquiry from Guaranteed Material UK Website">
+                        <input type="hidden" name="from_name" value="Guaranteed Material Website">
+
+                        <!-- Web3Forms Honeypot Botcheck (Fully automated by Web3Forms, hidden from users) -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                            <div class="space-y-1.5 sm:space-y-2">
+                                <label for="firstName" class="text-xs sm:text-sm font-medium text-text-dark">First Name <span class="text-primary font-bold">*</span></label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                             </div>
-                            <div class="space-y-2">
-                                <label for="lastName" class="text-sm font-medium text-text-dark">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                            <div class="space-y-1.5 sm:space-y-2">
+                                <label for="lastName" class="text-xs sm:text-sm font-medium text-text-dark">Last Name <span class="text-primary font-bold">*</span></label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                             </div>
                         </div>
                         
-                        <div class="space-y-2">
-                            <label for="email" class="text-sm font-medium text-text-dark">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                        <div class="space-y-1.5 sm:space-y-2">
+                            <label for="email" class="text-xs sm:text-sm font-medium text-text-dark">Email Address <span class="text-primary font-bold">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
                         </div>
                         
-                        <div class="space-y-2">
-                            <label for="subject" class="text-sm font-medium text-text-dark">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="How can we help?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white" required>
+                        <div class="space-y-1.5 sm:space-y-2">
+                            <label for="message" class="text-xs sm:text-sm font-medium text-text-dark">Message <span class="text-primary font-bold">*</span></label>
+                            <textarea id="message" name="message" rows="4" placeholder="Your message here..." class="w-full text-base px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white resize-none" required></textarea>
                         </div>
-                        
-                        <div class="space-y-2">
-                            <label for="message" class="text-sm font-medium text-text-dark">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Your message here..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 bg-gray-50/50 focus:bg-white resize-none" required></textarea>
+
+                        <!-- Privacy consent checkbox -->
+                        <div class="flex items-start gap-3 pt-1">
+                            <input type="checkbox" id="privacyConsent" name="privacyConsent" class="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary/30 accent-primary cursor-pointer shrink-0" required>
+                            <label for="privacyConsent" class="text-xs text-text-gray leading-relaxed cursor-pointer select-none">
+                                I agree to the processing of my personal details in accordance with the <a href="privacy_policy.html" target="_blank" class="text-primary font-medium underline hover:text-[#17322a]">Privacy Policy</a>. <span class="text-primary font-bold">*</span>
+                            </label>
                         </div>
+
+                        <!-- Status notification message -->
+                        <div id="form-status" class="hidden text-center p-3.5 rounded-xl text-sm font-medium transition-all duration-300"></div>
                         
-                        <button type="submit" class="w-full btn btn-primary py-4 text-base mt-2 shadow-lg shadow-primary/30 hover:shadow-primary/40">
-                            Send Message
+                        <button type="submit" id="submit-btn" class="w-full btn btn-primary mt-2 flex items-center justify-center gap-2 py-3.5 sm:py-4 text-sm sm:text-base font-bold shadow-md hover:shadow-lg active:scale-[0.98] transition-all">
+                            <span id="submit-btn-text">Send Message</span>
+                            <svg id="submit-spinner" class="hidden animate-spin h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
                         </button>
                     </form>
                 </div>
@@ -482,10 +522,10 @@
         </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer
-        class="bg-cover bg-center md:bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-12 sm:pt-16 lg:pt-24 pb-8 lg:pb-12 w-full mt-10 lg:mt-20">
-        <div class="max-w-[1200px] w-full mx-auto px-4 lg:px-10 flex flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-20 items-center lg:items-start">
+        class="bg-cover bg-center md:bg-fixed bg-no-repeat bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#457861] via-[#122A22] to-[#050D0A] text-white pt-12 sm:pt-16 lg:pt-24 pb-8 lg:pb-12 w-full mt-10 sm:mt-16 lg:mt-20">
+        <div class="max-w-[1200px] w-full mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-10 sm:gap-12 lg:gap-20 items-center lg:items-start">
             <!-- Column 1: Logo & Address -->
             <div class="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-none lg:w-56 mx-auto lg:mx-0 shrink-0 h-full">
                 <img src="assets/vertical_logo_white.svg" alt="Footer Logo" class="w-40 sm:w-48 lg:w-full h-auto" loading="lazy" decoding="async">
@@ -564,7 +604,7 @@
             </div>
         </div>
 
-        <div class="max-w-[1200px] mx-auto px-4 lg:px-10 flex flex-col justify-center mt-12 lg:mt-20">
+        <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-center mt-12 lg:mt-20">
             <div class="h-[1px] bg-white/20 w-full mb-6"></div>
             <p class="text-[12px] text-gray-400 leading-relaxed text-center">2026 Guaranteed Material UK. All rights
                 reserved. -Company registered in England & Wales No. 16430567 - VAT Reg No. 431615093</p>
@@ -577,6 +617,9 @@
 
     <!-- Scripts -->
     <script>
+        // Enable immediate :active state styling on iOS/touch devices
+        document.addEventListener('touchstart', function() {}, { passive: true });
+
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenuWrapper = document.getElementById('mobile-menu-wrapper');
         const navbarCapsule = document.getElementById('navbar-capsule');
@@ -698,12 +741,12 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         // Slide up and fade in (once only)
-                        entry.target.classList.remove('opacity-0', 'translate-y-16');
+                        entry.target.classList.remove('opacity-0', 'translate-y-12', 'translate-y-16');
                         entry.target.classList.add('opacity-100', 'translate-y-0');
                         revealObserver.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.15 }); // Triggers when 15% of the card is visible
+            }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
             revealElements.forEach(el => revealObserver.observe(el));
         });
@@ -762,6 +805,61 @@
             document.querySelectorAll('.stacking-card').forEach(c => observer.observe(c));
         } else {
             syncHeader();
+        }
+
+        // Web3Forms AJAX Submission
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = document.getElementById('submit-btn');
+        const submitBtnText = document.getElementById('submit-btn-text');
+        const submitSpinner = document.getElementById('submit-spinner');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Loading state
+                if (submitBtn) submitBtn.disabled = true;
+                if (submitBtnText) submitBtnText.textContent = 'Sending...';
+                if (submitSpinner) submitSpinner.classList.remove('hidden');
+                if (formStatus) {
+                    formStatus.className = 'hidden';
+                    formStatus.textContent = '';
+                }
+
+                const formData = new FormData(contactForm);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async (response) => {
+                    let res = await response.json();
+                    if (response.status === 200) {
+                        formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 text-center';
+                        formStatus.textContent = res.message || 'Thank you! Your message has been sent successfully.';
+                        contactForm.reset();
+                    } else {
+                        formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-red-50 text-red-800 border border-red-200 text-center';
+                        formStatus.textContent = res.message || 'Something went wrong. Please try again or email us directly at office@gmukltd.co.uk.';
+                    }
+                })
+                .catch((error) => {
+                    formStatus.className = 'block p-3.5 rounded-xl text-sm font-medium bg-red-50 text-red-800 border border-red-200 text-center';
+                    formStatus.textContent = 'Unable to send message. Please check your internet connection or email us directly at office@gmukltd.co.uk.';
+                })
+                .finally(() => {
+                    if (submitBtn) submitBtn.disabled = false;
+                    if (submitBtnText) submitBtnText.textContent = 'Send Message';
+                    if (submitSpinner) submitSpinner.classList.add('hidden');
+                });
+            });
         }
     </script>
 </body>
