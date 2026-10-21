@@ -61,14 +61,14 @@ active_nav: "about"
 
         <!-- Narrative Content with Scroll-Reveal Effect -->
         <div class="max-w-4xl">
-            <div id="about-scroll-narrative" class="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-semibold font-heading leading-[1.35] tracking-tight text-gray-300 space-y-4 sm:space-y-6">
+            <div id="about-scroll-narrative" class="text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] font-bold font-heading leading-[1.35] tracking-tight text-gray-300 space-y-4 sm:space-y-6">
                 <p>
                     <span class="scroll-word transition-colors duration-200">Every</span>
                     <span class="scroll-word transition-colors duration-200">great</span>
                     <span class="scroll-word transition-colors duration-200">name</span>
                     <span class="scroll-word transition-colors duration-200">tells</span>
                     <span class="scroll-word transition-colors duration-200">a</span>
-                    <span class="scroll-word transition-colors duration-200">story.</span>
+                    <span class="scroll-word transition-colors duration-200">story.</span><br>
                     <span class="scroll-word transition-colors duration-200">Ours</span>
                     <span class="scroll-word transition-colors duration-200">starts</span>
                     <span class="scroll-word transition-colors duration-200">with</span>
@@ -81,8 +81,8 @@ active_nav: "about"
                     <span class="scroll-word transition-colors duration-200">founded</span>
                     <span class="scroll-word transition-colors duration-200" data-accent="true">Guaranteed</span>
                     <span class="scroll-word transition-colors duration-200" data-accent="true">Material</span>
-                    <span class="scroll-word transition-colors duration-200" data-accent="true">UK,</span>
-                    <span class="scroll-word transition-colors duration-200">we</span>
+                    <span class="scroll-word transition-colors duration-200" data-accent="true">UK,</span><br>
+                    <span class="scroll-word transition-colors duration-200">We</span>
                     <span class="scroll-word transition-colors duration-200">weren't</span>
                     <span class="scroll-word transition-colors duration-200">just</span>
                     <span class="scroll-word transition-colors duration-200">choosing</span>
@@ -386,9 +386,9 @@ active_nav: "about"
             const rect = container.getBoundingClientRect();
             const windowHeight = window.innerHeight;
 
-            // Slower, smooth progression: starts at 85% of window, completes as top approaches 5%
+            // Faster progression: starts when entering 85% of window, completes at 40%
             const startY = windowHeight * 0.85;
-            const endY = windowHeight * 0.05;
+            const endY = windowHeight * 0.40;
 
             let progress = (startY - rect.top) / (startY - endY);
             progress = Math.max(0, Math.min(1, progress));
@@ -419,4 +419,5 @@ active_nav: "about"
         window.addEventListener('scroll', updateAboutNarrativeScroll, { passive: true });
         window.addEventListener('resize', updateAboutNarrativeScroll);
         document.addEventListener('DOMContentLoaded', updateAboutNarrativeScroll);
+        updateAboutNarrativeScroll();
 </script>
