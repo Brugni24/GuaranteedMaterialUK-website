@@ -6,7 +6,7 @@ Official website for Guaranteed Material UK Ltd, hosted on GitHub Pages with cus
 
 * **Static Site Engine:** Jekyll (natively compiled by GitHub Pages)
 * **CSS & Design:** Tailwind CSS (via CDN) + Custom responsive utility layers & micro-animations
-* **Clean URLs:** Organized in semantic directories with `index.html` (e.g. `/systems/mercury-10/`, `/about/`, `/contact/`)
+* **Clean URLs:** Organized in semantic directories with `index.html` (e.g. `/systems/mercury-sl/`, `/about/`, `/contact/`)
 * **Tracking & GDPR:** Cookie Consent Banner with Google Analytics Consent Mode v2
 
 ## Project Structure
@@ -36,12 +36,11 @@ website/
 │
 ├── systems/                # Roofing Systems
 │   ├── index.html          # /systems/
-│   ├── mercury-10/
-│   ├── mercury-20/
-│   ├── saturn-30/
-│   ├── halley-20/
-│   ├── phoenix-super-25/
-│   └── phoenix-super-35/
+│   ├── phoenix-super/
+│   ├── saturn/
+│   ├── halley-sa/
+│   ├── mercury/
+│   └── mercury-sl/
 │
 ├── legal/                  # Compliance & Legal
 │   ├── privacy/            # /legal/privacy/
