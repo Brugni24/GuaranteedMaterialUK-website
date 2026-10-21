@@ -431,4 +431,213 @@ active_nav: "services"
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <script>
+        // Chapter Progress Bar Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const progressBars = document.querySelectorAll('.bg-border-light > div.bg-text-dark');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const bar = entry.target;
+                    const targetWidth = bar.getAttribute('data-width');
+
+                    if (entry.isIntersecting) {
+                        if (targetWidth) {
+                            setTimeout(() => {
+                                bar.classList.remove('w-0');
+                                bar.classList.add(targetWidth);
+                            }, 150);
+                        }
+                    } else {
+                        if (targetWidth) {
+                            bar.classList.remove(targetWidth);
+                            bar.classList.add('w-0');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            progressBars.forEach(bar => {
+                const classes = Array.from(bar.classList);
+                const widthClass = classes.find(c => c.startsWith('w-'));
+
+                if (widthClass && widthClass !== 'w-0') {
+                    bar.setAttribute('data-width', widthClass);
+                    bar.classList.remove(widthClass);
+                    bar.classList.add('w-0');
+
+                    bar.classList.remove('duration-500');
+                    bar.classList.add('duration-[1500ms]', 'ease-in-out');
+
+                    observer.observe(bar);
+                }
+            });
+
+            // Scroll Reveal Animation: Services 6-Offerings Grid (gradual cascade)
+            const offeringsGrid = document.getElementById('services-offerings-grid');
+            if (offeringsGrid) {
+                const gridCards = offeringsGrid.querySelectorAll('.reveal-on-scroll');
+                const gridObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            gridCards.forEach((card, index) => {
+                                card.style.transitionDelay = `${index * 80}ms`;
+                                card.classList.remove('opacity-0', 'translate-y-16', 'translate-y-12', 'translate-y-10', 'translate-y-8', 'translate-y-6', 'translate-y-4');
+                                card.classList.add('opacity-100', 'translate-y-0');
+                            });
+                            setTimeout(() => {
+                                gridCards.forEach(card => {
+                                    card.style.transitionDelay = '0ms';
+                                });
+                            }, 1200);
+                            gridObserver.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    root: null,
+                    rootMargin: '0px 0px -30px 0px',
+                    threshold: 0.08
+                });
+                gridObserver.observe(offeringsGrid);
+            }
+
+            // Scroll Reveal Animation for other individual elements
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-16', 'translate-y-12', 'translate-y-10', 'translate-y-8', 'translate-y-6', 'translate-y-4');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null,
+                rootMargin: '0px 0px -40px 0px',
+                threshold: 0.08
+            });
+
+            revealElements.forEach(el => {
+                if (!offeringsGrid || !offeringsGrid.contains(el)) {
+                    revealObserver.observe(el);
+                }
+            });
+        });
+
+        // Services Title Scroll-Reveal Animation
+        const updateServicesScrollTitle = () => {
+            const titleEl = document.getElementById('services-scroll-title');
+            if (!titleEl) return;
+            const words = titleEl.querySelectorAll('.scroll-word');
+            if (!words.length) return;
+
+            const rect = titleEl.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Start reveal when element enters 85% of window, complete when at 40%
+            const startY = windowHeight * 0.85;
+            const endY = windowHeight * 0.40;
+
+            let progress = (startY - rect.top) / (startY - endY);
+            progress = Math.max(0, Math.min(1, progress));
+
+            const totalWords = words.length;
+            words.forEach((word, index) => {
+                const wordThreshold = index / totalWords;
+                if (progress >= wordThreshold) {
+                    word.style.color = '#1a1a1a';
+                } else {
+                    word.style.color = '#cbd5e1';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', updateServicesScrollTitle, { passive: true });
+        window.addEventListener('resize', updateServicesScrollTitle);
+        document.addEventListener('DOMContentLoaded', updateServicesScrollTitle);
+        updateServicesScrollTitle();
+
+        // Mobile Services Offerings Horizontal Slider
+        const initServicesSlider = () => {
+            const slider = document.getElementById('services-offerings-grid');
+            if (!slider) return;
+
+            const cards = Array.from(slider.querySelectorAll('.service-offering-card'));
+            const dots = Array.from(document.querySelectorAll('.services-slider-dot'));
+
+            if (!cards.length) return;
+
+            let currentIndex = 0;
+
+            const updateActiveState = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                currentIndex = index;
+
+                dots.forEach((dot, i) => {
+                    if (i === currentIndex) {
+                        dot.classList.remove('w-2', 'bg-gray-300');
+                        dot.classList.add('w-6', 'bg-black');
+                    } else {
+                        dot.classList.remove('w-6', 'bg-black', 'bg-primary');
+                        dot.classList.add('w-2', 'bg-gray-300');
+                    }
+                });
+            };
+
+            const scrollToCard = (index) => {
+                if (index < 0 || index >= cards.length) return;
+                const card = cards[index];
+                const sliderLeft = slider.getBoundingClientRect().left;
+                const cardLeft = card.getBoundingClientRect().left;
+                const scrollOffset = cardLeft - sliderLeft - (parseFloat(getComputedStyle(slider).paddingLeft) || 16);
+
+                slider.scrollBy({
+                    left: scrollOffset,
+                    behavior: 'smooth'
+                });
+                updateActiveState(index);
+            };
+
+            let scrollDebounce;
+            slider.addEventListener('scroll', () => {
+                clearTimeout(scrollDebounce);
+                scrollDebounce = setTimeout(() => {
+                    const sliderLeft = slider.getBoundingClientRect().left;
+                    const paddingLeft = parseFloat(getComputedStyle(slider).paddingLeft) || 16;
+                    let closestIndex = 0;
+                    let minDiff = Infinity;
+
+                    cards.forEach((card, i) => {
+                        const diff = Math.abs(card.getBoundingClientRect().left - sliderLeft - paddingLeft);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            closestIndex = i;
+                        }
+                    });
+
+                    updateActiveState(closestIndex);
+                }, 40);
+            }, { passive: true });
+
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    const idx = parseInt(dot.getAttribute('data-index'), 10);
+                    if (!isNaN(idx)) scrollToCard(idx);
+                });
+            });
+
+            updateActiveState(0);
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initServicesSlider);
+        } else {
+            initServicesSlider();
+        }
+    </script>
